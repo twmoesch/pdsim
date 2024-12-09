@@ -14,7 +14,7 @@ cdef class VdVstruct:
 cdef double get_global_theta(double theta, geoVals geo, int ichamb):
     return theta + geo.theta_min + (ichamb - 1) * pi / geo.num_lobes
 
-cdef double simple_interpolation(double X, double[:] X_all, double[:] Y_all, double Y_ext = 0.0):
+cdef double simple_interpolation(double X, double[:] X_all, double[:] Y_all, double Y_ext):
     cdef double X_i
     cdef int i = 0
 
@@ -44,8 +44,8 @@ cpdef VdVstruct VdV(double theta, geoVals geo, int ichamb):
     cdef double theta_global = get_global_theta(theta, geo, ichamb)
     cdef VdVstruct VdV = VdVstruct.__new__(VdVstruct)
 
-    VdV.V = simple_interpolation(theta_global, geo.theta_raw, geo.V_raw)
-    VdV.dV = simple_interpolation(theta_global, geo.theta_raw, geo.dV_raw)
+    VdV.V = simple_interpolation(theta_global, geo.theta_raw, geo.V_raw, 0.0)
+    VdV.dV = simple_interpolation(theta_global, geo.theta_raw, geo.dV_raw, 0.0)
     return VdV
 
 cpdef double area_leak(double theta, geoVals geo, int ichamb, leak_id id):
@@ -66,15 +66,15 @@ cpdef double area_leak(double theta, geoVals geo, int ichamb, leak_id id):
     cdef double area, theta_global = get_global_theta(theta, geo, ichamb)
 
     if id==HOUSING:
-        area = simple_interpolation(theta_global, geo.theta_raw, geo.A_leak_housing_raw)
+        area = simple_interpolation(theta_global, geo.theta_raw, geo.A_leak_housing_raw, 0.0)
     elif id==RADIAL:
-        area = simple_interpolation(theta_global, geo.theta_raw, geo.A_leak_radial_raw)
+        area = simple_interpolation(theta_global, geo.theta_raw, geo.A_leak_radial_raw, 0.0)
     elif id==BLOWHOLE:
-        area = simple_interpolation(theta_global, geo.theta_raw, geo.A_leak_blowhole1_raw) + simple_interpolation(theta_global, geo.theta_raw, geo.A_leak_blowhole2_raw)
+        area = simple_interpolation(theta_global, geo.theta_raw, geo.A_leak_blowhole1_raw, 0.0) + simple_interpolation(theta_global, geo.theta_raw, geo.A_leak_blowhole2_raw, 0.0)
     elif id==INTERMESH_INT:
-        area = simple_interpolation(theta_global, geo.theta_raw, geo.A_leak_intermesh_internal_raw)
+        area = simple_interpolation(theta_global, geo.theta_raw, geo.A_leak_intermesh_internal_raw, 0.0)
     elif id==INTERMESH_EXT:
-        area = simple_interpolation(theta_global, geo.theta_raw, geo.A_leak_intermesh_external_raw)
+        area = simple_interpolation(theta_global, geo.theta_raw, geo.A_leak_intermesh_external_raw, 0.0)
     else:
         area = 0.0
     return area
@@ -94,7 +94,7 @@ cpdef double area_suction(double theta, geoVals geo, int ichamb):
     """
     
     cdef double theta_global = get_global_theta(theta, geo, ichamb)
-    return simple_interpolation(theta_global, geo.theta_raw, geo.A_suc_ax_raw) + simple_interpolation(theta_global, geo.theta_raw, geo.A_suc_rad_raw)
+    return simple_interpolation(theta_global, geo.theta_raw, geo.A_suc_ax_raw, 0.0) + simple_interpolation(theta_global, geo.theta_raw, geo.A_suc_rad_raw, 0.0)
 
 cpdef double area_discharge(double theta, geoVals geo, int ichamb):
     """
@@ -110,7 +110,7 @@ cpdef double area_discharge(double theta, geoVals geo, int ichamb):
         The chamber number between 1 and geo.num_chambers
     """
     cdef double theta_global = get_global_theta(theta, geo, ichamb)
-    return simple_interpolation(theta_global, geo.theta_raw, geo.A_dis_ax_raw)
+    return simple_interpolation(theta_global, geo.theta_raw, geo.A_dis_ax_raw, 0.0)
 
 cpdef double area_injection(double theta, geoVals geo, int ichamb):
     """
@@ -126,5 +126,5 @@ cpdef double area_injection(double theta, geoVals geo, int ichamb):
         The chamber number between 1 and geo.num_chambers
     """
     cdef double theta_global = get_global_theta(theta, geo, ichamb)
-    return simple_interpolation(theta_global, geo.theta_raw, geo.A_inj_raw)
+    return simple_interpolation(theta_global, geo.theta_raw, geo.A_inj_raw, 0.0)
 

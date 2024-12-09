@@ -734,3 +734,37 @@ cpdef double FrictionCorrectedIsentropicNozzle(double A, State State_up, State S
     return mdot
 
 
+cpdef double LiquidNozzleFlow(double A, State State_up, State State_down, double X_d, double DP_floor):
+    """
+        A generic flow of liquid with mass flow rate calculated from:
+
+        :math:`\dot m = C_d A \sqrt{2\rho\Delta p}`
+
+        See also: https://en.wikipedia.org/wiki/Discharge_coefficient
+        
+        Parameters
+        ----------
+        A : float
+            Flow area of injection nozzle in m²
+        State_up : :class:`State <CoolProp.State.State>` instance
+            The State instance corresponding to the upstream side of the flow path
+        State_down : :class:`State <CoolProp.State.State>` instance
+            The State instance corresponding to the downstream side of the flow path
+        X_d : float
+            Flow coefficient when the flow goes from ``upstream_key`` to the downstream key
+        DP_floor: float
+            The minimum pressure drop [kPa]
+
+        Returns
+        -------
+        mdot : float
+            The mass flow through the flow path [kg/s]
+        """
+    try:
+        if State_up.p - State_down.p > DP_floor and abs(A) > 1e-15:
+            mdot = X_d*A*(2*State_up.rho*(State_up.p-State_down.p)*1000)**0.5
+            return mdot
+        else:
+            return 0.0
+    except ZeroDivisionError:
+        return 0.0

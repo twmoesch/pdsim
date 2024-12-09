@@ -55,3 +55,5 @@ cdef class ValveModel(object):
     cpdef double flow_velocity(self,State State_up, State State_down)
     cpdef arraym derivs(self, Core)
     cpdef dict __cdict__(self)
+
+cpdef double LiquidNozzleFlow(double A, State State_up, State State_down, double X_d, double DP_floor)

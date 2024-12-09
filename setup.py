@@ -70,7 +70,9 @@ pyx_list = [
             "PDSim/recip/_recip.pyx",
             "PDSim/scroll/common_scroll_geo.pyx",
             "PDSim/scroll/symm_scroll_geo.pyx",
-            "PDSim/scroll/_scroll.pyx"
+            "PDSim/scroll/_scroll.pyx",
+            "PDSim/screw/screw_spindle_geo.pyx",
+            "PDSim/screw/_screw_spindle.pyx"
             ]
 
 def clean():

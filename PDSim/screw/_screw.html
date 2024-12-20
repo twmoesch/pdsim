@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Cython: _screw_spindle.pyx</title>
+    <title>Cython: _screw.pyx</title>
     <style type="text/css">
     
 body.cython { font-family: courier; font-size: 12; }
@@ -294,7 +294,7 @@ body.cython { font-family: courier; font-size: 12; }
     <span style="background-color: #FFFF00">Yellow lines</span> hint at Python interaction.<br />
     Click on a line that starts with a "<code>+</code>" to see the C code that Cython generated for it.
 </p>
-<p>Raw output: <a href="_screw_spindle.cpp">_screw_spindle.cpp</a></p>
+<p>Raw output: <a href="_screw.cpp">_screw.cpp</a></p>
 <div class="cython"><pre class="cython line score-28" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">01</span>: from PDSim.flow import flow_models</pre>
 <pre class='cython code score-28 '>  __pyx_t_7 = <span class='py_c_api'>PyList_New</span>(1);<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 1, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_7);
@@ -316,49 +316,47 @@ body.cython { font-family: courier; font-size: 12; }
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_7); __pyx_t_7 = 0;
 </pre><pre class="cython line score-0">&#xA0;<span class="">02</span>: cimport PDSim.flow.flow_models as flow_models</pre>
 <pre class="cython line score-0">&#xA0;<span class="">03</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">04</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">05</span>: </pre>
-<pre class="cython line score-20" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">06</span>: from PDSim.screw import screw_spindle_geo</pre>
-<pre class='cython code score-20 '>  __pyx_t_4 = <span class='py_c_api'>PyList_New</span>(1);<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 6, __pyx_L1_error)</span>
+<pre class="cython line score-20" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">04</span>: from PDSim.screw import screw_spindle_geo</pre>
+<pre class='cython code score-20 '>  __pyx_t_4 = <span class='py_c_api'>PyList_New</span>(1);<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
   <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_n_s_screw_spindle_geo);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_n_s_screw_spindle_geo);
-  if (<span class='pyx_c_api'>__Pyx_PyList_SET_ITEM</span>(__pyx_t_4, 0, __pyx_n_s_screw_spindle_geo)) <span class='error_goto'>__PYX_ERR(0, 6, __pyx_L1_error)</span>;
-  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_Import</span>(__pyx_n_s_PDSim_screw, __pyx_t_4, -1);<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 6, __pyx_L1_error)</span>
+  if (<span class='pyx_c_api'>__Pyx_PyList_SET_ITEM</span>(__pyx_t_4, 0, __pyx_n_s_screw_spindle_geo)) <span class='error_goto'>__PYX_ERR(0, 4, __pyx_L1_error)</span>;
+  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_Import</span>(__pyx_n_s_PDSim_screw, __pyx_t_4, -1);<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 4, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_7);
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = <span class='pyx_c_api'>__Pyx_ImportFrom</span>(__pyx_t_7, __pyx_n_s_screw_spindle_geo);<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 6, __pyx_L1_error)</span>
+  __pyx_t_4 = <span class='pyx_c_api'>__Pyx_ImportFrom</span>(__pyx_t_7, __pyx_n_s_screw_spindle_geo);<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
-  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_d, __pyx_n_s_screw_spindle_geo, __pyx_t_4) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 6, __pyx_L1_error)</span>
+  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_d, __pyx_n_s_screw_spindle_geo, __pyx_t_4) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 4, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_7); __pyx_t_7 = 0;
-</pre><pre class="cython line score-0">&#xA0;<span class="">07</span>: cimport PDSim.screw.screw_spindle_geo as screw_spindle_geo</pre>
-<pre class="cython line score-0">&#xA0;<span class="">08</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">09</span>: </pre>
-<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">10</span>: cdef class _screw_spindle(object):</pre>
-<pre class='cython code score-0 '>struct __pyx_vtabstruct_5PDSim_5screw_14_screw_spindle__screw_spindle {
-  PyObject *(*__pyx___cdict__)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, int __pyx_skip_dispatch);
-  double (*Suction)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, int __pyx_skip_dispatch);
-  double (*Discharge)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, int __pyx_skip_dispatch);
-  double (*Leakage)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id, int __pyx_skip_dispatch);
-  double (*Injection)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, PyObject *, int __pyx_skip_dispatch);
+</pre><pre class="cython line score-0">&#xA0;<span class="">05</span>: cimport PDSim.screw.screw_spindle_geo as screw_spindle_geo</pre>
+<pre class="cython line score-0">&#xA0;<span class="">06</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">07</span>: </pre>
+<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">08</span>: cdef class _ScrewSpindle(object):</pre>
+<pre class='cython code score-0 '>struct __pyx_vtabstruct_5PDSim_5screw_6_screw__ScrewSpindle {
+  PyObject *(*__pyx___cdict__)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, int __pyx_skip_dispatch);
+  double (*Suction)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, int __pyx_skip_dispatch);
+  double (*Discharge)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, int __pyx_skip_dispatch);
+  double (*Leakage)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id, int __pyx_skip_dispatch);
+  double (*Injection)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, PyObject *, int __pyx_skip_dispatch);
 };
-static struct __pyx_vtabstruct_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_vtabptr_5PDSim_5screw_14_screw_spindle__screw_spindle;
+static struct __pyx_vtabstruct_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_vtabptr_5PDSim_5screw_6_screw__ScrewSpindle;
 
-</pre><pre class="cython line score-0">&#xA0;<span class="">11</span>: </pre>
-<pre class="cython line score-73" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">12</span>:     cpdef dict __cdict__(self):</pre>
-<pre class='cython code score-73 '>static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__(PyObject *__pyx_v_self, 
+</pre><pre class="cython line score-0">&#xA0;<span class="">09</span>: </pre>
+<pre class="cython line score-73" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">10</span>:     cpdef dict __cdict__(self):</pre>
+<pre class='cython code score-73 '>static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, int __pyx_skip_dispatch) {
+static PyObject *__pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, int __pyx_skip_dispatch) {
   PyObject *__pyx_r = NULL;
   <span class='trace'>__Pyx_TraceDeclarations</span>
   <span class='trace'>__Pyx_TraceFrameInit</span>(__pyx_codeobj__11)
-  <span class='trace'>__Pyx_TraceCall</span>("__cdict__", __pyx_f[0], 12, 0, <span class='error_goto'>__PYX_ERR(0, 12, __pyx_L1_error)</span>);
+  <span class='trace'>__Pyx_TraceCall</span>("__cdict__", __pyx_f[0], 10, 0, <span class='error_goto'>__PYX_ERR(0, 10, __pyx_L1_error)</span>);
   /* Check if called by wrapper */
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
@@ -368,9 +366,9 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_typedict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(((PyObject *)__pyx_v_self), __pyx_n_s_cdict);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)</span>
+      __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(((PyObject *)__pyx_v_self), __pyx_n_s_cdict);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)</span>
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
-      if (!<span class='pyx_c_api'>__Pyx_IsSameCFunction</span>(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__)) {
+      if (!<span class='pyx_c_api'>__Pyx_IsSameCFunction</span>(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__)) {
         <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
         <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
         __pyx_t_3 = __pyx_t_1; __pyx_t_4 = NULL;
@@ -391,11 +389,11 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict
           PyObject *__pyx_callargs[2] = {__pyx_t_4, NULL};
           __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_FastCall</span>(__pyx_t_3, __pyx_callargs+1-__pyx_t_5, 0+__pyx_t_5);
           <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(0, 12, __pyx_L1_error)</span>
+          if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(0, 10, __pyx_L1_error)</span>
           <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
           <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_3); __pyx_t_3 = 0;
         }
-        if (!(likely(<span class='py_c_api'>PyDict_CheckExact</span>(__pyx_t_2))||((__pyx_t_2) == Py_None) || <span class='pyx_c_api'>__Pyx_RaiseUnexpectedTypeError</span>("dict", __pyx_t_2))) <span class='error_goto'>__PYX_ERR(0, 12, __pyx_L1_error)</span>
+        if (!(likely(<span class='py_c_api'>PyDict_CheckExact</span>(__pyx_t_2))||((__pyx_t_2) == Py_None) || <span class='pyx_c_api'>__Pyx_RaiseUnexpectedTypeError</span>("dict", __pyx_t_2))) <span class='error_goto'>__PYX_ERR(0, 10, __pyx_L1_error)</span>
         __pyx_r = ((PyObject*)__pyx_t_2);
         __pyx_t_2 = 0;
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
@@ -420,7 +418,7 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_2);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_3);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_4);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.__cdict__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.__cdict__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   <span class='refnanny'>__Pyx_XGIVEREF</span>(__pyx_r);
@@ -430,16 +428,16 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-<span class='py_macro_api'>PyDoc_STRVAR</span>(__pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__, "_screw_spindle.__cdict__(self) -&gt; dict");
-static PyMethodDef __pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__ = {"__cdict__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__};
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__(PyObject *__pyx_v_self, 
+<span class='py_macro_api'>PyDoc_STRVAR</span>(__pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__, "_ScrewSpindle.__cdict__(self) -&gt; dict");
+static PyMethodDef __pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__ = {"__cdict__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__};
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -464,20 +462,20 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   if (unlikely(__pyx_nargs &gt; 0)) {
     <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("__cdict__", 1, 0, 0, __pyx_nargs); return NULL;}
   if (unlikely(__pyx_kwds) &amp;&amp; <span class='pyx_c_api'>__Pyx_NumKwargs_FASTCALL</span>(__pyx_kwds) &amp;&amp; unlikely(!<span class='pyx_c_api'>__Pyx_CheckKeywordStrings</span>(__pyx_kwds, "__cdict__", 0))) return NULL;
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self));
 
   /* function exit code */
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   <span class='trace'>__Pyx_TraceDeclarations</span>
   <span class='trace'>__Pyx_TraceFrameInit</span>(__pyx_codeobj__11)
-  <span class='trace'>__Pyx_TraceCall</span>("__cdict__ (wrapper)", __pyx_f[0], 12, 0, <span class='error_goto'>__PYX_ERR(0, 12, __pyx_L1_error)</span>);
+  <span class='trace'>__Pyx_TraceCall</span>("__cdict__ (wrapper)", __pyx_f[0], 10, 0, <span class='error_goto'>__PYX_ERR(0, 10, __pyx_L1_error)</span>);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
-  __pyx_t_1 = __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__(__pyx_v_self, 1);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)</span>
+  __pyx_t_1 = __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__(__pyx_v_self, 1);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -486,7 +484,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdic
   /* function exit code */
   __pyx_L1_error:;
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_1);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.__cdict__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.__cdict__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   <span class='refnanny'>__Pyx_XGIVEREF</span>(__pyx_r);
@@ -495,59 +493,59 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdic
   return __pyx_r;
 }
 /* … */
-  __pyx_tuple__31 = <span class='py_c_api'>PyTuple_Pack</span>(1, __pyx_n_s_self);<span class='error_goto'> if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 12, __pyx_L1_error)</span>
+  __pyx_tuple__31 = <span class='py_c_api'>PyTuple_Pack</span>(1, __pyx_n_s_self);<span class='error_goto'> if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 10, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_tuple__31);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_tuple__31);
 /* … */
-  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_screw_spindle___cdict, NULL, __pyx_n_s_PDSim_screw__screw_spindle, __pyx_d, ((PyObject *)__pyx_codeobj__11));<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 12, __pyx_L1_error)</span>
+  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_ScrewSpindle___cdict, NULL, __pyx_n_s_PDSim_screw__screw, __pyx_d, ((PyObject *)__pyx_codeobj__11));<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 10, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_7);
-  if (<span class='pyx_c_api'>__Pyx_SetItemOnTypeDict</span>((PyObject *)__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle, __pyx_n_s_cdict, __pyx_t_7) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 12, __pyx_L1_error)</span>
+  if (<span class='pyx_c_api'>__Pyx_SetItemOnTypeDict</span>((PyObject *)__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle, __pyx_n_s_cdict, __pyx_t_7) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 10, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_7); __pyx_t_7 = 0;
-  <span class='py_c_api'>PyType_Modified</span>(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
-  __pyx_codeobj__11 = (PyObject*)<span class='pyx_c_api'>__Pyx_PyCode_New</span>(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_spindle_pyx, __pyx_n_s_cdict, 12, __pyx_empty_bytes);<span class='error_goto'> if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 12, __pyx_L1_error)</span>
-</pre><pre class="cython line score-14" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">13</span>:         return dict(theta = self.theta,</pre>
+  <span class='py_c_api'>PyType_Modified</span>(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
+  __pyx_codeobj__11 = (PyObject*)<span class='pyx_c_api'>__Pyx_PyCode_New</span>(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_pyx, __pyx_n_s_cdict, 10, __pyx_empty_bytes);<span class='error_goto'> if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 10, __pyx_L1_error)</span>
+</pre><pre class="cython line score-14" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">11</span>:         return dict(theta = self.theta,</pre>
 <pre class='cython code score-14 '>  <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
-  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyDict_NewPresized</span>(5);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)</span>
+  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyDict_NewPresized</span>(5);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
-  __pyx_t_2 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_v_self-&gt;theta);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)</span>
+  __pyx_t_2 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_v_self-&gt;theta);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
-  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_t_1, __pyx_n_s_theta, __pyx_t_2) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 13, __pyx_L1_error)</span>
+  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_t_1, __pyx_n_s_theta, __pyx_t_2) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 11, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-5" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">14</span>:                     geo = self.geo,</pre>
-<pre class='cython code score-5 '>  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_t_1, __pyx_n_s_geo, ((PyObject *)__pyx_v_self-&gt;geo)) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 13, __pyx_L1_error)</span>
-</pre><pre class="cython line score-11" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">15</span>:                     HTC = self.HTC,</pre>
-<pre class='cython code score-11 '>  __pyx_t_2 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_v_self-&gt;HTC);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)</span>
+</pre><pre class="cython line score-5" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">12</span>:                     geo = self.geo,</pre>
+<pre class='cython code score-5 '>  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_t_1, __pyx_n_s_geo, ((PyObject *)__pyx_v_self-&gt;geo)) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 11, __pyx_L1_error)</span>
+</pre><pre class="cython line score-11" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">13</span>:                     HTC = self.HTC,</pre>
+<pre class='cython code score-11 '>  __pyx_t_2 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_v_self-&gt;HTC);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
-  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_t_1, __pyx_n_s_HTC, __pyx_t_2) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 13, __pyx_L1_error)</span>
+  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_t_1, __pyx_n_s_HTC, __pyx_t_2) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 11, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-8" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">16</span>:                     inc_injection = self.incl_injection,</pre>
-<pre class='cython code score-8 '>  __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyBool_FromLong</span>(__pyx_v_self-&gt;incl_injection);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)</span>
+</pre><pre class="cython line score-8" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">14</span>:                     inc_injection = self.incl_injection,</pre>
+<pre class='cython code score-8 '>  __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyBool_FromLong</span>(__pyx_v_self-&gt;incl_injection);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
-  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_t_1, __pyx_n_s_inc_injection, __pyx_t_2) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 13, __pyx_L1_error)</span>
+  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_t_1, __pyx_n_s_inc_injection, __pyx_t_2) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 11, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
-</pre><pre class="cython line score-8" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">17</span>:                     incl_leakage = self.incl_leakage)</pre>
-<pre class='cython code score-8 '>  __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyBool_FromLong</span>(__pyx_v_self-&gt;incl_leakage);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)</span>
+</pre><pre class="cython line score-8" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">15</span>:                     incl_leakage = self.incl_leakage)</pre>
+<pre class='cython code score-8 '>  __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyBool_FromLong</span>(__pyx_v_self-&gt;incl_leakage);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
-  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_t_1, __pyx_n_s_incl_leakage, __pyx_t_2) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 13, __pyx_L1_error)</span>
+  if (<span class='py_c_api'>PyDict_SetItem</span>(__pyx_t_1, __pyx_n_s_incl_leakage, __pyx_t_2) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 11, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
   goto __pyx_L0;
-</pre><pre class="cython line score-0">&#xA0;<span class="">18</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">19</span>: </pre>
-<pre class="cython line score-128" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">20</span>:     cpdef double Suction(self, FlowPath FP, int ichamb):</pre>
-<pre class='cython code score-128 '>static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction(PyObject *__pyx_v_self, 
+</pre><pre class="cython line score-0">&#xA0;<span class="">16</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">17</span>: </pre>
+<pre class="cython line score-128" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">18</span>:     cpdef double Suction(self, FlowPath FP, int ichamb):</pre>
+<pre class='cython code score-128 '>static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, int __pyx_skip_dispatch) {
+static double __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Suction(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, int __pyx_skip_dispatch) {
   double __pyx_r;
   <span class='trace'>__Pyx_TraceDeclarations</span>
   <span class='trace'>__Pyx_TraceFrameInit</span>(__pyx_codeobj__12)
-  <span class='trace'>__Pyx_TraceCall</span>("Suction", __pyx_f[0], 20, 0, <span class='error_goto'>__PYX_ERR(0, 20, __pyx_L1_error)</span>);
+  <span class='trace'>__Pyx_TraceCall</span>("Suction", __pyx_f[0], 18, 0, <span class='error_goto'>__PYX_ERR(0, 18, __pyx_L1_error)</span>);
   /* Check if called by wrapper */
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
@@ -557,10 +555,10 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_typedict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(((PyObject *)__pyx_v_self), __pyx_n_s_Suction);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)</span>
+      __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(((PyObject *)__pyx_v_self), __pyx_n_s_Suction);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 18, __pyx_L1_error)</span>
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
-      if (!<span class='pyx_c_api'>__Pyx_IsSameCFunction</span>(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction)) {
-        __pyx_t_3 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_ichamb);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 20, __pyx_L1_error)</span>
+      if (!<span class='pyx_c_api'>__Pyx_IsSameCFunction</span>(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction)) {
+        __pyx_t_3 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_ichamb);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 18, __pyx_L1_error)</span>
         <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
         <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
@@ -582,11 +580,11 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
           __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_FastCall</span>(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 2+__pyx_t_6);
           <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_5); __pyx_t_5 = 0;
           <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_3); __pyx_t_3 = 0;
-          if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(0, 20, __pyx_L1_error)</span>
+          if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(0, 18, __pyx_L1_error)</span>
           <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
           <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
         }
-        __pyx_t_7 = __pyx_<span class='py_c_api'>PyFloat_AsDouble</span>(__pyx_t_2); if (unlikely((__pyx_t_7 == (double)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 20, __pyx_L1_error)</span>
+        __pyx_t_7 = __pyx_<span class='py_c_api'>PyFloat_AsDouble</span>(__pyx_t_2); if (unlikely((__pyx_t_7 == (double)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 18, __pyx_L1_error)</span>
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_r = __pyx_t_7;
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
@@ -612,7 +610,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_3);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_4);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_5);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   <span class='trace'>__Pyx_TraceReturn</span>(Py_None, 0);
@@ -621,16 +619,16 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-<span class='py_macro_api'>PyDoc_STRVAR</span>(__pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Suction, "_screw_spindle.Suction(self, FlowPath FP, int ichamb) -&gt; double\n\n        Calculate the suction mass flow rate\n\n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that is connected to the suction plenum\n        \n        ");
-static PyMethodDef __pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction = {"Suction", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Suction};
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction(PyObject *__pyx_v_self, 
+<span class='py_macro_api'>PyDoc_STRVAR</span>(__pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_2Suction, "_ScrewSpindle.Suction(self, FlowPath FP, int ichamb) -&gt; double\n\n        Calculate the suction mass flow rate\n\n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that is connected to the suction plenum\n        \n        ");
+static PyMethodDef __pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction = {"Suction", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_2Suction};
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -674,7 +672,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)<span class='pyx_c_api'>__Pyx_Arg_NewRef_FASTCALL</span>(values[0]);
           kw_args--;
         }
-        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 20, __pyx_L3_error)</span>
+        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 18, __pyx_L3_error)</span>
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -682,14 +680,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)<span class='pyx_c_api'>__Pyx_Arg_NewRef_FASTCALL</span>(values[1]);
           kw_args--;
         }
-        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 20, __pyx_L3_error)</span>
+        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 18, __pyx_L3_error)</span>
         else {
-          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Suction", 1, 2, 2, 1); <span class='error_goto'>__PYX_ERR(0, 20, __pyx_L3_error)</span>
+          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Suction", 1, 2, 2, 1); <span class='error_goto'>__PYX_ERR(0, 18, __pyx_L3_error)</span>
         }
       }
       if (unlikely(kw_args &gt; 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(<span class='pyx_c_api'>__Pyx_ParseOptionalKeywords</span>(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Suction") &lt; 0)) <span class='error_goto'>__PYX_ERR(0, 20, __pyx_L3_error)</span>
+        if (unlikely(<span class='pyx_c_api'>__Pyx_ParseOptionalKeywords</span>(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Suction") &lt; 0)) <span class='error_goto'>__PYX_ERR(0, 18, __pyx_L3_error)</span>
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -698,11 +696,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[1] = <span class='pyx_c_api'>__Pyx_Arg_FASTCALL</span>(__pyx_args, 1);
     }
     __pyx_v_FP = ((struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *)values[0]);
-    __pyx_v_ichamb = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 20, __pyx_L3_error)</span>
+    __pyx_v_ichamb = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 18, __pyx_L3_error)</span>
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Suction", 1, 2, 2, __pyx_nargs); <span class='error_goto'>__PYX_ERR(0, 20, __pyx_L3_error)</span>
+  <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Suction", 1, 2, 2, __pyx_nargs); <span class='error_goto'>__PYX_ERR(0, 18, __pyx_L3_error)</span>
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -712,12 +710,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       <span class='pyx_c_api'>__Pyx_Arg_XDECREF_FASTCALL</span>(values[__pyx_temp]);
     }
   }
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!<span class='pyx_c_api'>__Pyx_ArgTypeTest</span>(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) <span class='error_goto'>__PYX_ERR(0, 20, __pyx_L1_error)</span>
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Suction(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb);
+  if (unlikely(!<span class='pyx_c_api'>__Pyx_ArgTypeTest</span>(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) <span class='error_goto'>__PYX_ERR(0, 18, __pyx_L1_error)</span>
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_2Suction(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb);
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -737,14 +735,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Suction(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_2Suction(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb) {
   PyObject *__pyx_r = NULL;
   <span class='trace'>__Pyx_TraceDeclarations</span>
   <span class='trace'>__Pyx_TraceFrameInit</span>(__pyx_codeobj__12)
-  <span class='trace'>__Pyx_TraceCall</span>("Suction (wrapper)", __pyx_f[0], 20, 0, <span class='error_goto'>__PYX_ERR(0, 20, __pyx_L1_error)</span>);
+  <span class='trace'>__Pyx_TraceCall</span>("Suction (wrapper)", __pyx_f[0], 18, 0, <span class='error_goto'>__PYX_ERR(0, 18, __pyx_L1_error)</span>);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
-  __pyx_t_1 = __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, 1);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 20, __pyx_L1_error)</span>
-  __pyx_t_2 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_t_1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)</span>
+  __pyx_t_1 = __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Suction(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, 1);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 18, __pyx_L1_error)</span>
+  __pyx_t_2 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_t_1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -753,7 +751,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Sucti
   /* function exit code */
   __pyx_L1_error:;
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_2);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   <span class='refnanny'>__Pyx_XGIVEREF</span>(__pyx_r);
@@ -762,33 +760,33 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Sucti
   return __pyx_r;
 }
 /* … */
-  __pyx_tuple__32 = <span class='py_c_api'>PyTuple_Pack</span>(3, __pyx_n_s_self, __pyx_n_s_FP, __pyx_n_s_ichamb);<span class='error_goto'> if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 20, __pyx_L1_error)</span>
+  __pyx_tuple__32 = <span class='py_c_api'>PyTuple_Pack</span>(3, __pyx_n_s_self, __pyx_n_s_FP, __pyx_n_s_ichamb);<span class='error_goto'> if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 18, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_tuple__32);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_tuple__32);
 /* … */
-  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_screw_spindle_Suction, NULL, __pyx_n_s_PDSim_screw__screw_spindle, __pyx_d, ((PyObject *)__pyx_codeobj__12));<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 20, __pyx_L1_error)</span>
+  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_ScrewSpindle_Suction, NULL, __pyx_n_s_PDSim_screw__screw, __pyx_d, ((PyObject *)__pyx_codeobj__12));<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 18, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_7);
-  if (<span class='pyx_c_api'>__Pyx_SetItemOnTypeDict</span>((PyObject *)__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle, __pyx_n_s_Suction, __pyx_t_7) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 20, __pyx_L1_error)</span>
+  if (<span class='pyx_c_api'>__Pyx_SetItemOnTypeDict</span>((PyObject *)__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle, __pyx_n_s_Suction, __pyx_t_7) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 18, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_7); __pyx_t_7 = 0;
-  <span class='py_c_api'>PyType_Modified</span>(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
-  __pyx_codeobj__12 = (PyObject*)<span class='pyx_c_api'>__Pyx_PyCode_New</span>(3, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_spindle_pyx, __pyx_n_s_Suction, 20, __pyx_empty_bytes);<span class='error_goto'> if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 20, __pyx_L1_error)</span>
-</pre><pre class="cython line score-0">&#xA0;<span class="">21</span>:         """</pre>
-<pre class="cython line score-0">&#xA0;<span class="">22</span>:         Calculate the suction mass flow rate</pre>
-<pre class="cython line score-0">&#xA0;<span class="">23</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">24</span>:         Parameters</pre>
-<pre class="cython line score-0">&#xA0;<span class="">25</span>:         ----------</pre>
-<pre class="cython line score-0">&#xA0;<span class="">26</span>:         FP : FlowPath</pre>
-<pre class="cython line score-0">&#xA0;<span class="">27</span>:         ichamb : int</pre>
-<pre class="cython line score-0">&#xA0;<span class="">28</span>:             number of chamber that is connected to the suction plenum</pre>
-<pre class="cython line score-0">&#xA0;<span class="">29</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">30</span>:         """</pre>
-<pre class="cython line score-2" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">31</span>:         FP.A = screw_spindle_geo.area_suction(self.theta, self.geo, ichamb)</pre>
+  <span class='py_c_api'>PyType_Modified</span>(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
+  __pyx_codeobj__12 = (PyObject*)<span class='pyx_c_api'>__Pyx_PyCode_New</span>(3, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_pyx, __pyx_n_s_Suction, 18, __pyx_empty_bytes);<span class='error_goto'> if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 18, __pyx_L1_error)</span>
+</pre><pre class="cython line score-0">&#xA0;<span class="">19</span>:         """</pre>
+<pre class="cython line score-0">&#xA0;<span class="">20</span>:         Calculate the suction mass flow rate</pre>
+<pre class="cython line score-0">&#xA0;<span class="">21</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">22</span>:         Parameters</pre>
+<pre class="cython line score-0">&#xA0;<span class="">23</span>:         ----------</pre>
+<pre class="cython line score-0">&#xA0;<span class="">24</span>:         FP : FlowPath</pre>
+<pre class="cython line score-0">&#xA0;<span class="">25</span>:         ichamb : int</pre>
+<pre class="cython line score-0">&#xA0;<span class="">26</span>:             number of chamber that is connected to the suction plenum</pre>
+<pre class="cython line score-0">&#xA0;<span class="">27</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">28</span>:         """</pre>
+<pre class="cython line score-2" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">29</span>:         FP.A = screw_spindle_geo.area_suction(self.theta, self.geo, ichamb)</pre>
 <pre class='cython code score-2 '>  __pyx_t_1 = ((PyObject *)__pyx_v_self-&gt;geo);
   <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
-  __pyx_t_7 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_suction(__pyx_v_self-&gt;theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, 0);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 31, __pyx_L1_error)</span>
+  __pyx_t_7 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_suction(__pyx_v_self-&gt;theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, 0);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 29, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_FP-&gt;A = __pyx_t_7;
-</pre><pre class="cython line score-11" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">32</span>:         try:</pre>
+</pre><pre class="cython line score-11" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">30</span>:         try:</pre>
 <pre class='cython code score-11 '>  {
     /*try:*/ {
 /* … */
@@ -819,25 +817,25 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Sucti
     <span class='pyx_c_api'>__Pyx_ExceptionReset</span>(__pyx_t_8, __pyx_t_9, __pyx_t_10);
     goto __pyx_L0;
   }
-</pre><pre class="cython line score-4" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">33</span>:             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)</pre>
+</pre><pre class="cython line score-4" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">31</span>:             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)</pre>
 <pre class='cython code score-4 '>      __pyx_t_1 = ((PyObject *)__pyx_v_FP-&gt;State_up);
       <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
       __pyx_t_2 = ((PyObject *)__pyx_v_FP-&gt;State_down);
       <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_2);
-      __pyx_t_7 = __pyx_f_5PDSim_4flow_11flow_models_IsentropicNozzle(__pyx_v_FP-&gt;A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 0, NULL);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 33, __pyx_L3_error)</span>
+      __pyx_t_7 = __pyx_f_5PDSim_4flow_11flow_models_IsentropicNozzle(__pyx_v_FP-&gt;A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 0, NULL);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 31, __pyx_L3_error)</span>
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_7;
       goto __pyx_L7_try_return;
-</pre><pre class="cython line score-6" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">34</span>:         except ZeroDivisionError:</pre>
+</pre><pre class="cython line score-6" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">32</span>:         except ZeroDivisionError:</pre>
 <pre class='cython code score-6 '>    __pyx_t_11 = <span class='pyx_c_api'>__Pyx_PyErr_ExceptionMatches</span>(__pyx_builtin_ZeroDivisionError);
     if (__pyx_t_11) {
-      <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (<span class='pyx_c_api'>__Pyx_GetException</span>(&amp;__pyx_t_2, &amp;__pyx_t_1, &amp;__pyx_t_4) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 34, __pyx_L5_except_error)</span>
+      <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      if (<span class='pyx_c_api'>__Pyx_GetException</span>(&amp;__pyx_t_2, &amp;__pyx_t_1, &amp;__pyx_t_4) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 32, __pyx_L5_except_error)</span>
       <span class='refnanny'>__Pyx_XGOTREF</span>(__pyx_t_2);
       <span class='refnanny'>__Pyx_XGOTREF</span>(__pyx_t_1);
       <span class='refnanny'>__Pyx_XGOTREF</span>(__pyx_t_4);
-</pre><pre class="cython line score-3" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">35</span>:             return 0.0</pre>
+</pre><pre class="cython line score-3" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">33</span>:             return 0.0</pre>
 <pre class='cython code score-3 '>      __pyx_r = 0.0;
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
@@ -845,20 +843,20 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Sucti
       goto __pyx_L6_except_return;
     }
     goto __pyx_L5_except_error;
-</pre><pre class="cython line score-0">&#xA0;<span class="">36</span>: </pre>
-<pre class="cython line score-123" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">37</span>:     cpdef double Discharge(self, FlowPath FP, int ichamb):</pre>
-<pre class='cython code score-123 '>static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge(PyObject *__pyx_v_self, 
+</pre><pre class="cython line score-0">&#xA0;<span class="">34</span>: </pre>
+<pre class="cython line score-123" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">35</span>:     cpdef double Discharge(self, FlowPath FP, int ichamb):</pre>
+<pre class='cython code score-123 '>static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, int __pyx_skip_dispatch) {
+static double __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Discharge(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, int __pyx_skip_dispatch) {
   double __pyx_r;
   <span class='trace'>__Pyx_TraceDeclarations</span>
   <span class='trace'>__Pyx_TraceFrameInit</span>(__pyx_codeobj__13)
-  <span class='trace'>__Pyx_TraceCall</span>("Discharge", __pyx_f[0], 37, 0, <span class='error_goto'>__PYX_ERR(0, 37, __pyx_L1_error)</span>);
+  <span class='trace'>__Pyx_TraceCall</span>("Discharge", __pyx_f[0], 35, 0, <span class='error_goto'>__PYX_ERR(0, 35, __pyx_L1_error)</span>);
   /* Check if called by wrapper */
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
@@ -868,10 +866,10 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_typedict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(((PyObject *)__pyx_v_self), __pyx_n_s_Discharge);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L1_error)</span>
+      __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(((PyObject *)__pyx_v_self), __pyx_n_s_Discharge);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)</span>
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
-      if (!<span class='pyx_c_api'>__Pyx_IsSameCFunction</span>(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge)) {
-        __pyx_t_3 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_ichamb);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 37, __pyx_L1_error)</span>
+      if (!<span class='pyx_c_api'>__Pyx_IsSameCFunction</span>(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge)) {
+        __pyx_t_3 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_ichamb);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 35, __pyx_L1_error)</span>
         <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
         <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
@@ -893,11 +891,11 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
           __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_FastCall</span>(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 2+__pyx_t_6);
           <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_5); __pyx_t_5 = 0;
           <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_3); __pyx_t_3 = 0;
-          if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(0, 37, __pyx_L1_error)</span>
+          if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(0, 35, __pyx_L1_error)</span>
           <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
           <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
         }
-        __pyx_t_7 = __pyx_<span class='py_c_api'>PyFloat_AsDouble</span>(__pyx_t_2); if (unlikely((__pyx_t_7 == (double)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 37, __pyx_L1_error)</span>
+        __pyx_t_7 = __pyx_<span class='py_c_api'>PyFloat_AsDouble</span>(__pyx_t_2); if (unlikely((__pyx_t_7 == (double)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 35, __pyx_L1_error)</span>
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_r = __pyx_t_7;
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
@@ -923,7 +921,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_3);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_4);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_5);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   <span class='trace'>__Pyx_TraceReturn</span>(Py_None, 0);
@@ -932,16 +930,16 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-<span class='py_macro_api'>PyDoc_STRVAR</span>(__pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Discharge, "_screw_spindle.Discharge(self, FlowPath FP, int ichamb) -&gt; double\n\n        Calculate the discharge mass flow rate\n        \n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that is connected to the discharge plenum\n        ");
-static PyMethodDef __pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge = {"Discharge", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Discharge};
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge(PyObject *__pyx_v_self, 
+<span class='py_macro_api'>PyDoc_STRVAR</span>(__pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_4Discharge, "_ScrewSpindle.Discharge(self, FlowPath FP, int ichamb) -&gt; double\n\n        Calculate the discharge mass flow rate\n        \n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that is connected to the discharge plenum\n        ");
+static PyMethodDef __pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge = {"Discharge", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_4Discharge};
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -985,7 +983,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)<span class='pyx_c_api'>__Pyx_Arg_NewRef_FASTCALL</span>(values[0]);
           kw_args--;
         }
-        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 37, __pyx_L3_error)</span>
+        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 35, __pyx_L3_error)</span>
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -993,14 +991,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)<span class='pyx_c_api'>__Pyx_Arg_NewRef_FASTCALL</span>(values[1]);
           kw_args--;
         }
-        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 37, __pyx_L3_error)</span>
+        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 35, __pyx_L3_error)</span>
         else {
-          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Discharge", 1, 2, 2, 1); <span class='error_goto'>__PYX_ERR(0, 37, __pyx_L3_error)</span>
+          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Discharge", 1, 2, 2, 1); <span class='error_goto'>__PYX_ERR(0, 35, __pyx_L3_error)</span>
         }
       }
       if (unlikely(kw_args &gt; 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(<span class='pyx_c_api'>__Pyx_ParseOptionalKeywords</span>(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Discharge") &lt; 0)) <span class='error_goto'>__PYX_ERR(0, 37, __pyx_L3_error)</span>
+        if (unlikely(<span class='pyx_c_api'>__Pyx_ParseOptionalKeywords</span>(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Discharge") &lt; 0)) <span class='error_goto'>__PYX_ERR(0, 35, __pyx_L3_error)</span>
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -1009,11 +1007,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[1] = <span class='pyx_c_api'>__Pyx_Arg_FASTCALL</span>(__pyx_args, 1);
     }
     __pyx_v_FP = ((struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *)values[0]);
-    __pyx_v_ichamb = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 37, __pyx_L3_error)</span>
+    __pyx_v_ichamb = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 35, __pyx_L3_error)</span>
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Discharge", 1, 2, 2, __pyx_nargs); <span class='error_goto'>__PYX_ERR(0, 37, __pyx_L3_error)</span>
+  <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Discharge", 1, 2, 2, __pyx_nargs); <span class='error_goto'>__PYX_ERR(0, 35, __pyx_L3_error)</span>
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -1023,12 +1021,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       <span class='pyx_c_api'>__Pyx_Arg_XDECREF_FASTCALL</span>(values[__pyx_temp]);
     }
   }
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!<span class='pyx_c_api'>__Pyx_ArgTypeTest</span>(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) <span class='error_goto'>__PYX_ERR(0, 37, __pyx_L1_error)</span>
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Discharge(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb);
+  if (unlikely(!<span class='pyx_c_api'>__Pyx_ArgTypeTest</span>(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) <span class='error_goto'>__PYX_ERR(0, 35, __pyx_L1_error)</span>
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_4Discharge(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb);
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -1048,14 +1046,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Discharge(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_4Discharge(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb) {
   PyObject *__pyx_r = NULL;
   <span class='trace'>__Pyx_TraceDeclarations</span>
   <span class='trace'>__Pyx_TraceFrameInit</span>(__pyx_codeobj__13)
-  <span class='trace'>__Pyx_TraceCall</span>("Discharge (wrapper)", __pyx_f[0], 37, 0, <span class='error_goto'>__PYX_ERR(0, 37, __pyx_L1_error)</span>);
+  <span class='trace'>__Pyx_TraceCall</span>("Discharge (wrapper)", __pyx_f[0], 35, 0, <span class='error_goto'>__PYX_ERR(0, 35, __pyx_L1_error)</span>);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
-  __pyx_t_1 = __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, 1);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 37, __pyx_L1_error)</span>
-  __pyx_t_2 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_t_1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 37, __pyx_L1_error)</span>
+  __pyx_t_1 = __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Discharge(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, 1);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 35, __pyx_L1_error)</span>
+  __pyx_t_2 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_t_1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 35, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -1064,7 +1062,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Disch
   /* function exit code */
   __pyx_L1_error:;
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_2);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   <span class='refnanny'>__Pyx_XGIVEREF</span>(__pyx_r);
@@ -1073,30 +1071,30 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Disch
   return __pyx_r;
 }
 /* … */
-  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_screw_spindle_Discharge, NULL, __pyx_n_s_PDSim_screw__screw_spindle, __pyx_d, ((PyObject *)__pyx_codeobj__13));<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 37, __pyx_L1_error)</span>
+  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_ScrewSpindle_Discharge, NULL, __pyx_n_s_PDSim_screw__screw, __pyx_d, ((PyObject *)__pyx_codeobj__13));<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 35, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_7);
-  if (<span class='pyx_c_api'>__Pyx_SetItemOnTypeDict</span>((PyObject *)__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle, __pyx_n_s_Discharge, __pyx_t_7) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 37, __pyx_L1_error)</span>
+  if (<span class='pyx_c_api'>__Pyx_SetItemOnTypeDict</span>((PyObject *)__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle, __pyx_n_s_Discharge, __pyx_t_7) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 35, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_7); __pyx_t_7 = 0;
-  <span class='py_c_api'>PyType_Modified</span>(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
+  <span class='py_c_api'>PyType_Modified</span>(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
 /* … */
-  __pyx_codeobj__13 = (PyObject*)<span class='pyx_c_api'>__Pyx_PyCode_New</span>(3, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_spindle_pyx, __pyx_n_s_Discharge, 37, __pyx_empty_bytes);<span class='error_goto'> if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 37, __pyx_L1_error)</span>
-</pre><pre class="cython line score-0">&#xA0;<span class="">38</span>:         """</pre>
-<pre class="cython line score-0">&#xA0;<span class="">39</span>:         Calculate the discharge mass flow rate</pre>
-<pre class="cython line score-0">&#xA0;<span class="">40</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">41</span>:         Parameters</pre>
-<pre class="cython line score-0">&#xA0;<span class="">42</span>:         ----------</pre>
-<pre class="cython line score-0">&#xA0;<span class="">43</span>:         FP : FlowPath</pre>
-<pre class="cython line score-0">&#xA0;<span class="">44</span>:         ichamb : int</pre>
-<pre class="cython line score-0">&#xA0;<span class="">45</span>:             number of chamber that is connected to the discharge plenum</pre>
-<pre class="cython line score-0">&#xA0;<span class="">46</span>:         """</pre>
-<pre class="cython line score-0">&#xA0;<span class="">47</span>: </pre>
-<pre class="cython line score-2" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">48</span>:         FP.A = screw_spindle_geo.area_discharge(self.theta, self.geo, ichamb)</pre>
+  __pyx_codeobj__13 = (PyObject*)<span class='pyx_c_api'>__Pyx_PyCode_New</span>(3, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_pyx, __pyx_n_s_Discharge, 35, __pyx_empty_bytes);<span class='error_goto'> if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 35, __pyx_L1_error)</span>
+</pre><pre class="cython line score-0">&#xA0;<span class="">36</span>:         """</pre>
+<pre class="cython line score-0">&#xA0;<span class="">37</span>:         Calculate the discharge mass flow rate</pre>
+<pre class="cython line score-0">&#xA0;<span class="">38</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">39</span>:         Parameters</pre>
+<pre class="cython line score-0">&#xA0;<span class="">40</span>:         ----------</pre>
+<pre class="cython line score-0">&#xA0;<span class="">41</span>:         FP : FlowPath</pre>
+<pre class="cython line score-0">&#xA0;<span class="">42</span>:         ichamb : int</pre>
+<pre class="cython line score-0">&#xA0;<span class="">43</span>:             number of chamber that is connected to the discharge plenum</pre>
+<pre class="cython line score-0">&#xA0;<span class="">44</span>:         """</pre>
+<pre class="cython line score-0">&#xA0;<span class="">45</span>: </pre>
+<pre class="cython line score-2" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">46</span>:         FP.A = screw_spindle_geo.area_discharge(self.theta, self.geo, ichamb)</pre>
 <pre class='cython code score-2 '>  __pyx_t_1 = ((PyObject *)__pyx_v_self-&gt;geo);
   <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
-  __pyx_t_7 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_discharge(__pyx_v_self-&gt;theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, 0);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 48, __pyx_L1_error)</span>
+  __pyx_t_7 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_discharge(__pyx_v_self-&gt;theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, 0);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 46, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_FP-&gt;A = __pyx_t_7;
-</pre><pre class="cython line score-11" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">49</span>:         try:</pre>
+</pre><pre class="cython line score-11" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">47</span>:         try:</pre>
 <pre class='cython code score-11 '>  {
     /*try:*/ {
 /* … */
@@ -1127,25 +1125,25 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Disch
     <span class='pyx_c_api'>__Pyx_ExceptionReset</span>(__pyx_t_8, __pyx_t_9, __pyx_t_10);
     goto __pyx_L0;
   }
-</pre><pre class="cython line score-4" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">50</span>:             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)</pre>
+</pre><pre class="cython line score-4" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">48</span>:             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)</pre>
 <pre class='cython code score-4 '>      __pyx_t_1 = ((PyObject *)__pyx_v_FP-&gt;State_up);
       <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
       __pyx_t_2 = ((PyObject *)__pyx_v_FP-&gt;State_down);
       <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_2);
-      __pyx_t_7 = __pyx_f_5PDSim_4flow_11flow_models_IsentropicNozzle(__pyx_v_FP-&gt;A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 0, NULL);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 50, __pyx_L3_error)</span>
+      __pyx_t_7 = __pyx_f_5PDSim_4flow_11flow_models_IsentropicNozzle(__pyx_v_FP-&gt;A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 0, NULL);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 48, __pyx_L3_error)</span>
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_7;
       goto __pyx_L7_try_return;
-</pre><pre class="cython line score-6" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">51</span>:         except ZeroDivisionError:</pre>
+</pre><pre class="cython line score-6" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">49</span>:         except ZeroDivisionError:</pre>
 <pre class='cython code score-6 '>    __pyx_t_11 = <span class='pyx_c_api'>__Pyx_PyErr_ExceptionMatches</span>(__pyx_builtin_ZeroDivisionError);
     if (__pyx_t_11) {
-      <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (<span class='pyx_c_api'>__Pyx_GetException</span>(&amp;__pyx_t_2, &amp;__pyx_t_1, &amp;__pyx_t_4) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 51, __pyx_L5_except_error)</span>
+      <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      if (<span class='pyx_c_api'>__Pyx_GetException</span>(&amp;__pyx_t_2, &amp;__pyx_t_1, &amp;__pyx_t_4) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 49, __pyx_L5_except_error)</span>
       <span class='refnanny'>__Pyx_XGOTREF</span>(__pyx_t_2);
       <span class='refnanny'>__Pyx_XGOTREF</span>(__pyx_t_1);
       <span class='refnanny'>__Pyx_XGOTREF</span>(__pyx_t_4);
-</pre><pre class="cython line score-3" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">52</span>:             return 0.0</pre>
+</pre><pre class="cython line score-3" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">50</span>:             return 0.0</pre>
 <pre class='cython code score-3 '>      __pyx_r = 0.0;
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
@@ -1153,20 +1151,20 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Disch
       goto __pyx_L6_except_return;
     }
     goto __pyx_L5_except_error;
-</pre><pre class="cython line score-0">&#xA0;<span class="">53</span>: </pre>
-<pre class="cython line score-145" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">54</span>:     cpdef double Leakage(self, FlowPath FP, int ichamb, leak_id id):</pre>
-<pre class='cython code score-145 '>static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage(PyObject *__pyx_v_self, 
+</pre><pre class="cython line score-0">&#xA0;<span class="">51</span>: </pre>
+<pre class="cython line score-145" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">52</span>:     cpdef double Leakage(self, FlowPath FP, int ichamb, leak_id id):</pre>
+<pre class='cython code score-145 '>static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id __pyx_v_id, int __pyx_skip_dispatch) {
+static double __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Leakage(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id __pyx_v_id, int __pyx_skip_dispatch) {
   double __pyx_r;
   <span class='trace'>__Pyx_TraceDeclarations</span>
   <span class='trace'>__Pyx_TraceFrameInit</span>(__pyx_codeobj__14)
-  <span class='trace'>__Pyx_TraceCall</span>("Leakage", __pyx_f[0], 54, 0, <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L1_error)</span>);
+  <span class='trace'>__Pyx_TraceCall</span>("Leakage", __pyx_f[0], 52, 0, <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L1_error)</span>);
   /* Check if called by wrapper */
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
@@ -1176,12 +1174,12 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_typedict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(((PyObject *)__pyx_v_self), __pyx_n_s_Leakage);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)</span>
+      __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(((PyObject *)__pyx_v_self), __pyx_n_s_Leakage);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)</span>
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
-      if (!<span class='pyx_c_api'>__Pyx_IsSameCFunction</span>(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage)) {
-        __pyx_t_3 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_ichamb);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 54, __pyx_L1_error)</span>
+      if (!<span class='pyx_c_api'>__Pyx_IsSameCFunction</span>(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage)) {
+        __pyx_t_3 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_ichamb);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)</span>
         <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
-        __pyx_t_4 = __Pyx_PyInt_From_enum____pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id(__pyx_v_id);<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 54, __pyx_L1_error)</span>
+        __pyx_t_4 = __Pyx_PyInt_From_enum____pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id(__pyx_v_id);<span class='error_goto'> if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)</span>
         <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_4);
         <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
         __pyx_t_5 = __pyx_t_1; __pyx_t_6 = NULL;
@@ -1204,11 +1202,11 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
           <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_6); __pyx_t_6 = 0;
           <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_3); __pyx_t_3 = 0;
           <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L1_error)</span>
+          if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L1_error)</span>
           <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
           <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_5); __pyx_t_5 = 0;
         }
-        __pyx_t_8 = __pyx_<span class='py_c_api'>PyFloat_AsDouble</span>(__pyx_t_2); if (unlikely((__pyx_t_8 == (double)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L1_error)</span>
+        __pyx_t_8 = __pyx_<span class='py_c_api'>PyFloat_AsDouble</span>(__pyx_t_2); if (unlikely((__pyx_t_8 == (double)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L1_error)</span>
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_r = __pyx_t_8;
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
@@ -1235,7 +1233,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_4);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_5);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_6);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   <span class='trace'>__Pyx_TraceReturn</span>(Py_None, 0);
@@ -1244,16 +1242,16 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-<span class='py_macro_api'>PyDoc_STRVAR</span>(__pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leakage, "_screw_spindle.Leakage(self, FlowPath FP, int ichamb, leak_id id) -&gt; double\n\n        Calculate the leakage mass flow rate from a specific chamber\n\n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that the leakage originates from\n        id : leak_id\n            leakage identifier (enum)       \n        ");
-static PyMethodDef __pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage = {"Leakage", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leakage};
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage(PyObject *__pyx_v_self, 
+<span class='py_macro_api'>PyDoc_STRVAR</span>(__pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_6Leakage, "_ScrewSpindle.Leakage(self, FlowPath FP, int ichamb, leak_id id) -&gt; double\n\n        Calculate the leakage mass flow rate from a specific chamber\n\n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that the leakage originates from\n        id : leak_id\n            leakage identifier (enum)       \n        ");
+static PyMethodDef __pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage = {"Leakage", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_6Leakage};
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -1300,7 +1298,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)<span class='pyx_c_api'>__Pyx_Arg_NewRef_FASTCALL</span>(values[0]);
           kw_args--;
         }
-        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L3_error)</span>
+        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L3_error)</span>
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -1308,9 +1306,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)<span class='pyx_c_api'>__Pyx_Arg_NewRef_FASTCALL</span>(values[1]);
           kw_args--;
         }
-        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L3_error)</span>
+        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L3_error)</span>
         else {
-          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Leakage", 1, 3, 3, 1); <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L3_error)</span>
+          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Leakage", 1, 3, 3, 1); <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L3_error)</span>
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -1318,14 +1316,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)<span class='pyx_c_api'>__Pyx_Arg_NewRef_FASTCALL</span>(values[2]);
           kw_args--;
         }
-        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L3_error)</span>
+        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L3_error)</span>
         else {
-          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Leakage", 1, 3, 3, 2); <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L3_error)</span>
+          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Leakage", 1, 3, 3, 2); <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L3_error)</span>
         }
       }
       if (unlikely(kw_args &gt; 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(<span class='pyx_c_api'>__Pyx_ParseOptionalKeywords</span>(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Leakage") &lt; 0)) <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L3_error)</span>
+        if (unlikely(<span class='pyx_c_api'>__Pyx_ParseOptionalKeywords</span>(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Leakage") &lt; 0)) <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L3_error)</span>
       }
     } else if (unlikely(__pyx_nargs != 3)) {
       goto __pyx_L5_argtuple_error;
@@ -1335,12 +1333,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[2] = <span class='pyx_c_api'>__Pyx_Arg_FASTCALL</span>(__pyx_args, 2);
     }
     __pyx_v_FP = ((struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *)values[0]);
-    __pyx_v_ichamb = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L3_error)</span>
-    __pyx_v_id = ((enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id)__Pyx_PyInt_As_enum____pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id(values[2]));<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 54, __pyx_L3_error)</span>
+    __pyx_v_ichamb = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L3_error)</span>
+    __pyx_v_id = ((enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id)__Pyx_PyInt_As_enum____pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id(values[2]));<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 52, __pyx_L3_error)</span>
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Leakage", 1, 3, 3, __pyx_nargs); <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L3_error)</span>
+  <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Leakage", 1, 3, 3, __pyx_nargs); <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L3_error)</span>
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -1350,12 +1348,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       <span class='pyx_c_api'>__Pyx_Arg_XDECREF_FASTCALL</span>(values[__pyx_temp]);
     }
   }
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!<span class='pyx_c_api'>__Pyx_ArgTypeTest</span>(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L1_error)</span>
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leakage(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb, __pyx_v_id);
+  if (unlikely(!<span class='pyx_c_api'>__Pyx_ArgTypeTest</span>(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L1_error)</span>
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_6Leakage(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb, __pyx_v_id);
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -1375,14 +1373,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leakage(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id __pyx_v_id) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_6Leakage(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id __pyx_v_id) {
   PyObject *__pyx_r = NULL;
   <span class='trace'>__Pyx_TraceDeclarations</span>
   <span class='trace'>__Pyx_TraceFrameInit</span>(__pyx_codeobj__14)
-  <span class='trace'>__Pyx_TraceCall</span>("Leakage (wrapper)", __pyx_f[0], 54, 0, <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L1_error)</span>);
+  <span class='trace'>__Pyx_TraceCall</span>("Leakage (wrapper)", __pyx_f[0], 52, 0, <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L1_error)</span>);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
-  __pyx_t_1 = __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, __pyx_v_id, 1);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 54, __pyx_L1_error)</span>
-  __pyx_t_2 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_t_1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)</span>
+  __pyx_t_1 = __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Leakage(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, __pyx_v_id, 1);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 52, __pyx_L1_error)</span>
+  __pyx_t_2 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_t_1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -1391,7 +1389,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leaka
   /* function exit code */
   __pyx_L1_error:;
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_2);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   <span class='refnanny'>__Pyx_XGIVEREF</span>(__pyx_r);
@@ -1400,35 +1398,35 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leaka
   return __pyx_r;
 }
 /* … */
-  __pyx_tuple__33 = <span class='py_c_api'>PyTuple_Pack</span>(4, __pyx_n_s_self, __pyx_n_s_FP, __pyx_n_s_ichamb, __pyx_n_s_id);<span class='error_goto'> if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 54, __pyx_L1_error)</span>
+  __pyx_tuple__33 = <span class='py_c_api'>PyTuple_Pack</span>(4, __pyx_n_s_self, __pyx_n_s_FP, __pyx_n_s_ichamb, __pyx_n_s_id);<span class='error_goto'> if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 52, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_tuple__33);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_tuple__33);
 /* … */
-  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_screw_spindle_Leakage, NULL, __pyx_n_s_PDSim_screw__screw_spindle, __pyx_d, ((PyObject *)__pyx_codeobj__14));<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 54, __pyx_L1_error)</span>
+  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_ScrewSpindle_Leakage, NULL, __pyx_n_s_PDSim_screw__screw, __pyx_d, ((PyObject *)__pyx_codeobj__14));<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 52, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_7);
-  if (<span class='pyx_c_api'>__Pyx_SetItemOnTypeDict</span>((PyObject *)__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle, __pyx_n_s_Leakage, __pyx_t_7) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 54, __pyx_L1_error)</span>
+  if (<span class='pyx_c_api'>__Pyx_SetItemOnTypeDict</span>((PyObject *)__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle, __pyx_n_s_Leakage, __pyx_t_7) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 52, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_7); __pyx_t_7 = 0;
-  <span class='py_c_api'>PyType_Modified</span>(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
-  __pyx_codeobj__14 = (PyObject*)<span class='pyx_c_api'>__Pyx_PyCode_New</span>(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_spindle_pyx, __pyx_n_s_Leakage, 54, __pyx_empty_bytes);<span class='error_goto'> if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 54, __pyx_L1_error)</span>
-</pre><pre class="cython line score-0">&#xA0;<span class="">55</span>:         """</pre>
-<pre class="cython line score-0">&#xA0;<span class="">56</span>:         Calculate the leakage mass flow rate from a specific chamber</pre>
-<pre class="cython line score-0">&#xA0;<span class="">57</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">58</span>:         Parameters</pre>
-<pre class="cython line score-0">&#xA0;<span class="">59</span>:         ----------</pre>
-<pre class="cython line score-0">&#xA0;<span class="">60</span>:         FP : FlowPath</pre>
-<pre class="cython line score-0">&#xA0;<span class="">61</span>:         ichamb : int</pre>
-<pre class="cython line score-0">&#xA0;<span class="">62</span>:             number of chamber that the leakage originates from</pre>
-<pre class="cython line score-0">&#xA0;<span class="">63</span>:         id : leak_id</pre>
-<pre class="cython line score-0">&#xA0;<span class="">64</span>:             leakage identifier (enum)</pre>
-<pre class="cython line score-0">&#xA0;<span class="">65</span>:         """</pre>
-<pre class="cython line score-0">&#xA0;<span class="">66</span>: </pre>
-<pre class="cython line score-2" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">67</span>:         FP.A = screw_spindle_geo.area_leak(self.theta, self.geo, ichamb, id)</pre>
+  <span class='py_c_api'>PyType_Modified</span>(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
+  __pyx_codeobj__14 = (PyObject*)<span class='pyx_c_api'>__Pyx_PyCode_New</span>(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_pyx, __pyx_n_s_Leakage, 52, __pyx_empty_bytes);<span class='error_goto'> if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 52, __pyx_L1_error)</span>
+</pre><pre class="cython line score-0">&#xA0;<span class="">53</span>:         """</pre>
+<pre class="cython line score-0">&#xA0;<span class="">54</span>:         Calculate the leakage mass flow rate from a specific chamber</pre>
+<pre class="cython line score-0">&#xA0;<span class="">55</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">56</span>:         Parameters</pre>
+<pre class="cython line score-0">&#xA0;<span class="">57</span>:         ----------</pre>
+<pre class="cython line score-0">&#xA0;<span class="">58</span>:         FP : FlowPath</pre>
+<pre class="cython line score-0">&#xA0;<span class="">59</span>:         ichamb : int</pre>
+<pre class="cython line score-0">&#xA0;<span class="">60</span>:             number of chamber that the leakage originates from</pre>
+<pre class="cython line score-0">&#xA0;<span class="">61</span>:         id : leak_id</pre>
+<pre class="cython line score-0">&#xA0;<span class="">62</span>:             leakage identifier (enum)</pre>
+<pre class="cython line score-0">&#xA0;<span class="">63</span>:         """</pre>
+<pre class="cython line score-0">&#xA0;<span class="">64</span>: </pre>
+<pre class="cython line score-2" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">65</span>:         FP.A = screw_spindle_geo.area_leak(self.theta, self.geo, ichamb, id)</pre>
 <pre class='cython code score-2 '>  __pyx_t_1 = ((PyObject *)__pyx_v_self-&gt;geo);
   <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
-  __pyx_t_8 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_leak(__pyx_v_self-&gt;theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, __pyx_v_id, 0);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)</span>
+  __pyx_t_8 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_leak(__pyx_v_self-&gt;theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, __pyx_v_id, 0);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 65, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_FP-&gt;A = __pyx_t_8;
-</pre><pre class="cython line score-12" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">68</span>:         try:</pre>
+</pre><pre class="cython line score-12" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">66</span>:         try:</pre>
 <pre class='cython code score-12 '>  {
     /*try:*/ {
 /* … */
@@ -1460,25 +1458,25 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leaka
     <span class='pyx_c_api'>__Pyx_ExceptionReset</span>(__pyx_t_9, __pyx_t_10, __pyx_t_11);
     goto __pyx_L0;
   }
-</pre><pre class="cython line score-4" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">69</span>:             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)</pre>
+</pre><pre class="cython line score-4" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">67</span>:             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)</pre>
 <pre class='cython code score-4 '>      __pyx_t_1 = ((PyObject *)__pyx_v_FP-&gt;State_up);
       <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
       __pyx_t_2 = ((PyObject *)__pyx_v_FP-&gt;State_down);
       <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_2);
-      __pyx_t_8 = __pyx_f_5PDSim_4flow_11flow_models_IsentropicNozzle(__pyx_v_FP-&gt;A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 0, NULL);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 69, __pyx_L3_error)</span>
+      __pyx_t_8 = __pyx_f_5PDSim_4flow_11flow_models_IsentropicNozzle(__pyx_v_FP-&gt;A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 0, NULL);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L3_error)</span>
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_8;
       goto __pyx_L7_try_return;
-</pre><pre class="cython line score-6" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">70</span>:         except ZeroDivisionError:</pre>
+</pre><pre class="cython line score-6" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">68</span>:         except ZeroDivisionError:</pre>
 <pre class='cython code score-6 '>    __pyx_t_12 = <span class='pyx_c_api'>__Pyx_PyErr_ExceptionMatches</span>(__pyx_builtin_ZeroDivisionError);
     if (__pyx_t_12) {
-      <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (<span class='pyx_c_api'>__Pyx_GetException</span>(&amp;__pyx_t_2, &amp;__pyx_t_1, &amp;__pyx_t_5) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 70, __pyx_L5_except_error)</span>
+      <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      if (<span class='pyx_c_api'>__Pyx_GetException</span>(&amp;__pyx_t_2, &amp;__pyx_t_1, &amp;__pyx_t_5) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 68, __pyx_L5_except_error)</span>
       <span class='refnanny'>__Pyx_XGOTREF</span>(__pyx_t_2);
       <span class='refnanny'>__Pyx_XGOTREF</span>(__pyx_t_1);
       <span class='refnanny'>__Pyx_XGOTREF</span>(__pyx_t_5);
-</pre><pre class="cython line score-3" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">71</span>:             return 0.0</pre>
+</pre><pre class="cython line score-3" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">69</span>:             return 0.0</pre>
 <pre class='cython code score-3 '>      __pyx_r = 0.0;
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
       <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
@@ -1486,20 +1484,20 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leaka
       goto __pyx_L6_except_return;
     }
     goto __pyx_L5_except_error;
-</pre><pre class="cython line score-0">&#xA0;<span class="">72</span>: </pre>
-<pre class="cython line score-145" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">73</span>:     cpdef double Injection(self, FlowPath FP, int ichamb, str upstream_key):</pre>
-<pre class='cython code score-145 '>static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection(PyObject *__pyx_v_self, 
+</pre><pre class="cython line score-0">&#xA0;<span class="">70</span>: </pre>
+<pre class="cython line score-145" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">71</span>:     cpdef double Injection(self, FlowPath FP, int ichamb, str upstream_key):</pre>
+<pre class='cython code score-145 '>static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, PyObject *__pyx_v_upstream_key, int __pyx_skip_dispatch) {
+static double __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Injection(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, PyObject *__pyx_v_upstream_key, int __pyx_skip_dispatch) {
   double __pyx_r;
   <span class='trace'>__Pyx_TraceDeclarations</span>
   <span class='trace'>__Pyx_TraceFrameInit</span>(__pyx_codeobj__15)
-  <span class='trace'>__Pyx_TraceCall</span>("Injection", __pyx_f[0], 73, 0, <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L1_error)</span>);
+  <span class='trace'>__Pyx_TraceCall</span>("Injection", __pyx_f[0], 71, 0, <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L1_error)</span>);
   /* Check if called by wrapper */
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
@@ -1509,10 +1507,10 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_typedict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(((PyObject *)__pyx_v_self), __pyx_n_s_Injection);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 73, __pyx_L1_error)</span>
+      __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(((PyObject *)__pyx_v_self), __pyx_n_s_Injection);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)</span>
       <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
-      if (!<span class='pyx_c_api'>__Pyx_IsSameCFunction</span>(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection)) {
-        __pyx_t_3 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_ichamb);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 73, __pyx_L1_error)</span>
+      if (!<span class='pyx_c_api'>__Pyx_IsSameCFunction</span>(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection)) {
+        __pyx_t_3 = <span class='pyx_c_api'>__Pyx_PyInt_From_int</span>(__pyx_v_ichamb);<span class='error_goto'> if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)</span>
         <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_3);
         <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
@@ -1534,11 +1532,11 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
           __pyx_t_2 = <span class='pyx_c_api'>__Pyx_PyObject_FastCall</span>(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 3+__pyx_t_6);
           <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_5); __pyx_t_5 = 0;
           <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_3); __pyx_t_3 = 0;
-          if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L1_error)</span>
+          if (unlikely(!__pyx_t_2)) <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L1_error)</span>
           <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
           <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_4); __pyx_t_4 = 0;
         }
-        __pyx_t_7 = __pyx_<span class='py_c_api'>PyFloat_AsDouble</span>(__pyx_t_2); if (unlikely((__pyx_t_7 == (double)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L1_error)</span>
+        __pyx_t_7 = __pyx_<span class='py_c_api'>PyFloat_AsDouble</span>(__pyx_t_2); if (unlikely((__pyx_t_7 == (double)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L1_error)</span>
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_r = __pyx_t_7;
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
@@ -1564,7 +1562,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_3);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_4);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_5);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   <span class='trace'>__Pyx_TraceReturn</span>(Py_None, 0);
@@ -1573,16 +1571,16 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-<span class='py_macro_api'>PyDoc_STRVAR</span>(__pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injection, "_screw_spindle.Injection(self, FlowPath FP, int ichamb, str upstream_key) -&gt; double\n\n        Calculate the injection mass flow rate into a specific chamber (w/o backflow)\n\n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that the leakage originates from\n        upstream_key: string\n            Key for the side of the flow path that is considered to be \"upstream\"      \n        ");
-static PyMethodDef __pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection = {"Injection", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injection};
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection(PyObject *__pyx_v_self, 
+<span class='py_macro_api'>PyDoc_STRVAR</span>(__pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_8Injection, "_ScrewSpindle.Injection(self, FlowPath FP, int ichamb, str upstream_key) -&gt; double\n\n        Calculate the injection mass flow rate into a specific chamber (w/o backflow)\n\n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that the leakage originates from\n        upstream_key: string\n            Key for the side of the flow path that is considered to be \"upstream\"      \n        ");
+static PyMethodDef __pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection = {"Injection", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_8Injection};
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -1629,7 +1627,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)<span class='pyx_c_api'>__Pyx_Arg_NewRef_FASTCALL</span>(values[0]);
           kw_args--;
         }
-        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L3_error)</span>
+        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L3_error)</span>
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -1637,9 +1635,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)<span class='pyx_c_api'>__Pyx_Arg_NewRef_FASTCALL</span>(values[1]);
           kw_args--;
         }
-        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L3_error)</span>
+        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L3_error)</span>
         else {
-          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Injection", 1, 3, 3, 1); <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L3_error)</span>
+          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Injection", 1, 3, 3, 1); <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L3_error)</span>
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -1647,14 +1645,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)<span class='pyx_c_api'>__Pyx_Arg_NewRef_FASTCALL</span>(values[2]);
           kw_args--;
         }
-        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L3_error)</span>
+        else if (unlikely(<span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L3_error)</span>
         else {
-          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Injection", 1, 3, 3, 2); <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L3_error)</span>
+          <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Injection", 1, 3, 3, 2); <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L3_error)</span>
         }
       }
       if (unlikely(kw_args &gt; 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(<span class='pyx_c_api'>__Pyx_ParseOptionalKeywords</span>(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Injection") &lt; 0)) <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L3_error)</span>
+        if (unlikely(<span class='pyx_c_api'>__Pyx_ParseOptionalKeywords</span>(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Injection") &lt; 0)) <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L3_error)</span>
       }
     } else if (unlikely(__pyx_nargs != 3)) {
       goto __pyx_L5_argtuple_error;
@@ -1664,12 +1662,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[2] = <span class='pyx_c_api'>__Pyx_Arg_FASTCALL</span>(__pyx_args, 2);
     }
     __pyx_v_FP = ((struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *)values[0]);
-    __pyx_v_ichamb = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L3_error)</span>
+    __pyx_v_ichamb = <span class='pyx_c_api'>__Pyx_PyInt_As_int</span>(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) &amp;&amp; <span class='py_c_api'>PyErr_Occurred</span>())) <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L3_error)</span>
     __pyx_v_upstream_key = ((PyObject*)values[2]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Injection", 1, 3, 3, __pyx_nargs); <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L3_error)</span>
+  <span class='pyx_c_api'>__Pyx_RaiseArgtupleInvalid</span>("Injection", 1, 3, 3, __pyx_nargs); <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L3_error)</span>
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -1679,13 +1677,13 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       <span class='pyx_c_api'>__Pyx_Arg_XDECREF_FASTCALL</span>(values[__pyx_temp]);
     }
   }
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
   <span class='refnanny'>__Pyx_RefNannyFinishContext</span>();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!<span class='pyx_c_api'>__Pyx_ArgTypeTest</span>(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L1_error)</span>
-  if (unlikely(!<span class='pyx_c_api'>__Pyx_ArgTypeTest</span>(((PyObject *)__pyx_v_upstream_key), (&amp;PyString_Type), 1, "upstream_key", 1))) <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L1_error)</span>
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injection(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb, __pyx_v_upstream_key);
+  if (unlikely(!<span class='pyx_c_api'>__Pyx_ArgTypeTest</span>(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L1_error)</span>
+  if (unlikely(!<span class='pyx_c_api'>__Pyx_ArgTypeTest</span>(((PyObject *)__pyx_v_upstream_key), (&amp;PyString_Type), 1, "upstream_key", 1))) <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L1_error)</span>
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_8Injection(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb, __pyx_v_upstream_key);
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -1705,14 +1703,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injection(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, PyObject *__pyx_v_upstream_key) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_8Injection(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, PyObject *__pyx_v_upstream_key) {
   PyObject *__pyx_r = NULL;
   <span class='trace'>__Pyx_TraceDeclarations</span>
   <span class='trace'>__Pyx_TraceFrameInit</span>(__pyx_codeobj__15)
-  <span class='trace'>__Pyx_TraceCall</span>("Injection (wrapper)", __pyx_f[0], 73, 0, <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L1_error)</span>);
+  <span class='trace'>__Pyx_TraceCall</span>("Injection (wrapper)", __pyx_f[0], 71, 0, <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L1_error)</span>);
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_r);
-  __pyx_t_1 = __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, __pyx_v_upstream_key, 1);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 73, __pyx_L1_error)</span>
-  __pyx_t_2 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_t_1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 73, __pyx_L1_error)</span>
+  __pyx_t_1 = __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Injection(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, __pyx_v_upstream_key, 1);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 71, __pyx_L1_error)</span>
+  __pyx_t_2 = <span class='py_c_api'>PyFloat_FromDouble</span>(__pyx_t_1);<span class='error_goto'> if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -1721,7 +1719,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injec
   /* function exit code */
   __pyx_L1_error:;
   <span class='pyx_macro_api'>__Pyx_XDECREF</span>(__pyx_t_2);
-  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   <span class='refnanny'>__Pyx_XGIVEREF</span>(__pyx_r);
@@ -1730,43 +1728,43 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injec
   return __pyx_r;
 }
 /* … */
-  __pyx_tuple__34 = <span class='py_c_api'>PyTuple_Pack</span>(4, __pyx_n_s_self, __pyx_n_s_FP, __pyx_n_s_ichamb, __pyx_n_s_upstream_key);<span class='error_goto'> if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 73, __pyx_L1_error)</span>
+  __pyx_tuple__34 = <span class='py_c_api'>PyTuple_Pack</span>(4, __pyx_n_s_self, __pyx_n_s_FP, __pyx_n_s_ichamb, __pyx_n_s_upstream_key);<span class='error_goto'> if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 71, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_tuple__34);
   <span class='refnanny'>__Pyx_GIVEREF</span>(__pyx_tuple__34);
 /* … */
-  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_screw_spindle_Injection, NULL, __pyx_n_s_PDSim_screw__screw_spindle, __pyx_d, ((PyObject *)__pyx_codeobj__15));<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 73, __pyx_L1_error)</span>
+  __pyx_t_7 = <span class='pyx_c_api'>__Pyx_CyFunction_New</span>(&amp;__pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_ScrewSpindle_Injection, NULL, __pyx_n_s_PDSim_screw__screw, __pyx_d, ((PyObject *)__pyx_codeobj__15));<span class='error_goto'> if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 71, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_7);
-  if (<span class='pyx_c_api'>__Pyx_SetItemOnTypeDict</span>((PyObject *)__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle, __pyx_n_s_Injection, __pyx_t_7) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 73, __pyx_L1_error)</span>
+  if (<span class='pyx_c_api'>__Pyx_SetItemOnTypeDict</span>((PyObject *)__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle, __pyx_n_s_Injection, __pyx_t_7) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 71, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_7); __pyx_t_7 = 0;
-  <span class='py_c_api'>PyType_Modified</span>(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
-  __pyx_codeobj__15 = (PyObject*)<span class='pyx_c_api'>__Pyx_PyCode_New</span>(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_spindle_pyx, __pyx_n_s_Injection, 73, __pyx_empty_bytes);<span class='error_goto'> if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 73, __pyx_L1_error)</span>
-</pre><pre class="cython line score-0">&#xA0;<span class="">74</span>:         """</pre>
-<pre class="cython line score-0">&#xA0;<span class="">75</span>:         Calculate the injection mass flow rate into a specific chamber (w/o backflow)</pre>
-<pre class="cython line score-0">&#xA0;<span class="">76</span>: </pre>
-<pre class="cython line score-0">&#xA0;<span class="">77</span>:         Parameters</pre>
-<pre class="cython line score-0">&#xA0;<span class="">78</span>:         ----------</pre>
-<pre class="cython line score-0">&#xA0;<span class="">79</span>:         FP : FlowPath</pre>
-<pre class="cython line score-0">&#xA0;<span class="">80</span>:         ichamb : int</pre>
-<pre class="cython line score-0">&#xA0;<span class="">81</span>:             number of chamber that the leakage originates from</pre>
-<pre class="cython line score-0">&#xA0;<span class="">82</span>:         upstream_key: string</pre>
-<pre class="cython line score-0">&#xA0;<span class="">83</span>:             Key for the side of the flow path that is considered to be "upstream"</pre>
-<pre class="cython line score-0">&#xA0;<span class="">84</span>:         """</pre>
-<pre class="cython line score-0">&#xA0;<span class="">85</span>: </pre>
-<pre class="cython line score-5" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">86</span>:         if FP.key_up == upstream_key:</pre>
-<pre class='cython code score-5 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(((PyObject *)__pyx_v_FP), __pyx_n_s_key_up);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 86, __pyx_L1_error)</span>
+  <span class='py_c_api'>PyType_Modified</span>(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
+  __pyx_codeobj__15 = (PyObject*)<span class='pyx_c_api'>__Pyx_PyCode_New</span>(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_pyx, __pyx_n_s_Injection, 71, __pyx_empty_bytes);<span class='error_goto'> if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 71, __pyx_L1_error)</span>
+</pre><pre class="cython line score-0">&#xA0;<span class="">72</span>:         """</pre>
+<pre class="cython line score-0">&#xA0;<span class="">73</span>:         Calculate the injection mass flow rate into a specific chamber (w/o backflow)</pre>
+<pre class="cython line score-0">&#xA0;<span class="">74</span>: </pre>
+<pre class="cython line score-0">&#xA0;<span class="">75</span>:         Parameters</pre>
+<pre class="cython line score-0">&#xA0;<span class="">76</span>:         ----------</pre>
+<pre class="cython line score-0">&#xA0;<span class="">77</span>:         FP : FlowPath</pre>
+<pre class="cython line score-0">&#xA0;<span class="">78</span>:         ichamb : int</pre>
+<pre class="cython line score-0">&#xA0;<span class="">79</span>:             number of chamber that the leakage originates from</pre>
+<pre class="cython line score-0">&#xA0;<span class="">80</span>:         upstream_key: string</pre>
+<pre class="cython line score-0">&#xA0;<span class="">81</span>:             Key for the side of the flow path that is considered to be "upstream"</pre>
+<pre class="cython line score-0">&#xA0;<span class="">82</span>:         """</pre>
+<pre class="cython line score-0">&#xA0;<span class="">83</span>: </pre>
+<pre class="cython line score-5" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">84</span>:         if FP.key_up == upstream_key:</pre>
+<pre class='cython code score-5 '>  __pyx_t_1 = <span class='pyx_c_api'>__Pyx_PyObject_GetAttrStr</span>(((PyObject *)__pyx_v_FP), __pyx_n_s_key_up);<span class='error_goto'> if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)</span>
   <span class='refnanny'>__Pyx_GOTREF</span>(__pyx_t_1);
-  __pyx_t_8 = (<span class='pyx_c_api'>__Pyx_PyString_Equals</span>(__pyx_t_1, __pyx_v_upstream_key, Py_EQ)); if (unlikely((__pyx_t_8 &lt; 0))) <span class='error_goto'>__PYX_ERR(0, 86, __pyx_L1_error)</span>
+  __pyx_t_8 = (<span class='pyx_c_api'>__Pyx_PyString_Equals</span>(__pyx_t_1, __pyx_v_upstream_key, Py_EQ)); if (unlikely((__pyx_t_8 &lt; 0))) <span class='error_goto'>__PYX_ERR(0, 84, __pyx_L1_error)</span>
   <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_8) {
 /* … */
   }
-</pre><pre class="cython line score-2" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">87</span>:             FP.A = screw_spindle_geo.area_injection(self.theta, self.geo, ichamb)</pre>
+</pre><pre class="cython line score-2" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">85</span>:             FP.A = screw_spindle_geo.area_injection(self.theta, self.geo, ichamb)</pre>
 <pre class='cython code score-2 '>    __pyx_t_1 = ((PyObject *)__pyx_v_self-&gt;geo);
     <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
-    __pyx_t_7 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_injection(__pyx_v_self-&gt;theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, 0);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 87, __pyx_L1_error)</span>
+    __pyx_t_7 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_injection(__pyx_v_self-&gt;theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, 0);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 85, __pyx_L1_error)</span>
     <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_FP-&gt;A = __pyx_t_7;
-</pre><pre class="cython line score-11" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">88</span>:             try:</pre>
+</pre><pre class="cython line score-11" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">86</span>:             try:</pre>
 <pre class='cython code score-11 '>    {
       /*try:*/ {
 /* … */
@@ -1797,25 +1795,25 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injec
       <span class='pyx_c_api'>__Pyx_ExceptionReset</span>(__pyx_t_9, __pyx_t_10, __pyx_t_11);
       goto __pyx_L0;
     }
-</pre><pre class="cython line score-4" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">89</span>:                 return flow_models.LiquidNozzleFlow(FP.A,FP.State_up,FP.State_down, 1.0, 1e-10)</pre>
+</pre><pre class="cython line score-4" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">87</span>:                 return flow_models.LiquidNozzleFlow(FP.A,FP.State_up,FP.State_down, 1.0, 1e-10)</pre>
 <pre class='cython code score-4 '>        __pyx_t_1 = ((PyObject *)__pyx_v_FP-&gt;State_up);
         <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_1);
         __pyx_t_2 = ((PyObject *)__pyx_v_FP-&gt;State_down);
         <span class='pyx_macro_api'>__Pyx_INCREF</span>(__pyx_t_2);
-        __pyx_t_7 = __pyx_f_5PDSim_4flow_11flow_models_LiquidNozzleFlow(__pyx_v_FP-&gt;A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 1.0, 1e-10, 0);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 89, __pyx_L4_error)</span>
+        __pyx_t_7 = __pyx_f_5PDSim_4flow_11flow_models_LiquidNozzleFlow(__pyx_v_FP-&gt;A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 1.0, 1e-10, 0);<span class='error_goto'> if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 87, __pyx_L4_error)</span>
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_r = __pyx_t_7;
         goto __pyx_L8_try_return;
-</pre><pre class="cython line score-6" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">90</span>:             except ZeroDivisionError:</pre>
+</pre><pre class="cython line score-6" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">88</span>:             except ZeroDivisionError:</pre>
 <pre class='cython code score-6 '>      __pyx_t_12 = <span class='pyx_c_api'>__Pyx_PyErr_ExceptionMatches</span>(__pyx_builtin_ZeroDivisionError);
       if (__pyx_t_12) {
-        <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw_spindle._screw_spindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
-        if (<span class='pyx_c_api'>__Pyx_GetException</span>(&amp;__pyx_t_2, &amp;__pyx_t_1, &amp;__pyx_t_4) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 90, __pyx_L6_except_error)</span>
+        <span class='pyx_c_api'>__Pyx_AddTraceback</span>("PDSim.screw._screw._ScrewSpindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        if (<span class='pyx_c_api'>__Pyx_GetException</span>(&amp;__pyx_t_2, &amp;__pyx_t_1, &amp;__pyx_t_4) &lt; 0) <span class='error_goto'>__PYX_ERR(0, 88, __pyx_L6_except_error)</span>
         <span class='refnanny'>__Pyx_XGOTREF</span>(__pyx_t_2);
         <span class='refnanny'>__Pyx_XGOTREF</span>(__pyx_t_1);
         <span class='refnanny'>__Pyx_XGOTREF</span>(__pyx_t_4);
-</pre><pre class="cython line score-3" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">91</span>:                 return 0.0</pre>
+</pre><pre class="cython line score-3" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">89</span>:                 return 0.0</pre>
 <pre class='cython code score-3 '>        __pyx_r = 0.0;
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_1); __pyx_t_1 = 0;
         <span class='pyx_macro_api'>__Pyx_DECREF</span>(__pyx_t_2); __pyx_t_2 = 0;
@@ -1823,8 +1821,8 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injec
         goto __pyx_L7_except_return;
       }
       goto __pyx_L6_except_error;
-</pre><pre class="cython line score-0">&#xA0;<span class="">92</span>:         else:</pre>
-<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">93</span>:             return 0.0</pre>
+</pre><pre class="cython line score-0">&#xA0;<span class="">90</span>:         else:</pre>
+<pre class="cython line score-0" onclick="(function(s){s.display=s.display==='block'?'none':'block'})(this.nextElementSibling.style)">+<span class="">91</span>:             return 0.0</pre>
 <pre class='cython code score-0 '>  /*else*/ {
     __pyx_r = 0.0;
     goto __pyx_L0;

@@ -1,13 +1,11 @@
 from PDSim.flow import flow_models
 cimport PDSim.flow.flow_models as flow_models
 
-
-
 from PDSim.screw import screw_spindle_geo
 cimport PDSim.screw.screw_spindle_geo as screw_spindle_geo
 
 
-cdef class _screw_spindle(object):
+cdef class _ScrewSpindle(object):
     
     cpdef dict __cdict__(self):
         return dict(theta = self.theta, 
@@ -15,7 +13,6 @@ cdef class _screw_spindle(object):
                     HTC = self.HTC,
                     inc_injection = self.incl_injection,
                     incl_leakage = self.incl_leakage)
-    
 
     cpdef double Suction(self, FlowPath FP, int ichamb):
         """
@@ -70,7 +67,7 @@ cdef class _screw_spindle(object):
         except ZeroDivisionError:
             return 0.0
     
-    cpdef double Injection(self, FlowPath FP, int ichamb, str upstream_key):
+    cpdef double Injection(self, FlowPath FP, int ichamb, int itube, str upstream_key):
         """
         Calculate the injection mass flow rate into a specific chamber (w/o backflow)
 
@@ -79,12 +76,14 @@ cdef class _screw_spindle(object):
         FP : FlowPath
         ichamb : int
             number of chamber that the leakage originates from
+        itube: int
+            The selected injection tube between 1 and geo.num_inj_tubes
         upstream_key: string
             Key for the side of the flow path that is considered to be "upstream"      
         """
 
         if FP.key_up == upstream_key:
-            FP.A = screw_spindle_geo.area_injection(self.theta, self.geo, ichamb)
+            FP.A = screw_spindle_geo.area_injection(self.theta, self.geo, ichamb, itube)
             try:
                 return flow_models.LiquidNozzleFlow(FP.A,FP.State_up,FP.State_down, 1.0, 1e-10)
             except ZeroDivisionError:

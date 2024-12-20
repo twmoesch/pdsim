@@ -112,7 +112,7 @@ cpdef double area_discharge(double theta, geoVals geo, int ichamb):
     cdef double theta_global = get_global_theta(theta, geo, ichamb)
     return simple_interpolation(theta_global, geo.theta_raw, geo.A_dis_ax_raw, 0.0)
 
-cpdef double area_injection(double theta, geoVals geo, int ichamb):
+cpdef double area_injection(double theta, geoVals geo, int ichamb, int itube):
     """
     Evaluate injection area for a chamber 
 
@@ -124,7 +124,9 @@ cpdef double area_injection(double theta, geoVals geo, int ichamb):
         The structure with the geometry obtained from get_geo()
     ichamb : int
         The chamber number between 1 and geo.num_chambers
+    itube: int
+        The selected injection tube between 1 and geo.num_inj_tubes
     """
     cdef double theta_global = get_global_theta(theta, geo, ichamb)
-    return simple_interpolation(theta_global, geo.theta_raw, geo.A_inj_raw, 0.0)
+    return simple_interpolation(theta_global, geo.theta_raw, geo.A_inj_raw[itube][:], 0.0)
 

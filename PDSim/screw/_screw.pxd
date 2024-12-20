@@ -21,7 +21,7 @@ cimport cython
 
 
 
-cdef class _screw_spindle(object):
+cdef class _ScrewSpindle(object):
     cdef public geoVals geo
     cdef public double theta
     cdef public double HTC
@@ -35,7 +35,7 @@ cdef class _screw_spindle(object):
     #cpdef double InternalIntermeshLeakage(self, FlowPath FP, int ichamb)
     #cpdef double ExternalIntermeshLeakage(self, FlowPath FP, int ichamb)
     #cpdef double BlowholeLeakage(self, FlowPath FP, int ichamb)
-    cpdef double Injection(self, FlowPath FP, int ichamb, str upstream_key)
+    cpdef double Injection(self, FlowPath FP, int ichamb, int itube, str upstream_key)
 
 
 

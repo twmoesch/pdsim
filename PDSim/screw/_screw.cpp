@@ -11,12 +11,12 @@
         ],
         "depends": [],
         "language": "c++",
-        "name": "PDSim.screw._screw_spindle",
+        "name": "PDSim.screw._screw",
         "sources": [
-            "PDSim/screw/_screw_spindle.pyx"
+            "PDSim/screw/_screw.pyx"
         ]
     },
-    "module_name": "PDSim.screw._screw_spindle"
+    "module_name": "PDSim.screw._screw"
 }
 END: Cython Metadata */
 
@@ -1265,8 +1265,8 @@ static CYTHON_INLINE float __PYX_NAN() {
     #define __PYX_EXTERN_C extern "C++"
 #endif
 
-#define __PYX_HAVE__PDSim__screw___screw_spindle
-#define __PYX_HAVE_API__PDSim__screw___screw_spindle
+#define __PYX_HAVE__PDSim__screw___screw
+#define __PYX_HAVE_API__PDSim__screw___screw
 /* Early includes */
 #include <string.h>
 #include <stdio.h>
@@ -1576,13 +1576,13 @@ static const char *__pyx_filename;
 /* #### Code section: filename_table ### */
 
 static const char *__pyx_f[] = {
-  "PDSim\\\\screw\\\\_screw_spindle.pyx",
+  "PDSim\\\\screw\\\\_screw.pyx",
   "<stringsource>",
   "__init__.cython-30.pxd",
   "complex.pxd",
   "contextvars.pxd",
   "PDSim\\\\misc\\\\datatypes.pxd",
-  "PDSim\\\\screw\\\\_screw_spindle.pxd",
+  "PDSim\\\\screw\\\\_screw.pxd",
   "type.pxd",
   "bool.pxd",
   "AbstractState.pxd",
@@ -1735,7 +1735,7 @@ typedef struct {
 
 /* #### Code section: numeric_typedefs ### */
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":786
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":786
  * # in Cython to enable them only on the right systems.
  * 
  * ctypedef npy_int8       int8_t             # <<<<<<<<<<<<<<
@@ -1744,7 +1744,7 @@ typedef struct {
  */
 typedef npy_int8 __pyx_t_5numpy_int8_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":787
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":787
  * 
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t             # <<<<<<<<<<<<<<
@@ -1753,7 +1753,7 @@ typedef npy_int8 __pyx_t_5numpy_int8_t;
  */
 typedef npy_int16 __pyx_t_5numpy_int16_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":788
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":788
  * ctypedef npy_int8       int8_t
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t             # <<<<<<<<<<<<<<
@@ -1762,7 +1762,7 @@ typedef npy_int16 __pyx_t_5numpy_int16_t;
  */
 typedef npy_int32 __pyx_t_5numpy_int32_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":789
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":789
  * ctypedef npy_int16      int16_t
  * ctypedef npy_int32      int32_t
  * ctypedef npy_int64      int64_t             # <<<<<<<<<<<<<<
@@ -1771,7 +1771,7 @@ typedef npy_int32 __pyx_t_5numpy_int32_t;
  */
 typedef npy_int64 __pyx_t_5numpy_int64_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":793
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":793
  * #ctypedef npy_int128     int128_t
  * 
  * ctypedef npy_uint8      uint8_t             # <<<<<<<<<<<<<<
@@ -1780,7 +1780,7 @@ typedef npy_int64 __pyx_t_5numpy_int64_t;
  */
 typedef npy_uint8 __pyx_t_5numpy_uint8_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":794
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":794
  * 
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t             # <<<<<<<<<<<<<<
@@ -1789,7 +1789,7 @@ typedef npy_uint8 __pyx_t_5numpy_uint8_t;
  */
 typedef npy_uint16 __pyx_t_5numpy_uint16_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":795
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":795
  * ctypedef npy_uint8      uint8_t
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t             # <<<<<<<<<<<<<<
@@ -1798,7 +1798,7 @@ typedef npy_uint16 __pyx_t_5numpy_uint16_t;
  */
 typedef npy_uint32 __pyx_t_5numpy_uint32_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":796
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":796
  * ctypedef npy_uint16     uint16_t
  * ctypedef npy_uint32     uint32_t
  * ctypedef npy_uint64     uint64_t             # <<<<<<<<<<<<<<
@@ -1807,7 +1807,7 @@ typedef npy_uint32 __pyx_t_5numpy_uint32_t;
  */
 typedef npy_uint64 __pyx_t_5numpy_uint64_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":800
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":800
  * #ctypedef npy_uint128    uint128_t
  * 
  * ctypedef npy_float32    float32_t             # <<<<<<<<<<<<<<
@@ -1816,7 +1816,7 @@ typedef npy_uint64 __pyx_t_5numpy_uint64_t;
  */
 typedef npy_float32 __pyx_t_5numpy_float32_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":801
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":801
  * 
  * ctypedef npy_float32    float32_t
  * ctypedef npy_float64    float64_t             # <<<<<<<<<<<<<<
@@ -1825,7 +1825,7 @@ typedef npy_float32 __pyx_t_5numpy_float32_t;
  */
 typedef npy_float64 __pyx_t_5numpy_float64_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":808
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":808
  * ctypedef double complex complex128_t
  * 
  * ctypedef npy_longlong   longlong_t             # <<<<<<<<<<<<<<
@@ -1834,7 +1834,7 @@ typedef npy_float64 __pyx_t_5numpy_float64_t;
  */
 typedef npy_longlong __pyx_t_5numpy_longlong_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":809
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":809
  * 
  * ctypedef npy_longlong   longlong_t
  * ctypedef npy_ulonglong  ulonglong_t             # <<<<<<<<<<<<<<
@@ -1843,7 +1843,7 @@ typedef npy_longlong __pyx_t_5numpy_longlong_t;
  */
 typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":811
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":811
  * ctypedef npy_ulonglong  ulonglong_t
  * 
  * ctypedef npy_intp       intp_t             # <<<<<<<<<<<<<<
@@ -1852,7 +1852,7 @@ typedef npy_ulonglong __pyx_t_5numpy_ulonglong_t;
  */
 typedef npy_intp __pyx_t_5numpy_intp_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":812
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":812
  * 
  * ctypedef npy_intp       intp_t
  * ctypedef npy_uintp      uintp_t             # <<<<<<<<<<<<<<
@@ -1861,7 +1861,7 @@ typedef npy_intp __pyx_t_5numpy_intp_t;
  */
 typedef npy_uintp __pyx_t_5numpy_uintp_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":814
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":814
  * ctypedef npy_uintp      uintp_t
  * 
  * ctypedef npy_double     float_t             # <<<<<<<<<<<<<<
@@ -1870,7 +1870,7 @@ typedef npy_uintp __pyx_t_5numpy_uintp_t;
  */
 typedef npy_double __pyx_t_5numpy_float_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":815
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":815
  * 
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t             # <<<<<<<<<<<<<<
@@ -1879,7 +1879,7 @@ typedef npy_double __pyx_t_5numpy_float_t;
  */
 typedef npy_double __pyx_t_5numpy_double_t;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":816
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":816
  * ctypedef npy_double     float_t
  * ctypedef npy_double     double_t
  * ctypedef npy_longdouble longdouble_t             # <<<<<<<<<<<<<<
@@ -1950,7 +1950,7 @@ struct __pyx_obj_5PDSim_4flow_11flow_models_IsentropicNozzleWrapper;
 struct __pyx_obj_5PDSim_4flow_11flow_models_ValveModel;
 struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_VdVstruct;
 struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals;
-struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle;
+struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle;
 struct __pyx_array_obj;
 struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
@@ -1982,7 +1982,7 @@ struct __pyx_opt_args_7cpython_11contextvars_get_value_no_default {
   PyObject *default_value;
 };
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1112
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1112
  * 
  * # Iterator API added in v1.6
  * ctypedef int (*NpyIter_IterNextFunc)(NpyIter* it) noexcept nogil             # <<<<<<<<<<<<<<
@@ -1991,7 +1991,7 @@ struct __pyx_opt_args_7cpython_11contextvars_get_value_no_default {
  */
 typedef int (*__pyx_t_5numpy_NpyIter_IterNextFunc)(NpyIter *);
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1113
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1113
  * # Iterator API added in v1.6
  * ctypedef int (*NpyIter_IterNextFunc)(NpyIter* it) noexcept nogil
  * ctypedef void (*NpyIter_GetMultiIndexFunc)(NpyIter* it, npy_intp* outcoords) noexcept nogil             # <<<<<<<<<<<<<<
@@ -2002,7 +2002,7 @@ typedef void (*__pyx_t_5numpy_NpyIter_GetMultiIndexFunc)(NpyIter *, npy_intp *);
 struct __pyx_opt_args_8CoolProp_8CoolProp_13AbstractState_tangent_plane_distance;
 struct __pyx_opt_args_8CoolProp_8CoolProp_5State_get_Tsat;
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":97
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":97
  * 
  *     ## Tangent plane distance
  *     cpdef double tangent_plane_distance(self, double T, double p, vector[double] w, double rhomolar_guess=*) except *             # <<<<<<<<<<<<<<
@@ -2107,7 +2107,7 @@ enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id {
   __pyx_e_5PDSim_5screw_17screw_spindle_geo_BLOWHOLE
 };
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":29
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":29
  *     long
  * 
  * cdef class PyPhaseEnvelopeData:             # <<<<<<<<<<<<<<
@@ -2139,7 +2139,7 @@ struct __pyx_obj_8CoolProp_8CoolProp_PyPhaseEnvelopeData {
 };
 
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":35
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":35
  *     cdef public list x, y, K
  * 
  * cdef class PyGuessesStructure:             # <<<<<<<<<<<<<<
@@ -2160,7 +2160,7 @@ struct __pyx_obj_8CoolProp_8CoolProp_PyGuessesStructure {
 };
 
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":40
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":40
  *     cdef public list x, y
  * 
  * cdef class PyCriticalState:             # <<<<<<<<<<<<<<
@@ -2178,7 +2178,7 @@ struct __pyx_obj_8CoolProp_8CoolProp_PyCriticalState {
 };
 
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":44
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":44
  *     cdef public bool stable
  * 
  * cdef class PySpinodalData:             # <<<<<<<<<<<<<<
@@ -2193,7 +2193,7 @@ struct __pyx_obj_8CoolProp_8CoolProp_PySpinodalData {
 };
 
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":47
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":47
  *     cdef public vector[double] tau, delta, M1
  * 
  * cdef class AbstractState:             # <<<<<<<<<<<<<<
@@ -2471,16 +2471,16 @@ struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals {
 };
 
 
-/* "PDSim/screw/_screw_spindle.pxd":24
+/* "PDSim/screw/_screw.pxd":24
  * 
  * 
- * cdef class _screw_spindle(object):             # <<<<<<<<<<<<<<
+ * cdef class _ScrewSpindle(object):             # <<<<<<<<<<<<<<
  *     cdef public geoVals geo
  *     cdef public double theta
  */
-struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle {
+struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle {
   PyObject_HEAD
-  struct __pyx_vtabstruct_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_vtab;
+  struct __pyx_vtabstruct_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_vtab;
   struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *geo;
   double theta;
   double HTC;
@@ -2566,7 +2566,7 @@ struct __pyx_memoryviewslice_obj {
 
 
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":47
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/CoolProp/AbstractState.pxd":47
  *     cdef public vector[double] tau, delta, M1
  * 
  * cdef class AbstractState:             # <<<<<<<<<<<<<<
@@ -2914,22 +2914,22 @@ struct __pyx_vtabstruct_5PDSim_4flow_11flow_models_ValveModel {
 static struct __pyx_vtabstruct_5PDSim_4flow_11flow_models_ValveModel *__pyx_vtabptr_5PDSim_4flow_11flow_models_ValveModel;
 
 
-/* "PDSim/screw/_screw_spindle.pyx":10
+/* "PDSim/screw/_screw.pyx":8
  * 
  * 
- * cdef class _screw_spindle(object):             # <<<<<<<<<<<<<<
+ * cdef class _ScrewSpindle(object):             # <<<<<<<<<<<<<<
  * 
  *     cpdef dict __cdict__(self):
  */
 
-struct __pyx_vtabstruct_5PDSim_5screw_14_screw_spindle__screw_spindle {
-  PyObject *(*__pyx___cdict__)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, int __pyx_skip_dispatch);
-  double (*Suction)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, int __pyx_skip_dispatch);
-  double (*Discharge)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, int __pyx_skip_dispatch);
-  double (*Leakage)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id, int __pyx_skip_dispatch);
-  double (*Injection)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, PyObject *, int __pyx_skip_dispatch);
+struct __pyx_vtabstruct_5PDSim_5screw_6_screw__ScrewSpindle {
+  PyObject *(*__pyx___cdict__)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, int __pyx_skip_dispatch);
+  double (*Suction)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, int __pyx_skip_dispatch);
+  double (*Discharge)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, int __pyx_skip_dispatch);
+  double (*Leakage)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id, int __pyx_skip_dispatch);
+  double (*Injection)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, PyObject *, int __pyx_skip_dispatch);
 };
-static struct __pyx_vtabstruct_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_vtabptr_5PDSim_5screw_14_screw_spindle__screw_spindle;
+static struct __pyx_vtabstruct_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_vtabptr_5PDSim_5screw_6_screw__ScrewSpindle;
 
 
 /* "View.MemoryView":114
@@ -4334,11 +4334,11 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *
 static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__pyx_v_self); /* proto*/
 static CYTHON_INLINE double __pyx_f_7cpython_7complex_7complex_4real_real(PyComplexObject *__pyx_v_self); /* proto*/
 static CYTHON_INLINE double __pyx_f_7cpython_7complex_7complex_4imag_imag(PyComplexObject *__pyx_v_self); /* proto*/
-static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, int __pyx_skip_dispatch); /* proto*/
-static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, int __pyx_skip_dispatch); /* proto*/
-static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, int __pyx_skip_dispatch); /* proto*/
-static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id __pyx_v_id, int __pyx_skip_dispatch); /* proto*/
-static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, PyObject *__pyx_v_upstream_key, int __pyx_skip_dispatch); /* proto*/
+static PyObject *__pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, int __pyx_skip_dispatch); /* proto*/
+static double __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Suction(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, int __pyx_skip_dispatch); /* proto*/
+static double __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Discharge(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, int __pyx_skip_dispatch); /* proto*/
+static double __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Leakage(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id __pyx_v_id, int __pyx_skip_dispatch); /* proto*/
+static double __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Injection(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, PyObject *__pyx_v_upstream_key, int __pyx_skip_dispatch); /* proto*/
 
 /* Module declarations from "cython.view" */
 
@@ -4477,7 +4477,7 @@ static double (*__pyx_f_5PDSim_5screw_17screw_spindle_geo_area_suction)(double, 
 static double (*__pyx_f_5PDSim_5screw_17screw_spindle_geo_area_discharge)(double, struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *, int, int __pyx_skip_dispatch); /*proto*/
 static double (*__pyx_f_5PDSim_5screw_17screw_spindle_geo_area_injection)(double, struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *, int, int __pyx_skip_dispatch); /*proto*/
 
-/* Module declarations from "PDSim.screw._screw_spindle" */
+/* Module declarations from "PDSim.screw._screw" */
 static PyObject *__pyx_collections_abc_Sequence = 0;
 static PyObject *generic = 0;
 static PyObject *strided = 0;
@@ -4486,7 +4486,7 @@ static PyObject *contiguous = 0;
 static PyObject *indirect_contiguous = 0;
 static int __pyx_memoryview_thread_locks_used;
 static PyThread_type_lock __pyx_memoryview_thread_locks[8];
-static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_spindle__set_state(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, PyObject *); /*proto*/
+static PyObject *__pyx_f_5PDSim_5screw_6_screw___pyx_unpickle__ScrewSpindle__set_state(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, PyObject *); /*proto*/
 static int __pyx_array_allocate_buffer(struct __pyx_array_obj *); /*proto*/
 static struct __pyx_array_obj *__pyx_array_new(PyObject *, Py_ssize_t, char *, char *, char *); /*proto*/
 static PyObject *__pyx_memoryview_new(PyObject *, int, int, __Pyx_TypeInfo *); /*proto*/
@@ -4523,11 +4523,11 @@ static void __pyx_memoryview__slice_assign_scalar(char *, Py_ssize_t *, Py_ssize
 static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, PyObject *); /*proto*/
 /* #### Code section: typeinfo ### */
 /* #### Code section: before_global_var ### */
-#define __Pyx_MODULE_NAME "PDSim.screw._screw_spindle"
-extern int __pyx_module_is_main_PDSim__screw___screw_spindle;
-int __pyx_module_is_main_PDSim__screw___screw_spindle = 0;
+#define __Pyx_MODULE_NAME "PDSim.screw._screw"
+extern int __pyx_module_is_main_PDSim__screw___screw;
+int __pyx_module_is_main_PDSim__screw___screw = 0;
 
-/* Implementation of "PDSim.screw._screw_spindle" */
+/* Implementation of "PDSim.screw._screw" */
 /* #### Code section: global_var ### */
 static PyObject *__pyx_builtin_ZeroDivisionError;
 static PyObject *__pyx_builtin___import__;
@@ -4629,6 +4629,7 @@ static const char __pyx_k_PDSim_screw[] = "PDSim.screw";
 static const char __pyx_k_PickleError[] = "PickleError";
 static const char __pyx_k_collections[] = "collections";
 static const char __pyx_k_flow_models[] = "flow_models";
+static const char __pyx_k_ScrewSpindle[] = "_ScrewSpindle";
 static const char __pyx_k_incl_leakage[] = "incl_leakage";
 static const char __pyx_k_initializing[] = "_initializing";
 static const char __pyx_k_is_coroutine[] = "_is_coroutine";
@@ -4640,7 +4641,6 @@ static const char __pyx_k_version_info[] = "version_info";
 static const char __pyx_k_class_getitem[] = "__class_getitem__";
 static const char __pyx_k_inc_injection[] = "inc_injection";
 static const char __pyx_k_reduce_cython[] = "__reduce_cython__";
-static const char __pyx_k_screw_spindle[] = "_screw_spindle";
 static const char __pyx_k_AssertionError[] = "AssertionError";
 static const char __pyx_k_View_MemoryView[] = "View.MemoryView";
 static const char __pyx_k_allocate_buffer[] = "allocate_buffer";
@@ -4651,32 +4651,32 @@ static const char __pyx_k_setstate_cython[] = "__setstate_cython__";
 static const char __pyx_k_ZeroDivisionError[] = "ZeroDivisionError";
 static const char __pyx_k_pyx_unpickle_Enum[] = "__pyx_unpickle_Enum";
 static const char __pyx_k_screw_spindle_geo[] = "screw_spindle_geo";
+static const char __pyx_k_PDSim_screw__screw[] = "PDSim.screw._screw";
 static const char __pyx_k_asyncio_coroutines[] = "asyncio.coroutines";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_strided_and_direct[] = "<strided and direct>";
+static const char __pyx_k_ScrewSpindle_Leakage[] = "_ScrewSpindle.Leakage";
+static const char __pyx_k_ScrewSpindle_Suction[] = "_ScrewSpindle.Suction";
+static const char __pyx_k_ScrewSpindle___cdict[] = "_ScrewSpindle.__cdict__";
 static const char __pyx_k_strided_and_indirect[] = "<strided and indirect>";
 static const char __pyx_k_Invalid_shape_in_axis[] = "Invalid shape in axis ";
 static const char __pyx_k_contiguous_and_direct[] = "<contiguous and direct>";
-static const char __pyx_k_screw_spindle_Leakage[] = "_screw_spindle.Leakage";
-static const char __pyx_k_screw_spindle_Suction[] = "_screw_spindle.Suction";
-static const char __pyx_k_screw_spindle___cdict[] = "_screw_spindle.__cdict__";
 static const char __pyx_k_Cannot_index_with_type[] = "Cannot index with type '";
 static const char __pyx_k_MemoryView_of_r_object[] = "<MemoryView of %r object>";
+static const char __pyx_k_PDSim_screw__screw_pyx[] = "PDSim\\screw\\_screw.pyx";
+static const char __pyx_k_ScrewSpindle_Discharge[] = "_ScrewSpindle.Discharge";
+static const char __pyx_k_ScrewSpindle_Injection[] = "_ScrewSpindle.Injection";
 static const char __pyx_k_MemoryView_of_r_at_0x_x[] = "<MemoryView of %r at 0x%x>";
 static const char __pyx_k_contiguous_and_indirect[] = "<contiguous and indirect>";
-static const char __pyx_k_screw_spindle_Discharge[] = "_screw_spindle.Discharge";
-static const char __pyx_k_screw_spindle_Injection[] = "_screw_spindle.Injection";
 static const char __pyx_k_Dimension_d_is_not_direct[] = "Dimension %d is not direct";
 static const char __pyx_k_Index_out_of_bounds_axis_d[] = "Index out of bounds (axis %d)";
-static const char __pyx_k_PDSim_screw__screw_spindle[] = "PDSim.screw._screw_spindle";
+static const char __pyx_k_pyx_unpickle__ScrewSpindle[] = "__pyx_unpickle__ScrewSpindle";
 static const char __pyx_k_Step_may_not_be_zero_axis_d[] = "Step may not be zero (axis %d)";
 static const char __pyx_k_itemsize_0_for_cython_array[] = "itemsize <= 0 for cython.array";
-static const char __pyx_k_pyx_unpickle__screw_spindle[] = "__pyx_unpickle__screw_spindle";
-static const char __pyx_k_screw_spindle___reduce_cython[] = "_screw_spindle.__reduce_cython__";
+static const char __pyx_k_ScrewSpindle___reduce_cython[] = "_ScrewSpindle.__reduce_cython__";
 static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";
-static const char __pyx_k_PDSim_screw__screw_spindle_pyx[] = "PDSim\\screw\\_screw_spindle.pyx";
+static const char __pyx_k_ScrewSpindle___setstate_cython[] = "_ScrewSpindle.__setstate_cython__";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
-static const char __pyx_k_screw_spindle___setstate_cython[] = "_screw_spindle.__setstate_cython__";
 static const char __pyx_k_All_dimensions_preceding_dimensi[] = "All dimensions preceding dimension %d must be indexed and not sliced";
 static const char __pyx_k_Buffer_view_does_not_expose_stri[] = "Buffer view does not expose strides";
 static const char __pyx_k_Can_only_create_a_buffer_that_is[] = "Can only create a buffer that is contiguous in memory.";
@@ -4738,26 +4738,26 @@ static void __pyx_memoryviewslice___pyx_pf_15View_dot_MemoryView_16_memoryviewsl
 static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Suction(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb); /* proto */
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Discharge(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb); /* proto */
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leakage(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id __pyx_v_id); /* proto */
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injection(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, PyObject *__pyx_v_upstream_key); /* proto */
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo___get__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self); /* proto */
-static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_2__set__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_4__del__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta___get__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self); /* proto */
-static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta_2__set__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC___get__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self); /* proto */
-static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC_2__set__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leakage___get__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self); /* proto */
-static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leakage_2__set__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injection___get__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self); /* proto */
-static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injection_2__set__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_10__reduce_cython__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12__setstate_cython__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_spindle(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_5PDSim_5screw_14_screw_spindle__screw_spindle(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_2Suction(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb); /* proto */
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_4Discharge(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb); /* proto */
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_6Leakage(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id __pyx_v_id); /* proto */
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_8Injection(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, PyObject *__pyx_v_upstream_key); /* proto */
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo___get__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self); /* proto */
+static int __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_2__set__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static int __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_4__del__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_5theta___get__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self); /* proto */
+static int __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_5theta_2__set__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3HTC___get__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self); /* proto */
+static int __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3HTC_2__set__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_12incl_leakage___get__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self); /* proto */
+static int __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_12incl_leakage_2__set__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_14incl_injection___get__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self); /* proto */
+static int __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_14incl_injection_2__set__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, PyObject *__pyx_v_value); /* proto */
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_10__reduce_cython__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_12__setstate_cython__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw___pyx_unpickle__ScrewSpindle(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
+static PyObject *__pyx_tp_new_5PDSim_5screw_6_screw__ScrewSpindle(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -4956,13 +4956,13 @@ typedef struct {
   PyTypeObject *__pyx_ptype_5PDSim_5screw_17screw_spindle_geo_VdVstruct;
   PyTypeObject *__pyx_ptype_5PDSim_5screw_17screw_spindle_geo_geoVals;
   #if CYTHON_USE_MODULE_STATE
-  PyObject *__pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle;
+  PyObject *__pyx_type_5PDSim_5screw_6_screw__ScrewSpindle;
   PyObject *__pyx_type___pyx_array;
   PyObject *__pyx_type___pyx_MemviewEnum;
   PyObject *__pyx_type___pyx_memoryview;
   PyObject *__pyx_type___pyx_memoryviewslice;
   #endif
-  PyTypeObject *__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle;
+  PyTypeObject *__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle;
   PyTypeObject *__pyx_array_type;
   PyTypeObject *__pyx_MemviewEnum_type;
   PyTypeObject *__pyx_memoryview_type;
@@ -5001,9 +5001,17 @@ typedef struct {
   PyObject *__pyx_kp_u_Out_of_bounds_on_buffer_access_a;
   PyObject *__pyx_n_s_PDSim_flow;
   PyObject *__pyx_n_s_PDSim_screw;
-  PyObject *__pyx_n_s_PDSim_screw__screw_spindle;
-  PyObject *__pyx_kp_s_PDSim_screw__screw_spindle_pyx;
+  PyObject *__pyx_n_s_PDSim_screw__screw;
+  PyObject *__pyx_kp_s_PDSim_screw__screw_pyx;
   PyObject *__pyx_n_s_PickleError;
+  PyObject *__pyx_n_s_ScrewSpindle;
+  PyObject *__pyx_n_s_ScrewSpindle_Discharge;
+  PyObject *__pyx_n_s_ScrewSpindle_Injection;
+  PyObject *__pyx_n_s_ScrewSpindle_Leakage;
+  PyObject *__pyx_n_s_ScrewSpindle_Suction;
+  PyObject *__pyx_n_s_ScrewSpindle___cdict;
+  PyObject *__pyx_n_s_ScrewSpindle___reduce_cython;
+  PyObject *__pyx_n_s_ScrewSpindle___setstate_cython;
   PyObject *__pyx_n_s_Sequence;
   PyObject *__pyx_kp_s_Step_may_not_be_zero_axis_d;
   PyObject *__pyx_n_s_Suction;
@@ -5083,21 +5091,13 @@ typedef struct {
   PyObject *__pyx_n_s_pyx_state;
   PyObject *__pyx_n_s_pyx_type;
   PyObject *__pyx_n_s_pyx_unpickle_Enum;
-  PyObject *__pyx_n_s_pyx_unpickle__screw_spindle;
+  PyObject *__pyx_n_s_pyx_unpickle__ScrewSpindle;
   PyObject *__pyx_n_s_pyx_vtable;
   PyObject *__pyx_n_s_range;
   PyObject *__pyx_n_s_reduce;
   PyObject *__pyx_n_s_reduce_cython;
   PyObject *__pyx_n_s_reduce_ex;
   PyObject *__pyx_n_s_register;
-  PyObject *__pyx_n_s_screw_spindle;
-  PyObject *__pyx_n_s_screw_spindle_Discharge;
-  PyObject *__pyx_n_s_screw_spindle_Injection;
-  PyObject *__pyx_n_s_screw_spindle_Leakage;
-  PyObject *__pyx_n_s_screw_spindle_Suction;
-  PyObject *__pyx_n_s_screw_spindle___cdict;
-  PyObject *__pyx_n_s_screw_spindle___reduce_cython;
-  PyObject *__pyx_n_s_screw_spindle___setstate_cython;
   PyObject *__pyx_n_s_screw_spindle_geo;
   PyObject *__pyx_n_s_self;
   PyObject *__pyx_n_s_setstate;
@@ -5243,8 +5243,8 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_ptype_5PDSim_4flow_11flow_models_ValveModel);
   Py_CLEAR(clear_module_state->__pyx_ptype_5PDSim_5screw_17screw_spindle_geo_VdVstruct);
   Py_CLEAR(clear_module_state->__pyx_ptype_5PDSim_5screw_17screw_spindle_geo_geoVals);
-  Py_CLEAR(clear_module_state->__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
-  Py_CLEAR(clear_module_state->__pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle);
+  Py_CLEAR(clear_module_state->__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
+  Py_CLEAR(clear_module_state->__pyx_type_5PDSim_5screw_6_screw__ScrewSpindle);
   Py_CLEAR(clear_module_state->__pyx_array_type);
   Py_CLEAR(clear_module_state->__pyx_type___pyx_array);
   Py_CLEAR(clear_module_state->__pyx_MemviewEnum_type);
@@ -5287,9 +5287,17 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_kp_u_Out_of_bounds_on_buffer_access_a);
   Py_CLEAR(clear_module_state->__pyx_n_s_PDSim_flow);
   Py_CLEAR(clear_module_state->__pyx_n_s_PDSim_screw);
-  Py_CLEAR(clear_module_state->__pyx_n_s_PDSim_screw__screw_spindle);
-  Py_CLEAR(clear_module_state->__pyx_kp_s_PDSim_screw__screw_spindle_pyx);
+  Py_CLEAR(clear_module_state->__pyx_n_s_PDSim_screw__screw);
+  Py_CLEAR(clear_module_state->__pyx_kp_s_PDSim_screw__screw_pyx);
   Py_CLEAR(clear_module_state->__pyx_n_s_PickleError);
+  Py_CLEAR(clear_module_state->__pyx_n_s_ScrewSpindle);
+  Py_CLEAR(clear_module_state->__pyx_n_s_ScrewSpindle_Discharge);
+  Py_CLEAR(clear_module_state->__pyx_n_s_ScrewSpindle_Injection);
+  Py_CLEAR(clear_module_state->__pyx_n_s_ScrewSpindle_Leakage);
+  Py_CLEAR(clear_module_state->__pyx_n_s_ScrewSpindle_Suction);
+  Py_CLEAR(clear_module_state->__pyx_n_s_ScrewSpindle___cdict);
+  Py_CLEAR(clear_module_state->__pyx_n_s_ScrewSpindle___reduce_cython);
+  Py_CLEAR(clear_module_state->__pyx_n_s_ScrewSpindle___setstate_cython);
   Py_CLEAR(clear_module_state->__pyx_n_s_Sequence);
   Py_CLEAR(clear_module_state->__pyx_kp_s_Step_may_not_be_zero_axis_d);
   Py_CLEAR(clear_module_state->__pyx_n_s_Suction);
@@ -5369,21 +5377,13 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_pyx_state);
   Py_CLEAR(clear_module_state->__pyx_n_s_pyx_type);
   Py_CLEAR(clear_module_state->__pyx_n_s_pyx_unpickle_Enum);
-  Py_CLEAR(clear_module_state->__pyx_n_s_pyx_unpickle__screw_spindle);
+  Py_CLEAR(clear_module_state->__pyx_n_s_pyx_unpickle__ScrewSpindle);
   Py_CLEAR(clear_module_state->__pyx_n_s_pyx_vtable);
   Py_CLEAR(clear_module_state->__pyx_n_s_range);
   Py_CLEAR(clear_module_state->__pyx_n_s_reduce);
   Py_CLEAR(clear_module_state->__pyx_n_s_reduce_cython);
   Py_CLEAR(clear_module_state->__pyx_n_s_reduce_ex);
   Py_CLEAR(clear_module_state->__pyx_n_s_register);
-  Py_CLEAR(clear_module_state->__pyx_n_s_screw_spindle);
-  Py_CLEAR(clear_module_state->__pyx_n_s_screw_spindle_Discharge);
-  Py_CLEAR(clear_module_state->__pyx_n_s_screw_spindle_Injection);
-  Py_CLEAR(clear_module_state->__pyx_n_s_screw_spindle_Leakage);
-  Py_CLEAR(clear_module_state->__pyx_n_s_screw_spindle_Suction);
-  Py_CLEAR(clear_module_state->__pyx_n_s_screw_spindle___cdict);
-  Py_CLEAR(clear_module_state->__pyx_n_s_screw_spindle___reduce_cython);
-  Py_CLEAR(clear_module_state->__pyx_n_s_screw_spindle___setstate_cython);
   Py_CLEAR(clear_module_state->__pyx_n_s_screw_spindle_geo);
   Py_CLEAR(clear_module_state->__pyx_n_s_self);
   Py_CLEAR(clear_module_state->__pyx_n_s_setstate);
@@ -5507,8 +5507,8 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_ptype_5PDSim_4flow_11flow_models_ValveModel);
   Py_VISIT(traverse_module_state->__pyx_ptype_5PDSim_5screw_17screw_spindle_geo_VdVstruct);
   Py_VISIT(traverse_module_state->__pyx_ptype_5PDSim_5screw_17screw_spindle_geo_geoVals);
-  Py_VISIT(traverse_module_state->__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
-  Py_VISIT(traverse_module_state->__pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle);
+  Py_VISIT(traverse_module_state->__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
+  Py_VISIT(traverse_module_state->__pyx_type_5PDSim_5screw_6_screw__ScrewSpindle);
   Py_VISIT(traverse_module_state->__pyx_array_type);
   Py_VISIT(traverse_module_state->__pyx_type___pyx_array);
   Py_VISIT(traverse_module_state->__pyx_MemviewEnum_type);
@@ -5551,9 +5551,17 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_kp_u_Out_of_bounds_on_buffer_access_a);
   Py_VISIT(traverse_module_state->__pyx_n_s_PDSim_flow);
   Py_VISIT(traverse_module_state->__pyx_n_s_PDSim_screw);
-  Py_VISIT(traverse_module_state->__pyx_n_s_PDSim_screw__screw_spindle);
-  Py_VISIT(traverse_module_state->__pyx_kp_s_PDSim_screw__screw_spindle_pyx);
+  Py_VISIT(traverse_module_state->__pyx_n_s_PDSim_screw__screw);
+  Py_VISIT(traverse_module_state->__pyx_kp_s_PDSim_screw__screw_pyx);
   Py_VISIT(traverse_module_state->__pyx_n_s_PickleError);
+  Py_VISIT(traverse_module_state->__pyx_n_s_ScrewSpindle);
+  Py_VISIT(traverse_module_state->__pyx_n_s_ScrewSpindle_Discharge);
+  Py_VISIT(traverse_module_state->__pyx_n_s_ScrewSpindle_Injection);
+  Py_VISIT(traverse_module_state->__pyx_n_s_ScrewSpindle_Leakage);
+  Py_VISIT(traverse_module_state->__pyx_n_s_ScrewSpindle_Suction);
+  Py_VISIT(traverse_module_state->__pyx_n_s_ScrewSpindle___cdict);
+  Py_VISIT(traverse_module_state->__pyx_n_s_ScrewSpindle___reduce_cython);
+  Py_VISIT(traverse_module_state->__pyx_n_s_ScrewSpindle___setstate_cython);
   Py_VISIT(traverse_module_state->__pyx_n_s_Sequence);
   Py_VISIT(traverse_module_state->__pyx_kp_s_Step_may_not_be_zero_axis_d);
   Py_VISIT(traverse_module_state->__pyx_n_s_Suction);
@@ -5633,21 +5641,13 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_pyx_state);
   Py_VISIT(traverse_module_state->__pyx_n_s_pyx_type);
   Py_VISIT(traverse_module_state->__pyx_n_s_pyx_unpickle_Enum);
-  Py_VISIT(traverse_module_state->__pyx_n_s_pyx_unpickle__screw_spindle);
+  Py_VISIT(traverse_module_state->__pyx_n_s_pyx_unpickle__ScrewSpindle);
   Py_VISIT(traverse_module_state->__pyx_n_s_pyx_vtable);
   Py_VISIT(traverse_module_state->__pyx_n_s_range);
   Py_VISIT(traverse_module_state->__pyx_n_s_reduce);
   Py_VISIT(traverse_module_state->__pyx_n_s_reduce_cython);
   Py_VISIT(traverse_module_state->__pyx_n_s_reduce_ex);
   Py_VISIT(traverse_module_state->__pyx_n_s_register);
-  Py_VISIT(traverse_module_state->__pyx_n_s_screw_spindle);
-  Py_VISIT(traverse_module_state->__pyx_n_s_screw_spindle_Discharge);
-  Py_VISIT(traverse_module_state->__pyx_n_s_screw_spindle_Injection);
-  Py_VISIT(traverse_module_state->__pyx_n_s_screw_spindle_Leakage);
-  Py_VISIT(traverse_module_state->__pyx_n_s_screw_spindle_Suction);
-  Py_VISIT(traverse_module_state->__pyx_n_s_screw_spindle___cdict);
-  Py_VISIT(traverse_module_state->__pyx_n_s_screw_spindle___reduce_cython);
-  Py_VISIT(traverse_module_state->__pyx_n_s_screw_spindle___setstate_cython);
   Py_VISIT(traverse_module_state->__pyx_n_s_screw_spindle_geo);
   Py_VISIT(traverse_module_state->__pyx_n_s_self);
   Py_VISIT(traverse_module_state->__pyx_n_s_setstate);
@@ -5910,13 +5910,13 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_ptype_5PDSim_5screw_17screw_spindle_geo_VdVstruct __pyx_mstate_global->__pyx_ptype_5PDSim_5screw_17screw_spindle_geo_VdVstruct
 #define __pyx_ptype_5PDSim_5screw_17screw_spindle_geo_geoVals __pyx_mstate_global->__pyx_ptype_5PDSim_5screw_17screw_spindle_geo_geoVals
 #if CYTHON_USE_MODULE_STATE
-#define __pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle __pyx_mstate_global->__pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle
+#define __pyx_type_5PDSim_5screw_6_screw__ScrewSpindle __pyx_mstate_global->__pyx_type_5PDSim_5screw_6_screw__ScrewSpindle
 #define __pyx_type___pyx_array __pyx_mstate_global->__pyx_type___pyx_array
 #define __pyx_type___pyx_MemviewEnum __pyx_mstate_global->__pyx_type___pyx_MemviewEnum
 #define __pyx_type___pyx_memoryview __pyx_mstate_global->__pyx_type___pyx_memoryview
 #define __pyx_type___pyx_memoryviewslice __pyx_mstate_global->__pyx_type___pyx_memoryviewslice
 #endif
-#define __pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle __pyx_mstate_global->__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle
+#define __pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle __pyx_mstate_global->__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle
 #define __pyx_array_type __pyx_mstate_global->__pyx_array_type
 #define __pyx_MemviewEnum_type __pyx_mstate_global->__pyx_MemviewEnum_type
 #define __pyx_memoryview_type __pyx_mstate_global->__pyx_memoryview_type
@@ -5955,9 +5955,17 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_kp_u_Out_of_bounds_on_buffer_access_a __pyx_mstate_global->__pyx_kp_u_Out_of_bounds_on_buffer_access_a
 #define __pyx_n_s_PDSim_flow __pyx_mstate_global->__pyx_n_s_PDSim_flow
 #define __pyx_n_s_PDSim_screw __pyx_mstate_global->__pyx_n_s_PDSim_screw
-#define __pyx_n_s_PDSim_screw__screw_spindle __pyx_mstate_global->__pyx_n_s_PDSim_screw__screw_spindle
-#define __pyx_kp_s_PDSim_screw__screw_spindle_pyx __pyx_mstate_global->__pyx_kp_s_PDSim_screw__screw_spindle_pyx
+#define __pyx_n_s_PDSim_screw__screw __pyx_mstate_global->__pyx_n_s_PDSim_screw__screw
+#define __pyx_kp_s_PDSim_screw__screw_pyx __pyx_mstate_global->__pyx_kp_s_PDSim_screw__screw_pyx
 #define __pyx_n_s_PickleError __pyx_mstate_global->__pyx_n_s_PickleError
+#define __pyx_n_s_ScrewSpindle __pyx_mstate_global->__pyx_n_s_ScrewSpindle
+#define __pyx_n_s_ScrewSpindle_Discharge __pyx_mstate_global->__pyx_n_s_ScrewSpindle_Discharge
+#define __pyx_n_s_ScrewSpindle_Injection __pyx_mstate_global->__pyx_n_s_ScrewSpindle_Injection
+#define __pyx_n_s_ScrewSpindle_Leakage __pyx_mstate_global->__pyx_n_s_ScrewSpindle_Leakage
+#define __pyx_n_s_ScrewSpindle_Suction __pyx_mstate_global->__pyx_n_s_ScrewSpindle_Suction
+#define __pyx_n_s_ScrewSpindle___cdict __pyx_mstate_global->__pyx_n_s_ScrewSpindle___cdict
+#define __pyx_n_s_ScrewSpindle___reduce_cython __pyx_mstate_global->__pyx_n_s_ScrewSpindle___reduce_cython
+#define __pyx_n_s_ScrewSpindle___setstate_cython __pyx_mstate_global->__pyx_n_s_ScrewSpindle___setstate_cython
 #define __pyx_n_s_Sequence __pyx_mstate_global->__pyx_n_s_Sequence
 #define __pyx_kp_s_Step_may_not_be_zero_axis_d __pyx_mstate_global->__pyx_kp_s_Step_may_not_be_zero_axis_d
 #define __pyx_n_s_Suction __pyx_mstate_global->__pyx_n_s_Suction
@@ -6037,21 +6045,13 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_pyx_state __pyx_mstate_global->__pyx_n_s_pyx_state
 #define __pyx_n_s_pyx_type __pyx_mstate_global->__pyx_n_s_pyx_type
 #define __pyx_n_s_pyx_unpickle_Enum __pyx_mstate_global->__pyx_n_s_pyx_unpickle_Enum
-#define __pyx_n_s_pyx_unpickle__screw_spindle __pyx_mstate_global->__pyx_n_s_pyx_unpickle__screw_spindle
+#define __pyx_n_s_pyx_unpickle__ScrewSpindle __pyx_mstate_global->__pyx_n_s_pyx_unpickle__ScrewSpindle
 #define __pyx_n_s_pyx_vtable __pyx_mstate_global->__pyx_n_s_pyx_vtable
 #define __pyx_n_s_range __pyx_mstate_global->__pyx_n_s_range
 #define __pyx_n_s_reduce __pyx_mstate_global->__pyx_n_s_reduce
 #define __pyx_n_s_reduce_cython __pyx_mstate_global->__pyx_n_s_reduce_cython
 #define __pyx_n_s_reduce_ex __pyx_mstate_global->__pyx_n_s_reduce_ex
 #define __pyx_n_s_register __pyx_mstate_global->__pyx_n_s_register
-#define __pyx_n_s_screw_spindle __pyx_mstate_global->__pyx_n_s_screw_spindle
-#define __pyx_n_s_screw_spindle_Discharge __pyx_mstate_global->__pyx_n_s_screw_spindle_Discharge
-#define __pyx_n_s_screw_spindle_Injection __pyx_mstate_global->__pyx_n_s_screw_spindle_Injection
-#define __pyx_n_s_screw_spindle_Leakage __pyx_mstate_global->__pyx_n_s_screw_spindle_Leakage
-#define __pyx_n_s_screw_spindle_Suction __pyx_mstate_global->__pyx_n_s_screw_spindle_Suction
-#define __pyx_n_s_screw_spindle___cdict __pyx_mstate_global->__pyx_n_s_screw_spindle___cdict
-#define __pyx_n_s_screw_spindle___reduce_cython __pyx_mstate_global->__pyx_n_s_screw_spindle___reduce_cython
-#define __pyx_n_s_screw_spindle___setstate_cython __pyx_mstate_global->__pyx_n_s_screw_spindle___setstate_cython
 #define __pyx_n_s_screw_spindle_geo __pyx_mstate_global->__pyx_n_s_screw_spindle_geo
 #define __pyx_n_s_self __pyx_mstate_global->__pyx_n_s_self
 #define __pyx_n_s_setstate __pyx_mstate_global->__pyx_n_s_setstate
@@ -19749,7 +19749,7 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":286
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":286
  * 
  *         @property
  *         cdef inline npy_intp itemsize(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -19768,7 +19768,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_8itemsize_itemsize(PyArray_D
   #endif
   __Pyx_TraceCall("itemsize", __pyx_f[2], 286, 1, __PYX_ERR(2, 286, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":287
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":287
  *         @property
  *         cdef inline npy_intp itemsize(self) noexcept nogil:
  *             return PyDataType_ELSIZE(self)             # <<<<<<<<<<<<<<
@@ -19778,7 +19778,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_8itemsize_itemsize(PyArray_D
   __pyx_r = PyDataType_ELSIZE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":286
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":286
  * 
  *         @property
  *         cdef inline npy_intp itemsize(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -19801,7 +19801,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_8itemsize_itemsize(PyArray_D
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":290
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":290
  * 
  *         @property
  *         cdef inline npy_intp alignment(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -19820,7 +19820,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_9alignment_alignment(PyArray
   #endif
   __Pyx_TraceCall("alignment", __pyx_f[2], 290, 1, __PYX_ERR(2, 290, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":291
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":291
  *         @property
  *         cdef inline npy_intp alignment(self) noexcept nogil:
  *             return PyDataType_ALIGNMENT(self)             # <<<<<<<<<<<<<<
@@ -19830,7 +19830,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_9alignment_alignment(PyArray
   __pyx_r = PyDataType_ALIGNMENT(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":290
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":290
  * 
  *         @property
  *         cdef inline npy_intp alignment(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -19853,7 +19853,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_5dtype_9alignment_alignment(PyArray
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":296
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":296
  *         # for this using PyDataType_HASFIELDS.
  *         @property
  *         cdef inline object fields(self):             # <<<<<<<<<<<<<<
@@ -19872,7 +19872,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_6fields_fields(PyArray_Desc
   __Pyx_RefNannySetupContext("fields", 1);
   __Pyx_TraceCall("fields", __pyx_f[2], 296, 0, __PYX_ERR(2, 296, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":297
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":297
  *         @property
  *         cdef inline object fields(self):
  *             return <object>PyDataType_FIELDS(self)             # <<<<<<<<<<<<<<
@@ -19885,7 +19885,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_6fields_fields(PyArray_Desc
   __pyx_r = ((PyObject *)__pyx_t_1);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":296
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":296
  *         # for this using PyDataType_HASFIELDS.
  *         @property
  *         cdef inline object fields(self):             # <<<<<<<<<<<<<<
@@ -19904,7 +19904,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_6fields_fields(PyArray_Desc
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":300
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":300
  * 
  *         @property
  *         cdef inline tuple names(self):             # <<<<<<<<<<<<<<
@@ -19923,7 +19923,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_5names_names(PyArray_Descr 
   __Pyx_RefNannySetupContext("names", 1);
   __Pyx_TraceCall("names", __pyx_f[2], 300, 0, __PYX_ERR(2, 300, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":301
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":301
  *         @property
  *         cdef inline tuple names(self):
  *             return <tuple>PyDataType_NAMES(self)             # <<<<<<<<<<<<<<
@@ -19936,7 +19936,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_5names_names(PyArray_Descr 
   __pyx_r = ((PyObject*)__pyx_t_1);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":300
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":300
  * 
  *         @property
  *         cdef inline tuple names(self):             # <<<<<<<<<<<<<<
@@ -19955,7 +19955,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_5dtype_5names_names(PyArray_Descr 
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":307
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":307
  *         # this field via the inline helper method PyDataType_SHAPE.
  *         @property
  *         cdef inline PyArray_ArrayDescr* subarray(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -19974,7 +19974,7 @@ static CYTHON_INLINE PyArray_ArrayDescr *__pyx_f_5numpy_5dtype_8subarray_subarra
   #endif
   __Pyx_TraceCall("subarray", __pyx_f[2], 307, 1, __PYX_ERR(2, 307, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":308
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":308
  *         @property
  *         cdef inline PyArray_ArrayDescr* subarray(self) noexcept nogil:
  *             return PyDataType_SUBARRAY(self)             # <<<<<<<<<<<<<<
@@ -19984,7 +19984,7 @@ static CYTHON_INLINE PyArray_ArrayDescr *__pyx_f_5numpy_5dtype_8subarray_subarra
   __pyx_r = PyDataType_SUBARRAY(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":307
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":307
  *         # this field via the inline helper method PyDataType_SHAPE.
  *         @property
  *         cdef inline PyArray_ArrayDescr* subarray(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20007,7 +20007,7 @@ static CYTHON_INLINE PyArray_ArrayDescr *__pyx_f_5numpy_5dtype_8subarray_subarra
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":311
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":311
  * 
  *         @property
  *         cdef inline npy_uint64 flags(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20026,7 +20026,7 @@ static CYTHON_INLINE npy_uint64 __pyx_f_5numpy_5dtype_5flags_flags(PyArray_Descr
   #endif
   __Pyx_TraceCall("flags", __pyx_f[2], 311, 1, __PYX_ERR(2, 311, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":313
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":313
  *         cdef inline npy_uint64 flags(self) noexcept nogil:
  *             """The data types flags."""
  *             return PyDataType_FLAGS(self)             # <<<<<<<<<<<<<<
@@ -20036,7 +20036,7 @@ static CYTHON_INLINE npy_uint64 __pyx_f_5numpy_5dtype_5flags_flags(PyArray_Descr
   __pyx_r = PyDataType_FLAGS(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":311
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":311
  * 
  *         @property
  *         cdef inline npy_uint64 flags(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20059,7 +20059,7 @@ static CYTHON_INLINE npy_uint64 __pyx_f_5numpy_5dtype_5flags_flags(PyArray_Descr
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":323
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":323
  * 
  *         @property
  *         cdef inline int numiter(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20078,7 +20078,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_7numiter_numiter(PyArrayMulti
   #endif
   __Pyx_TraceCall("numiter", __pyx_f[2], 323, 1, __PYX_ERR(2, 323, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":325
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":325
  *         cdef inline int numiter(self) noexcept nogil:
  *             """The number of arrays that need to be broadcast to the same shape."""
  *             return PyArray_MultiIter_NUMITER(self)             # <<<<<<<<<<<<<<
@@ -20088,7 +20088,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_7numiter_numiter(PyArrayMulti
   __pyx_r = PyArray_MultiIter_NUMITER(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":323
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":323
  * 
  *         @property
  *         cdef inline int numiter(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20111,7 +20111,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_7numiter_numiter(PyArrayMulti
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":328
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":328
  * 
  *         @property
  *         cdef inline npy_intp size(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20130,7 +20130,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_4size_size(PyArrayMultiI
   #endif
   __Pyx_TraceCall("size", __pyx_f[2], 328, 1, __PYX_ERR(2, 328, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":330
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":330
  *         cdef inline npy_intp size(self) noexcept nogil:
  *             """The total broadcasted size."""
  *             return PyArray_MultiIter_SIZE(self)             # <<<<<<<<<<<<<<
@@ -20140,7 +20140,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_4size_size(PyArrayMultiI
   __pyx_r = PyArray_MultiIter_SIZE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":328
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":328
  * 
  *         @property
  *         cdef inline npy_intp size(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20163,7 +20163,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_4size_size(PyArrayMultiI
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":333
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":333
  * 
  *         @property
  *         cdef inline npy_intp index(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20182,7 +20182,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_5index_index(PyArrayMult
   #endif
   __Pyx_TraceCall("index", __pyx_f[2], 333, 1, __PYX_ERR(2, 333, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":335
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":335
  *         cdef inline npy_intp index(self) noexcept nogil:
  *             """The current (1-d) index into the broadcasted result."""
  *             return PyArray_MultiIter_INDEX(self)             # <<<<<<<<<<<<<<
@@ -20192,7 +20192,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_5index_index(PyArrayMult
   __pyx_r = PyArray_MultiIter_INDEX(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":333
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":333
  * 
  *         @property
  *         cdef inline npy_intp index(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20215,7 +20215,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_9broadcast_5index_index(PyArrayMult
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":338
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":338
  * 
  *         @property
  *         cdef inline int nd(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20234,7 +20234,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_2nd_nd(PyArrayMultiIterObject
   #endif
   __Pyx_TraceCall("nd", __pyx_f[2], 338, 1, __PYX_ERR(2, 338, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":340
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":340
  *         cdef inline int nd(self) noexcept nogil:
  *             """The number of dimensions in the broadcasted result."""
  *             return PyArray_MultiIter_NDIM(self)             # <<<<<<<<<<<<<<
@@ -20244,7 +20244,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_2nd_nd(PyArrayMultiIterObject
   __pyx_r = PyArray_MultiIter_NDIM(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":338
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":338
  * 
  *         @property
  *         cdef inline int nd(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20267,7 +20267,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_9broadcast_2nd_nd(PyArrayMultiIterObject
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":343
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":343
  * 
  *         @property
  *         cdef inline npy_intp* dimensions(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20286,7 +20286,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_9broadcast_10dimensions_dimensions
   #endif
   __Pyx_TraceCall("dimensions", __pyx_f[2], 343, 1, __PYX_ERR(2, 343, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":345
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":345
  *         cdef inline npy_intp* dimensions(self) noexcept nogil:
  *             """The shape of the broadcasted result."""
  *             return PyArray_MultiIter_DIMS(self)             # <<<<<<<<<<<<<<
@@ -20296,7 +20296,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_9broadcast_10dimensions_dimensions
   __pyx_r = PyArray_MultiIter_DIMS(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":343
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":343
  * 
  *         @property
  *         cdef inline npy_intp* dimensions(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20319,7 +20319,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_9broadcast_10dimensions_dimensions
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":348
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":348
  * 
  *         @property
  *         cdef inline void** iters(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20338,7 +20338,7 @@ static CYTHON_INLINE void **__pyx_f_5numpy_9broadcast_5iters_iters(PyArrayMultiI
   #endif
   __Pyx_TraceCall("iters", __pyx_f[2], 348, 1, __PYX_ERR(2, 348, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":351
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":351
  *             """An array of iterator objects that holds the iterators for the arrays to be broadcast together.
  *             On return, the iterators are adjusted for broadcasting."""
  *             return PyArray_MultiIter_ITERS(self)             # <<<<<<<<<<<<<<
@@ -20348,7 +20348,7 @@ static CYTHON_INLINE void **__pyx_f_5numpy_9broadcast_5iters_iters(PyArrayMultiI
   __pyx_r = PyArray_MultiIter_ITERS(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":348
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":348
  * 
  *         @property
  *         cdef inline void** iters(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20371,7 +20371,7 @@ static CYTHON_INLINE void **__pyx_f_5numpy_9broadcast_5iters_iters(PyArrayMultiI
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":366
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":366
  * 
  *         @property
  *         cdef inline PyObject* base(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20390,7 +20390,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_7ndarray_4base_base(PyArrayObject 
   #endif
   __Pyx_TraceCall("base", __pyx_f[2], 366, 1, __PYX_ERR(2, 366, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":369
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":369
  *             """Returns a borrowed reference to the object owning the data/memory.
  *             """
  *             return PyArray_BASE(self)             # <<<<<<<<<<<<<<
@@ -20400,7 +20400,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_7ndarray_4base_base(PyArrayObject 
   __pyx_r = PyArray_BASE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":366
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":366
  * 
  *         @property
  *         cdef inline PyObject* base(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20423,7 +20423,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_7ndarray_4base_base(PyArrayObject 
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":372
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":372
  * 
  *         @property
  *         cdef inline dtype descr(self):             # <<<<<<<<<<<<<<
@@ -20442,7 +20442,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
   __Pyx_RefNannySetupContext("descr", 1);
   __Pyx_TraceCall("descr", __pyx_f[2], 372, 0, __PYX_ERR(2, 372, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":375
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":375
  *             """Returns an owned reference to the dtype of the array.
  *             """
  *             return <dtype>PyArray_DESCR(self)             # <<<<<<<<<<<<<<
@@ -20455,7 +20455,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
   __pyx_r = ((PyArray_Descr *)__pyx_t_1);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":372
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":372
  * 
  *         @property
  *         cdef inline dtype descr(self):             # <<<<<<<<<<<<<<
@@ -20474,7 +20474,7 @@ static CYTHON_INLINE PyArray_Descr *__pyx_f_5numpy_7ndarray_5descr_descr(PyArray
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":378
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":378
  * 
  *         @property
  *         cdef inline int ndim(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20493,7 +20493,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx
   #endif
   __Pyx_TraceCall("ndim", __pyx_f[2], 378, 1, __PYX_ERR(2, 378, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":381
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":381
  *             """Returns the number of dimensions in the array.
  *             """
  *             return PyArray_NDIM(self)             # <<<<<<<<<<<<<<
@@ -20503,7 +20503,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx
   __pyx_r = PyArray_NDIM(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":378
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":378
  * 
  *         @property
  *         cdef inline int ndim(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20526,7 +20526,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_7ndarray_4ndim_ndim(PyArrayObject *__pyx
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":384
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":384
  * 
  *         @property
  *         cdef inline npy_intp *shape(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20545,7 +20545,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObjec
   #endif
   __Pyx_TraceCall("shape", __pyx_f[2], 384, 1, __PYX_ERR(2, 384, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":389
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":389
  *             Can return NULL for 0-dimensional arrays.
  *             """
  *             return PyArray_DIMS(self)             # <<<<<<<<<<<<<<
@@ -20555,7 +20555,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObjec
   __pyx_r = PyArray_DIMS(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":384
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":384
  * 
  *         @property
  *         cdef inline npy_intp *shape(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20578,7 +20578,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_5shape_shape(PyArrayObjec
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":392
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":392
  * 
  *         @property
  *         cdef inline npy_intp *strides(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20597,7 +20597,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayO
   #endif
   __Pyx_TraceCall("strides", __pyx_f[2], 392, 1, __PYX_ERR(2, 392, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":396
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":396
  *             The number of elements matches the number of dimensions of the array (ndim).
  *             """
  *             return PyArray_STRIDES(self)             # <<<<<<<<<<<<<<
@@ -20607,7 +20607,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayO
   __pyx_r = PyArray_STRIDES(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":392
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":392
  * 
  *         @property
  *         cdef inline npy_intp *strides(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20630,7 +20630,7 @@ static CYTHON_INLINE npy_intp *__pyx_f_5numpy_7ndarray_7strides_strides(PyArrayO
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":399
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":399
  * 
  *         @property
  *         cdef inline npy_intp size(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20649,7 +20649,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *
   #endif
   __Pyx_TraceCall("size", __pyx_f[2], 399, 1, __PYX_ERR(2, 399, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":402
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":402
  *             """Returns the total size (in number of elements) of the array.
  *             """
  *             return PyArray_SIZE(self)             # <<<<<<<<<<<<<<
@@ -20659,7 +20659,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *
   __pyx_r = PyArray_SIZE(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":399
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":399
  * 
  *         @property
  *         cdef inline npy_intp size(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20682,7 +20682,7 @@ static CYTHON_INLINE npy_intp __pyx_f_5numpy_7ndarray_4size_size(PyArrayObject *
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":405
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":405
  * 
  *         @property
  *         cdef inline char* data(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20701,7 +20701,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__p
   #endif
   __Pyx_TraceCall("data", __pyx_f[2], 405, 1, __PYX_ERR(2, 405, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":411
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":411
  *             of `PyArray_DATA()` instead, which returns a 'void*'.
  *             """
  *             return PyArray_BYTES(self)             # <<<<<<<<<<<<<<
@@ -20711,7 +20711,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__p
   __pyx_r = PyArray_BYTES(__pyx_v_self);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":405
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":405
  * 
  *         @property
  *         cdef inline char* data(self) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -20734,7 +20734,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__p
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":823
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":823
  * ctypedef long double complex clongdouble_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -20753,7 +20753,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew1", 1);
   __Pyx_TraceCall("PyArray_MultiIterNew1", __pyx_f[2], 823, 0, __PYX_ERR(2, 823, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":824
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":824
  * 
  * cdef inline object PyArray_MultiIterNew1(a):
  *     return PyArray_MultiIterNew(1, <void*>a)             # <<<<<<<<<<<<<<
@@ -20767,7 +20767,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":823
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":823
  * ctypedef long double complex clongdouble_t
  * 
  * cdef inline object PyArray_MultiIterNew1(a):             # <<<<<<<<<<<<<<
@@ -20787,7 +20787,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew1(PyObject *__
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":826
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":826
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -20806,7 +20806,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew2", 1);
   __Pyx_TraceCall("PyArray_MultiIterNew2", __pyx_f[2], 826, 0, __PYX_ERR(2, 826, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":827
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":827
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)             # <<<<<<<<<<<<<<
@@ -20820,7 +20820,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":826
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":826
  *     return PyArray_MultiIterNew(1, <void*>a)
  * 
  * cdef inline object PyArray_MultiIterNew2(a, b):             # <<<<<<<<<<<<<<
@@ -20840,7 +20840,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew2(PyObject *__
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":829
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":829
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -20859,7 +20859,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew3", 1);
   __Pyx_TraceCall("PyArray_MultiIterNew3", __pyx_f[2], 829, 0, __PYX_ERR(2, 829, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":830
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":830
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)             # <<<<<<<<<<<<<<
@@ -20873,7 +20873,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":829
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":829
  *     return PyArray_MultiIterNew(2, <void*>a, <void*>b)
  * 
  * cdef inline object PyArray_MultiIterNew3(a, b, c):             # <<<<<<<<<<<<<<
@@ -20893,7 +20893,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew3(PyObject *__
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":832
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":832
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -20912,7 +20912,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew4", 1);
   __Pyx_TraceCall("PyArray_MultiIterNew4", __pyx_f[2], 832, 0, __PYX_ERR(2, 832, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":833
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":833
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)             # <<<<<<<<<<<<<<
@@ -20926,7 +20926,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":832
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":832
  *     return PyArray_MultiIterNew(3, <void*>a, <void*>b, <void*> c)
  * 
  * cdef inline object PyArray_MultiIterNew4(a, b, c, d):             # <<<<<<<<<<<<<<
@@ -20946,7 +20946,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew4(PyObject *__
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":835
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":835
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -20965,7 +20965,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __Pyx_RefNannySetupContext("PyArray_MultiIterNew5", 1);
   __Pyx_TraceCall("PyArray_MultiIterNew5", __pyx_f[2], 835, 0, __PYX_ERR(2, 835, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":836
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":836
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)             # <<<<<<<<<<<<<<
@@ -20979,7 +20979,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":835
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":835
  *     return PyArray_MultiIterNew(4, <void*>a, <void*>b, <void*>c, <void*> d)
  * 
  * cdef inline object PyArray_MultiIterNew5(a, b, c, d, e):             # <<<<<<<<<<<<<<
@@ -20999,7 +20999,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyArray_MultiIterNew5(PyObject *__
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":838
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":838
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -21019,7 +21019,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __Pyx_RefNannySetupContext("PyDataType_SHAPE", 1);
   __Pyx_TraceCall("PyDataType_SHAPE", __pyx_f[2], 838, 0, __PYX_ERR(2, 838, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":839
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":839
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -21029,7 +21029,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   __pyx_t_1 = PyDataType_HASSUBARRAY(__pyx_v_d);
   if (__pyx_t_1) {
 
-    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":840
+    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":840
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):
  *         return <tuple>d.subarray.shape             # <<<<<<<<<<<<<<
@@ -21042,7 +21042,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     __pyx_r = ((PyObject*)__pyx_t_2);
     goto __pyx_L0;
 
-    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":839
+    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":839
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):
  *     if PyDataType_HASSUBARRAY(d):             # <<<<<<<<<<<<<<
@@ -21051,7 +21051,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
  */
   }
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":842
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":842
  *         return <tuple>d.subarray.shape
  *     else:
  *         return ()             # <<<<<<<<<<<<<<
@@ -21065,7 +21065,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
     goto __pyx_L0;
   }
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":838
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":838
  *     return PyArray_MultiIterNew(5, <void*>a, <void*>b, <void*>c, <void*> d, <void*> e)
  * 
  * cdef inline tuple PyDataType_SHAPE(dtype d):             # <<<<<<<<<<<<<<
@@ -21084,7 +21084,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_PyDataType_SHAPE(PyArray_Descr *__
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1026
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1026
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base) except *:             # <<<<<<<<<<<<<<
@@ -21100,7 +21100,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   int __pyx_clineno = 0;
   __Pyx_TraceCall("set_array_base", __pyx_f[2], 1026, 0, __PYX_ERR(2, 1026, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1027
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1027
  * 
  * cdef inline void set_array_base(ndarray arr, object base) except *:
  *     Py_INCREF(base) # important to do this before stealing the reference below!             # <<<<<<<<<<<<<<
@@ -21109,7 +21109,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   Py_INCREF(__pyx_v_base);
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1028
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1028
  * cdef inline void set_array_base(ndarray arr, object base) except *:
  *     Py_INCREF(base) # important to do this before stealing the reference below!
  *     PyArray_SetBaseObject(arr, base)             # <<<<<<<<<<<<<<
@@ -21118,7 +21118,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
  */
   __pyx_t_1 = PyArray_SetBaseObject(__pyx_v_arr, __pyx_v_base); if (unlikely(__pyx_t_1 == ((int)-1))) __PYX_ERR(2, 1028, __pyx_L1_error)
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1026
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1026
  *     int _import_umath() except -1
  * 
  * cdef inline void set_array_base(ndarray arr, object base) except *:             # <<<<<<<<<<<<<<
@@ -21134,7 +21134,7 @@ static CYTHON_INLINE void __pyx_f_5numpy_set_array_base(PyArrayObject *__pyx_v_a
   __Pyx_TraceReturn(Py_None, 0);
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1030
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1030
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -21154,7 +21154,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __Pyx_RefNannySetupContext("get_array_base", 1);
   __Pyx_TraceCall("get_array_base", __pyx_f[2], 1030, 0, __PYX_ERR(2, 1030, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1031
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1031
  * 
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)             # <<<<<<<<<<<<<<
@@ -21163,7 +21163,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   __pyx_v_base = PyArray_BASE(__pyx_v_arr);
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1032
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1032
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -21173,7 +21173,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_t_1 = (__pyx_v_base == NULL);
   if (__pyx_t_1) {
 
-    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1033
+    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1033
  *     base = PyArray_BASE(arr)
  *     if base is NULL:
  *         return None             # <<<<<<<<<<<<<<
@@ -21184,7 +21184,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1032
+    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1032
  * cdef inline object get_array_base(ndarray arr):
  *     base = PyArray_BASE(arr)
  *     if base is NULL:             # <<<<<<<<<<<<<<
@@ -21193,7 +21193,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
  */
   }
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1034
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1034
  *     if base is NULL:
  *         return None
  *     return <object>base             # <<<<<<<<<<<<<<
@@ -21205,7 +21205,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   __pyx_r = ((PyObject *)__pyx_v_base);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1030
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1030
  *     PyArray_SetBaseObject(arr, base)
  * 
  * cdef inline object get_array_base(ndarray arr):             # <<<<<<<<<<<<<<
@@ -21224,7 +21224,7 @@ static CYTHON_INLINE PyObject *__pyx_f_5numpy_get_array_base(PyArrayObject *__py
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1038
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1038
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -21250,7 +21250,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   __Pyx_RefNannySetupContext("import_array", 1);
   __Pyx_TraceCall("import_array", __pyx_f[2], 1038, 0, __PYX_ERR(2, 1038, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1039
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1039
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21266,7 +21266,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1040
+      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1040
  * cdef inline int import_array() except -1:
  *     try:
  *         __pyx_import_array()             # <<<<<<<<<<<<<<
@@ -21275,7 +21275,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
  */
       __pyx_t_4 = _import_array(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1040, __pyx_L3_error)
 
-      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1039
+      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1039
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21289,7 +21289,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1041
+    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1041
  *     try:
  *         __pyx_import_array()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -21304,7 +21304,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
       __Pyx_XGOTREF(__pyx_t_6);
       __Pyx_XGOTREF(__pyx_t_7);
 
-      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1042
+      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1042
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy._core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -21319,7 +21319,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     }
     goto __pyx_L5_except_error;
 
-    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1039
+    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1039
  * # Cython code.
  * cdef inline int import_array() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21335,7 +21335,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1038
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1038
  * # Versions of the import_* functions which are more suitable for
  * # Cython code.
  * cdef inline int import_array() except -1:             # <<<<<<<<<<<<<<
@@ -21359,7 +21359,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_array(void) {
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1044
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1044
  *         raise ImportError("numpy._core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -21385,7 +21385,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   __Pyx_RefNannySetupContext("import_umath", 1);
   __Pyx_TraceCall("import_umath", __pyx_f[2], 1044, 0, __PYX_ERR(2, 1044, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1045
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1045
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21401,7 +21401,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1046
+      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1046
  * cdef inline int import_umath() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -21410,7 +21410,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1046, __pyx_L3_error)
 
-      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1045
+      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1045
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21424,7 +21424,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1047
+    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1047
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -21439,7 +21439,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
       __Pyx_XGOTREF(__pyx_t_6);
       __Pyx_XGOTREF(__pyx_t_7);
 
-      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1048
+      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1048
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy._core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -21454,7 +21454,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     }
     goto __pyx_L5_except_error;
 
-    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1045
+    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1045
  * 
  * cdef inline int import_umath() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21470,7 +21470,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1044
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1044
  *         raise ImportError("numpy._core.multiarray failed to import")
  * 
  * cdef inline int import_umath() except -1:             # <<<<<<<<<<<<<<
@@ -21494,7 +21494,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_umath(void) {
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1050
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1050
  *         raise ImportError("numpy._core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -21520,7 +21520,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   __Pyx_RefNannySetupContext("import_ufunc", 1);
   __Pyx_TraceCall("import_ufunc", __pyx_f[2], 1050, 0, __PYX_ERR(2, 1050, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1051
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1051
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21536,7 +21536,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __Pyx_XGOTREF(__pyx_t_3);
     /*try:*/ {
 
-      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1052
+      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1052
  * cdef inline int import_ufunc() except -1:
  *     try:
  *         _import_umath()             # <<<<<<<<<<<<<<
@@ -21545,7 +21545,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
  */
       __pyx_t_4 = _import_umath(); if (unlikely(__pyx_t_4 == ((int)-1))) __PYX_ERR(2, 1052, __pyx_L3_error)
 
-      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1051
+      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1051
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21559,7 +21559,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     goto __pyx_L8_try_end;
     __pyx_L3_error:;
 
-    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1053
+    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1053
  *     try:
  *         _import_umath()
  *     except Exception:             # <<<<<<<<<<<<<<
@@ -21574,7 +21574,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
       __Pyx_XGOTREF(__pyx_t_6);
       __Pyx_XGOTREF(__pyx_t_7);
 
-      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1054
+      /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1054
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy._core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -21589,7 +21589,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     }
     goto __pyx_L5_except_error;
 
-    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1051
+    /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1051
  * 
  * cdef inline int import_ufunc() except -1:
  *     try:             # <<<<<<<<<<<<<<
@@ -21605,7 +21605,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
     __pyx_L8_try_end:;
   }
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1050
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1050
  *         raise ImportError("numpy._core.umath failed to import")
  * 
  * cdef inline int import_ufunc() except -1:             # <<<<<<<<<<<<<<
@@ -21629,7 +21629,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_import_ufunc(void) {
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1057
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1057
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj) noexcept:             # <<<<<<<<<<<<<<
@@ -21645,7 +21645,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   int __pyx_clineno = 0;
   __Pyx_TraceCall("is_timedelta64_object", __pyx_f[2], 1057, 0, __PYX_ERR(2, 1057, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1069
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1069
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyTimedeltaArrType_Type)             # <<<<<<<<<<<<<<
@@ -21655,7 +21655,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyTimedeltaArrType_Type));
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1057
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1057
  * 
  * 
  * cdef inline bint is_timedelta64_object(object obj) noexcept:             # <<<<<<<<<<<<<<
@@ -21672,7 +21672,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_timedelta64_object(PyObject *__pyx_v_
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1072
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1072
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj) noexcept:             # <<<<<<<<<<<<<<
@@ -21688,7 +21688,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   int __pyx_clineno = 0;
   __Pyx_TraceCall("is_datetime64_object", __pyx_f[2], 1072, 0, __PYX_ERR(2, 1072, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1084
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1084
  *     bool
  *     """
  *     return PyObject_TypeCheck(obj, &PyDatetimeArrType_Type)             # <<<<<<<<<<<<<<
@@ -21698,7 +21698,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   __pyx_r = PyObject_TypeCheck(__pyx_v_obj, (&PyDatetimeArrType_Type));
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1072
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1072
  * 
  * 
  * cdef inline bint is_datetime64_object(object obj) noexcept:             # <<<<<<<<<<<<<<
@@ -21715,7 +21715,7 @@ static CYTHON_INLINE int __pyx_f_5numpy_is_datetime64_object(PyObject *__pyx_v_o
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1087
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1087
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -21734,7 +21734,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   #endif
   __Pyx_TraceCall("get_datetime64_value", __pyx_f[2], 1087, 1, __PYX_ERR(2, 1087, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1094
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1094
  *     also needed.  That can be found using `get_datetime64_unit`.
  *     """
  *     return (<PyDatetimeScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -21744,7 +21744,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   __pyx_r = ((PyDatetimeScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1087
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1087
  * 
  * 
  * cdef inline npy_datetime get_datetime64_value(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -21767,7 +21767,7 @@ static CYTHON_INLINE npy_datetime __pyx_f_5numpy_get_datetime64_value(PyObject *
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1097
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1097
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -21786,7 +21786,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   #endif
   __Pyx_TraceCall("get_timedelta64_value", __pyx_f[2], 1097, 1, __PYX_ERR(2, 1097, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1101
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1101
  *     returns the int64 value underlying scalar numpy timedelta64 object
  *     """
  *     return (<PyTimedeltaScalarObject*>obj).obval             # <<<<<<<<<<<<<<
@@ -21796,7 +21796,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   __pyx_r = ((PyTimedeltaScalarObject *)__pyx_v_obj)->obval;
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1097
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1097
  * 
  * 
  * cdef inline npy_timedelta get_timedelta64_value(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -21819,7 +21819,7 @@ static CYTHON_INLINE npy_timedelta __pyx_f_5numpy_get_timedelta64_value(PyObject
   return __pyx_r;
 }
 
-/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1104
+/* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1104
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -21838,7 +21838,7 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
   #endif
   __Pyx_TraceCall("get_datetime64_unit", __pyx_f[2], 1104, 1, __PYX_ERR(2, 1104, __pyx_L1_error));
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1108
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1108
  *     returns the unit part of the dtype for a numpy datetime64 object.
  *     """
  *     return <NPY_DATETIMEUNIT>(<PyDatetimeScalarObject*>obj).obmeta.base             # <<<<<<<<<<<<<<
@@ -21848,7 +21848,7 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
   __pyx_r = ((NPY_DATETIMEUNIT)((PyDatetimeScalarObject *)__pyx_v_obj)->obmeta.base);
   goto __pyx_L0;
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1104
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1104
  * 
  * 
  * cdef inline NPY_DATETIMEUNIT get_datetime64_unit(object obj) noexcept nogil:             # <<<<<<<<<<<<<<
@@ -22283,22 +22283,22 @@ static CYTHON_INLINE PyObject *__pyx_f_5PDSim_4misc_9datatypes_check_dims(struct
   return __pyx_r;
 }
 
-/* "PDSim/screw/_screw_spindle.pyx":12
- * cdef class _screw_spindle(object):
+/* "PDSim/screw/_screw.pyx":10
+ * cdef class _ScrewSpindle(object):
  * 
  *     cpdef dict __cdict__(self):             # <<<<<<<<<<<<<<
  *         return dict(theta = self.theta,
  *                     geo = self.geo,
  */
 
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, int __pyx_skip_dispatch) {
+static PyObject *__pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, int __pyx_skip_dispatch) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -22312,7 +22312,7 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict
   int __pyx_clineno = 0;
   __Pyx_TraceFrameInit(__pyx_codeobj__11)
   __Pyx_RefNannySetupContext("__cdict__", 1);
-  __Pyx_TraceCall("__cdict__", __pyx_f[0], 12, 0, __PYX_ERR(0, 12, __pyx_L1_error));
+  __Pyx_TraceCall("__cdict__", __pyx_f[0], 10, 0, __PYX_ERR(0, 10, __pyx_L1_error));
   /* Check if called by wrapper */
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
@@ -22322,9 +22322,9 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_typedict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_cdict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_cdict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__)) {
+      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__)) {
         __Pyx_XDECREF(__pyx_r);
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_3 = __pyx_t_1; __pyx_t_4 = NULL;
@@ -22345,11 +22345,11 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict
           PyObject *__pyx_callargs[2] = {__pyx_t_4, NULL};
           __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_3, __pyx_callargs+1-__pyx_t_5, 0+__pyx_t_5);
           __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
+          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 10, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         }
-        if (!(likely(PyDict_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None) || __Pyx_RaiseUnexpectedTypeError("dict", __pyx_t_2))) __PYX_ERR(0, 12, __pyx_L1_error)
+        if (!(likely(PyDict_CheckExact(__pyx_t_2))||((__pyx_t_2) == Py_None) || __Pyx_RaiseUnexpectedTypeError("dict", __pyx_t_2))) __PYX_ERR(0, 10, __pyx_L1_error)
         __pyx_r = ((PyObject*)__pyx_t_2);
         __pyx_t_2 = 0;
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -22368,7 +22368,7 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict
     #endif
   }
 
-  /* "PDSim/screw/_screw_spindle.pyx":13
+  /* "PDSim/screw/_screw.pyx":11
  * 
  *     cpdef dict __cdict__(self):
  *         return dict(theta = self.theta,             # <<<<<<<<<<<<<<
@@ -22376,63 +22376,63 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict
  *                     HTC = self.HTC,
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyFloat_FromDouble(__pyx_v_self->theta); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
+  __pyx_t_2 = PyFloat_FromDouble(__pyx_v_self->theta); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_theta, __pyx_t_2) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_theta, __pyx_t_2) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "PDSim/screw/_screw_spindle.pyx":14
+  /* "PDSim/screw/_screw.pyx":12
  *     cpdef dict __cdict__(self):
  *         return dict(theta = self.theta,
  *                     geo = self.geo,             # <<<<<<<<<<<<<<
  *                     HTC = self.HTC,
  *                     inc_injection = self.incl_injection,
  */
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_geo, ((PyObject *)__pyx_v_self->geo)) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_geo, ((PyObject *)__pyx_v_self->geo)) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
 
-  /* "PDSim/screw/_screw_spindle.pyx":15
+  /* "PDSim/screw/_screw.pyx":13
  *         return dict(theta = self.theta,
  *                     geo = self.geo,
  *                     HTC = self.HTC,             # <<<<<<<<<<<<<<
  *                     inc_injection = self.incl_injection,
  *                     incl_leakage = self.incl_leakage)
  */
-  __pyx_t_2 = PyFloat_FromDouble(__pyx_v_self->HTC); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_t_2 = PyFloat_FromDouble(__pyx_v_self->HTC); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 13, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_HTC, __pyx_t_2) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_HTC, __pyx_t_2) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "PDSim/screw/_screw_spindle.pyx":16
+  /* "PDSim/screw/_screw.pyx":14
  *                     geo = self.geo,
  *                     HTC = self.HTC,
  *                     inc_injection = self.incl_injection,             # <<<<<<<<<<<<<<
  *                     incl_leakage = self.incl_leakage)
  * 
  */
-  __pyx_t_2 = __Pyx_PyBool_FromLong(__pyx_v_self->incl_injection); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBool_FromLong(__pyx_v_self->incl_injection); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 14, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_inc_injection, __pyx_t_2) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_inc_injection, __pyx_t_2) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "PDSim/screw/_screw_spindle.pyx":17
+  /* "PDSim/screw/_screw.pyx":15
  *                     HTC = self.HTC,
  *                     inc_injection = self.incl_injection,
  *                     incl_leakage = self.incl_leakage)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_2 = __Pyx_PyBool_FromLong(__pyx_v_self->incl_leakage); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 17, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyBool_FromLong(__pyx_v_self->incl_leakage); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 15, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_incl_leakage, __pyx_t_2) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_incl_leakage, __pyx_t_2) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "PDSim/screw/_screw_spindle.pyx":12
- * cdef class _screw_spindle(object):
+  /* "PDSim/screw/_screw.pyx":10
+ * cdef class _ScrewSpindle(object):
  * 
  *     cpdef dict __cdict__(self):             # <<<<<<<<<<<<<<
  *         return dict(theta = self.theta,
@@ -22445,7 +22445,7 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict
   __Pyx_XDECREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.__cdict__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.__cdict__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -22455,16 +22455,16 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__, "_screw_spindle.__cdict__(self) -> dict");
-static PyMethodDef __pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__ = {"__cdict__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__};
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__(PyObject *__pyx_v_self, 
+PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__, "_ScrewSpindle.__cdict__(self) -> dict");
+static PyMethodDef __pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__ = {"__cdict__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__};
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -22489,14 +22489,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   if (unlikely(__pyx_nargs > 0)) {
     __Pyx_RaiseArgtupleInvalid("__cdict__", 1, 0, 0, __pyx_nargs); return NULL;}
   if (unlikely(__pyx_kwds) && __Pyx_NumKwargs_FASTCALL(__pyx_kwds) && unlikely(!__Pyx_CheckKeywordStrings(__pyx_kwds, "__cdict__", 0))) return NULL;
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -22506,9 +22506,9 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdic
   int __pyx_clineno = 0;
   __Pyx_TraceFrameInit(__pyx_codeobj__11)
   __Pyx_RefNannySetupContext("__cdict__", 1);
-  __Pyx_TraceCall("__cdict__ (wrapper)", __pyx_f[0], 12, 0, __PYX_ERR(0, 12, __pyx_L1_error));
+  __Pyx_TraceCall("__cdict__ (wrapper)", __pyx_f[0], 10, 0, __PYX_ERR(0, 10, __pyx_L1_error));
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__(__pyx_v_self, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
@@ -22517,7 +22517,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdic
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.__cdict__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.__cdict__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -22526,7 +22526,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdic
   return __pyx_r;
 }
 
-/* "PDSim/screw/_screw_spindle.pyx":20
+/* "PDSim/screw/_screw.pyx":18
  * 
  * 
  *     cpdef double Suction(self, FlowPath FP, int ichamb):             # <<<<<<<<<<<<<<
@@ -22534,14 +22534,14 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdic
  *         Calculate the suction mass flow rate
  */
 
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, int __pyx_skip_dispatch) {
+static double __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Suction(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, int __pyx_skip_dispatch) {
   double __pyx_r;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -22561,7 +22561,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
   int __pyx_clineno = 0;
   __Pyx_TraceFrameInit(__pyx_codeobj__12)
   __Pyx_RefNannySetupContext("Suction", 1);
-  __Pyx_TraceCall("Suction", __pyx_f[0], 20, 0, __PYX_ERR(0, 20, __pyx_L1_error));
+  __Pyx_TraceCall("Suction", __pyx_f[0], 18, 0, __PYX_ERR(0, 18, __pyx_L1_error));
   /* Check if called by wrapper */
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
@@ -22571,10 +22571,10 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_typedict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_Suction); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 20, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_Suction); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 18, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction)) {
-        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ichamb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 20, __pyx_L1_error)
+      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction)) {
+        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ichamb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 18, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
@@ -22596,11 +22596,11 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
           __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 2+__pyx_t_6);
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)
+          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         }
-        __pyx_t_7 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_7 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 20, __pyx_L1_error)
+        __pyx_t_7 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_7 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 18, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_r = __pyx_t_7;
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -22619,7 +22619,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
     #endif
   }
 
-  /* "PDSim/screw/_screw_spindle.pyx":31
+  /* "PDSim/screw/_screw.pyx":29
  * 
  *         """
  *         FP.A = screw_spindle_geo.area_suction(self.theta, self.geo, ichamb)             # <<<<<<<<<<<<<<
@@ -22628,11 +22628,11 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
  */
   __pyx_t_1 = ((PyObject *)__pyx_v_self->geo);
   __Pyx_INCREF(__pyx_t_1);
-  __pyx_t_7 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_suction(__pyx_v_self->theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_7 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_suction(__pyx_v_self->theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_FP->A = __pyx_t_7;
 
-  /* "PDSim/screw/_screw_spindle.pyx":32
+  /* "PDSim/screw/_screw.pyx":30
  *         """
  *         FP.A = screw_spindle_geo.area_suction(self.theta, self.geo, ichamb)
  *         try:             # <<<<<<<<<<<<<<
@@ -22648,7 +22648,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
     __Pyx_XGOTREF(__pyx_t_10);
     /*try:*/ {
 
-      /* "PDSim/screw/_screw_spindle.pyx":33
+      /* "PDSim/screw/_screw.pyx":31
  *         FP.A = screw_spindle_geo.area_suction(self.theta, self.geo, ichamb)
  *         try:
  *             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)             # <<<<<<<<<<<<<<
@@ -22659,13 +22659,13 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
       __Pyx_INCREF(__pyx_t_1);
       __pyx_t_2 = ((PyObject *)__pyx_v_FP->State_down);
       __Pyx_INCREF(__pyx_t_2);
-      __pyx_t_7 = __pyx_f_5PDSim_4flow_11flow_models_IsentropicNozzle(__pyx_v_FP->A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 0, NULL); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 33, __pyx_L3_error)
+      __pyx_t_7 = __pyx_f_5PDSim_4flow_11flow_models_IsentropicNozzle(__pyx_v_FP->A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 0, NULL); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 31, __pyx_L3_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_7;
       goto __pyx_L7_try_return;
 
-      /* "PDSim/screw/_screw_spindle.pyx":32
+      /* "PDSim/screw/_screw.pyx":30
  *         """
  *         FP.A = screw_spindle_geo.area_suction(self.theta, self.geo, ichamb)
  *         try:             # <<<<<<<<<<<<<<
@@ -22680,7 +22680,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "PDSim/screw/_screw_spindle.pyx":34
+    /* "PDSim/screw/_screw.pyx":32
  *         try:
  *             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)
  *         except ZeroDivisionError:             # <<<<<<<<<<<<<<
@@ -22689,13 +22689,13 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
  */
     __pyx_t_11 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ZeroDivisionError);
     if (__pyx_t_11) {
-      __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_1, &__pyx_t_4) < 0) __PYX_ERR(0, 34, __pyx_L5_except_error)
+      __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_1, &__pyx_t_4) < 0) __PYX_ERR(0, 32, __pyx_L5_except_error)
       __Pyx_XGOTREF(__pyx_t_2);
       __Pyx_XGOTREF(__pyx_t_1);
       __Pyx_XGOTREF(__pyx_t_4);
 
-      /* "PDSim/screw/_screw_spindle.pyx":35
+      /* "PDSim/screw/_screw.pyx":33
  *             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)
  *         except ZeroDivisionError:
  *             return 0.0             # <<<<<<<<<<<<<<
@@ -22710,7 +22710,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
     }
     goto __pyx_L5_except_error;
 
-    /* "PDSim/screw/_screw_spindle.pyx":32
+    /* "PDSim/screw/_screw.pyx":30
  *         """
  *         FP.A = screw_spindle_geo.area_suction(self.theta, self.geo, ichamb)
  *         try:             # <<<<<<<<<<<<<<
@@ -22737,7 +22737,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
     goto __pyx_L0;
   }
 
-  /* "PDSim/screw/_screw_spindle.pyx":20
+  /* "PDSim/screw/_screw.pyx":18
  * 
  * 
  *     cpdef double Suction(self, FlowPath FP, int ichamb):             # <<<<<<<<<<<<<<
@@ -22752,7 +22752,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_TraceReturn(Py_None, 0);
@@ -22761,16 +22761,16 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(st
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Suction, "_screw_spindle.Suction(self, FlowPath FP, int ichamb) -> double\n\n        Calculate the suction mass flow rate\n\n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that is connected to the suction plenum\n        \n        ");
-static PyMethodDef __pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction = {"Suction", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Suction};
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction(PyObject *__pyx_v_self, 
+PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_2Suction, "_ScrewSpindle.Suction(self, FlowPath FP, int ichamb) -> double\n\n        Calculate the suction mass flow rate\n\n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that is connected to the suction plenum\n        \n        ");
+static PyMethodDef __pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction = {"Suction", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_2Suction};
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -22817,7 +22817,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 20, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 18, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -22825,14 +22825,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 20, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 18, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("Suction", 1, 2, 2, 1); __PYX_ERR(0, 20, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("Suction", 1, 2, 2, 1); __PYX_ERR(0, 18, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Suction") < 0)) __PYX_ERR(0, 20, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Suction") < 0)) __PYX_ERR(0, 18, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -22841,11 +22841,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
     }
     __pyx_v_FP = ((struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *)values[0]);
-    __pyx_v_ichamb = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 20, __pyx_L3_error)
+    __pyx_v_ichamb = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 18, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("Suction", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 20, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("Suction", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 18, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -22855,12 +22855,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) __PYX_ERR(0, 20, __pyx_L1_error)
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Suction(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) __PYX_ERR(0, 18, __pyx_L1_error)
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_2Suction(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb);
 
   /* function exit code */
   goto __pyx_L0;
@@ -22877,7 +22877,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Suction(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_2Suction(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -22888,10 +22888,10 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Sucti
   int __pyx_clineno = 0;
   __Pyx_TraceFrameInit(__pyx_codeobj__12)
   __Pyx_RefNannySetupContext("Suction", 1);
-  __Pyx_TraceCall("Suction (wrapper)", __pyx_f[0], 20, 0, __PYX_ERR(0, 20, __pyx_L1_error));
+  __Pyx_TraceCall("Suction (wrapper)", __pyx_f[0], 18, 0, __PYX_ERR(0, 18, __pyx_L1_error));
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 20, __pyx_L1_error)
-  __pyx_t_2 = PyFloat_FromDouble(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Suction(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 18, __pyx_L1_error)
+  __pyx_t_2 = PyFloat_FromDouble(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -22900,7 +22900,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Sucti
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Suction", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -22909,7 +22909,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Sucti
   return __pyx_r;
 }
 
-/* "PDSim/screw/_screw_spindle.pyx":37
+/* "PDSim/screw/_screw.pyx":35
  *             return 0.0
  * 
  *     cpdef double Discharge(self, FlowPath FP, int ichamb):             # <<<<<<<<<<<<<<
@@ -22917,14 +22917,14 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_2Sucti
  *         Calculate the discharge mass flow rate
  */
 
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, int __pyx_skip_dispatch) {
+static double __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Discharge(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, int __pyx_skip_dispatch) {
   double __pyx_r;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -22944,7 +22944,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
   int __pyx_clineno = 0;
   __Pyx_TraceFrameInit(__pyx_codeobj__13)
   __Pyx_RefNannySetupContext("Discharge", 1);
-  __Pyx_TraceCall("Discharge", __pyx_f[0], 37, 0, __PYX_ERR(0, 37, __pyx_L1_error));
+  __Pyx_TraceCall("Discharge", __pyx_f[0], 35, 0, __PYX_ERR(0, 35, __pyx_L1_error));
   /* Check if called by wrapper */
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
@@ -22954,10 +22954,10 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_typedict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_Discharge); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_Discharge); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge)) {
-        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ichamb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 37, __pyx_L1_error)
+      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge)) {
+        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ichamb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 35, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
@@ -22979,11 +22979,11 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
           __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 2+__pyx_t_6);
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 37, __pyx_L1_error)
+          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 35, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         }
-        __pyx_t_7 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_7 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 37, __pyx_L1_error)
+        __pyx_t_7 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_7 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 35, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_r = __pyx_t_7;
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -23002,7 +23002,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
     #endif
   }
 
-  /* "PDSim/screw/_screw_spindle.pyx":48
+  /* "PDSim/screw/_screw.pyx":46
  *         """
  * 
  *         FP.A = screw_spindle_geo.area_discharge(self.theta, self.geo, ichamb)             # <<<<<<<<<<<<<<
@@ -23011,11 +23011,11 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
  */
   __pyx_t_1 = ((PyObject *)__pyx_v_self->geo);
   __Pyx_INCREF(__pyx_t_1);
-  __pyx_t_7 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_discharge(__pyx_v_self->theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_t_7 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_discharge(__pyx_v_self->theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_FP->A = __pyx_t_7;
 
-  /* "PDSim/screw/_screw_spindle.pyx":49
+  /* "PDSim/screw/_screw.pyx":47
  * 
  *         FP.A = screw_spindle_geo.area_discharge(self.theta, self.geo, ichamb)
  *         try:             # <<<<<<<<<<<<<<
@@ -23031,7 +23031,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
     __Pyx_XGOTREF(__pyx_t_10);
     /*try:*/ {
 
-      /* "PDSim/screw/_screw_spindle.pyx":50
+      /* "PDSim/screw/_screw.pyx":48
  *         FP.A = screw_spindle_geo.area_discharge(self.theta, self.geo, ichamb)
  *         try:
  *             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)             # <<<<<<<<<<<<<<
@@ -23042,13 +23042,13 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
       __Pyx_INCREF(__pyx_t_1);
       __pyx_t_2 = ((PyObject *)__pyx_v_FP->State_down);
       __Pyx_INCREF(__pyx_t_2);
-      __pyx_t_7 = __pyx_f_5PDSim_4flow_11flow_models_IsentropicNozzle(__pyx_v_FP->A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 0, NULL); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 50, __pyx_L3_error)
+      __pyx_t_7 = __pyx_f_5PDSim_4flow_11flow_models_IsentropicNozzle(__pyx_v_FP->A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 0, NULL); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 48, __pyx_L3_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_7;
       goto __pyx_L7_try_return;
 
-      /* "PDSim/screw/_screw_spindle.pyx":49
+      /* "PDSim/screw/_screw.pyx":47
  * 
  *         FP.A = screw_spindle_geo.area_discharge(self.theta, self.geo, ichamb)
  *         try:             # <<<<<<<<<<<<<<
@@ -23063,7 +23063,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "PDSim/screw/_screw_spindle.pyx":51
+    /* "PDSim/screw/_screw.pyx":49
  *         try:
  *             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)
  *         except ZeroDivisionError:             # <<<<<<<<<<<<<<
@@ -23072,13 +23072,13 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
  */
     __pyx_t_11 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ZeroDivisionError);
     if (__pyx_t_11) {
-      __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_1, &__pyx_t_4) < 0) __PYX_ERR(0, 51, __pyx_L5_except_error)
+      __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_1, &__pyx_t_4) < 0) __PYX_ERR(0, 49, __pyx_L5_except_error)
       __Pyx_XGOTREF(__pyx_t_2);
       __Pyx_XGOTREF(__pyx_t_1);
       __Pyx_XGOTREF(__pyx_t_4);
 
-      /* "PDSim/screw/_screw_spindle.pyx":52
+      /* "PDSim/screw/_screw.pyx":50
  *             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)
  *         except ZeroDivisionError:
  *             return 0.0             # <<<<<<<<<<<<<<
@@ -23093,7 +23093,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
     }
     goto __pyx_L5_except_error;
 
-    /* "PDSim/screw/_screw_spindle.pyx":49
+    /* "PDSim/screw/_screw.pyx":47
  * 
  *         FP.A = screw_spindle_geo.area_discharge(self.theta, self.geo, ichamb)
  *         try:             # <<<<<<<<<<<<<<
@@ -23120,7 +23120,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
     goto __pyx_L0;
   }
 
-  /* "PDSim/screw/_screw_spindle.pyx":37
+  /* "PDSim/screw/_screw.pyx":35
  *             return 0.0
  * 
  *     cpdef double Discharge(self, FlowPath FP, int ichamb):             # <<<<<<<<<<<<<<
@@ -23135,7 +23135,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_TraceReturn(Py_None, 0);
@@ -23144,16 +23144,16 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Discharge, "_screw_spindle.Discharge(self, FlowPath FP, int ichamb) -> double\n\n        Calculate the discharge mass flow rate\n        \n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that is connected to the discharge plenum\n        ");
-static PyMethodDef __pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge = {"Discharge", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Discharge};
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge(PyObject *__pyx_v_self, 
+PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_4Discharge, "_ScrewSpindle.Discharge(self, FlowPath FP, int ichamb) -> double\n\n        Calculate the discharge mass flow rate\n        \n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that is connected to the discharge plenum\n        ");
+static PyMethodDef __pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge = {"Discharge", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_4Discharge};
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -23200,7 +23200,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 37, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 35, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -23208,14 +23208,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 37, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 35, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("Discharge", 1, 2, 2, 1); __PYX_ERR(0, 37, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("Discharge", 1, 2, 2, 1); __PYX_ERR(0, 35, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Discharge") < 0)) __PYX_ERR(0, 37, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Discharge") < 0)) __PYX_ERR(0, 35, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 2)) {
       goto __pyx_L5_argtuple_error;
@@ -23224,11 +23224,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[1] = __Pyx_Arg_FASTCALL(__pyx_args, 1);
     }
     __pyx_v_FP = ((struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *)values[0]);
-    __pyx_v_ichamb = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 37, __pyx_L3_error)
+    __pyx_v_ichamb = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 35, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("Discharge", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 37, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("Discharge", 1, 2, 2, __pyx_nargs); __PYX_ERR(0, 35, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -23238,12 +23238,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) __PYX_ERR(0, 37, __pyx_L1_error)
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Discharge(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_4Discharge(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb);
 
   /* function exit code */
   goto __pyx_L0;
@@ -23260,7 +23260,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Discharge(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_4Discharge(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -23271,10 +23271,10 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Disch
   int __pyx_clineno = 0;
   __Pyx_TraceFrameInit(__pyx_codeobj__13)
   __Pyx_RefNannySetupContext("Discharge", 1);
-  __Pyx_TraceCall("Discharge (wrapper)", __pyx_f[0], 37, 0, __PYX_ERR(0, 37, __pyx_L1_error));
+  __Pyx_TraceCall("Discharge (wrapper)", __pyx_f[0], 35, 0, __PYX_ERR(0, 35, __pyx_L1_error));
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 37, __pyx_L1_error)
-  __pyx_t_2 = PyFloat_FromDouble(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Discharge(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_2 = PyFloat_FromDouble(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -23283,7 +23283,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Disch
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Discharge", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -23292,7 +23292,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Disch
   return __pyx_r;
 }
 
-/* "PDSim/screw/_screw_spindle.pyx":54
+/* "PDSim/screw/_screw.pyx":52
  *             return 0.0
  * 
  *     cpdef double Leakage(self, FlowPath FP, int ichamb, leak_id id):             # <<<<<<<<<<<<<<
@@ -23300,14 +23300,14 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_4Disch
  *         Calculate the leakage mass flow rate from a specific chamber
  */
 
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id __pyx_v_id, int __pyx_skip_dispatch) {
+static double __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Leakage(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id __pyx_v_id, int __pyx_skip_dispatch) {
   double __pyx_r;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -23328,7 +23328,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
   int __pyx_clineno = 0;
   __Pyx_TraceFrameInit(__pyx_codeobj__14)
   __Pyx_RefNannySetupContext("Leakage", 1);
-  __Pyx_TraceCall("Leakage", __pyx_f[0], 54, 0, __PYX_ERR(0, 54, __pyx_L1_error));
+  __Pyx_TraceCall("Leakage", __pyx_f[0], 52, 0, __PYX_ERR(0, 52, __pyx_L1_error));
   /* Check if called by wrapper */
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
@@ -23338,12 +23338,12 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_typedict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_Leakage); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_Leakage); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage)) {
-        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ichamb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 54, __pyx_L1_error)
+      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage)) {
+        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ichamb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
-        __pyx_t_4 = __Pyx_PyInt_From_enum____pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id(__pyx_v_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 54, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyInt_From_enum____pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id(__pyx_v_id); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_5 = __pyx_t_1; __pyx_t_6 = NULL;
@@ -23366,11 +23366,11 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
           __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
+          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         }
-        __pyx_t_8 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_8 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 54, __pyx_L1_error)
+        __pyx_t_8 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_8 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 52, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_r = __pyx_t_8;
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -23389,7 +23389,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
     #endif
   }
 
-  /* "PDSim/screw/_screw_spindle.pyx":67
+  /* "PDSim/screw/_screw.pyx":65
  *         """
  * 
  *         FP.A = screw_spindle_geo.area_leak(self.theta, self.geo, ichamb, id)             # <<<<<<<<<<<<<<
@@ -23398,11 +23398,11 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
  */
   __pyx_t_1 = ((PyObject *)__pyx_v_self->geo);
   __Pyx_INCREF(__pyx_t_1);
-  __pyx_t_8 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_leak(__pyx_v_self->theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, __pyx_v_id, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_8 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_leak(__pyx_v_self->theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, __pyx_v_id, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_FP->A = __pyx_t_8;
 
-  /* "PDSim/screw/_screw_spindle.pyx":68
+  /* "PDSim/screw/_screw.pyx":66
  * 
  *         FP.A = screw_spindle_geo.area_leak(self.theta, self.geo, ichamb, id)
  *         try:             # <<<<<<<<<<<<<<
@@ -23418,7 +23418,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
     __Pyx_XGOTREF(__pyx_t_11);
     /*try:*/ {
 
-      /* "PDSim/screw/_screw_spindle.pyx":69
+      /* "PDSim/screw/_screw.pyx":67
  *         FP.A = screw_spindle_geo.area_leak(self.theta, self.geo, ichamb, id)
  *         try:
  *             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)             # <<<<<<<<<<<<<<
@@ -23429,13 +23429,13 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
       __Pyx_INCREF(__pyx_t_1);
       __pyx_t_2 = ((PyObject *)__pyx_v_FP->State_down);
       __Pyx_INCREF(__pyx_t_2);
-      __pyx_t_8 = __pyx_f_5PDSim_4flow_11flow_models_IsentropicNozzle(__pyx_v_FP->A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 0, NULL); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 69, __pyx_L3_error)
+      __pyx_t_8 = __pyx_f_5PDSim_4flow_11flow_models_IsentropicNozzle(__pyx_v_FP->A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 0, NULL); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 67, __pyx_L3_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_r = __pyx_t_8;
       goto __pyx_L7_try_return;
 
-      /* "PDSim/screw/_screw_spindle.pyx":68
+      /* "PDSim/screw/_screw.pyx":66
  * 
  *         FP.A = screw_spindle_geo.area_leak(self.theta, self.geo, ichamb, id)
  *         try:             # <<<<<<<<<<<<<<
@@ -23451,7 +23451,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "PDSim/screw/_screw_spindle.pyx":70
+    /* "PDSim/screw/_screw.pyx":68
  *         try:
  *             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)
  *         except ZeroDivisionError:             # <<<<<<<<<<<<<<
@@ -23460,13 +23460,13 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
  */
     __pyx_t_12 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ZeroDivisionError);
     if (__pyx_t_12) {
-      __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
-      if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_1, &__pyx_t_5) < 0) __PYX_ERR(0, 70, __pyx_L5_except_error)
+      __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_1, &__pyx_t_5) < 0) __PYX_ERR(0, 68, __pyx_L5_except_error)
       __Pyx_XGOTREF(__pyx_t_2);
       __Pyx_XGOTREF(__pyx_t_1);
       __Pyx_XGOTREF(__pyx_t_5);
 
-      /* "PDSim/screw/_screw_spindle.pyx":71
+      /* "PDSim/screw/_screw.pyx":69
  *             return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)
  *         except ZeroDivisionError:
  *             return 0.0             # <<<<<<<<<<<<<<
@@ -23481,7 +23481,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
     }
     goto __pyx_L5_except_error;
 
-    /* "PDSim/screw/_screw_spindle.pyx":68
+    /* "PDSim/screw/_screw.pyx":66
  * 
  *         FP.A = screw_spindle_geo.area_leak(self.theta, self.geo, ichamb, id)
  *         try:             # <<<<<<<<<<<<<<
@@ -23508,7 +23508,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
     goto __pyx_L0;
   }
 
-  /* "PDSim/screw/_screw_spindle.pyx":54
+  /* "PDSim/screw/_screw.pyx":52
  *             return 0.0
  * 
  *     cpdef double Leakage(self, FlowPath FP, int ichamb, leak_id id):             # <<<<<<<<<<<<<<
@@ -23524,7 +23524,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_TraceReturn(Py_None, 0);
@@ -23533,16 +23533,16 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(st
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leakage, "_screw_spindle.Leakage(self, FlowPath FP, int ichamb, leak_id id) -> double\n\n        Calculate the leakage mass flow rate from a specific chamber\n\n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that the leakage originates from\n        id : leak_id\n            leakage identifier (enum)       \n        ");
-static PyMethodDef __pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage = {"Leakage", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leakage};
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage(PyObject *__pyx_v_self, 
+PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_6Leakage, "_ScrewSpindle.Leakage(self, FlowPath FP, int ichamb, leak_id id) -> double\n\n        Calculate the leakage mass flow rate from a specific chamber\n\n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that the leakage originates from\n        id : leak_id\n            leakage identifier (enum)       \n        ");
+static PyMethodDef __pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage = {"Leakage", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_6Leakage};
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -23592,7 +23592,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 54, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 52, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -23600,9 +23600,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 54, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 52, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("Leakage", 1, 3, 3, 1); __PYX_ERR(0, 54, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("Leakage", 1, 3, 3, 1); __PYX_ERR(0, 52, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -23610,14 +23610,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 54, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 52, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("Leakage", 1, 3, 3, 2); __PYX_ERR(0, 54, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("Leakage", 1, 3, 3, 2); __PYX_ERR(0, 52, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Leakage") < 0)) __PYX_ERR(0, 54, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Leakage") < 0)) __PYX_ERR(0, 52, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 3)) {
       goto __pyx_L5_argtuple_error;
@@ -23627,12 +23627,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[2] = __Pyx_Arg_FASTCALL(__pyx_args, 2);
     }
     __pyx_v_FP = ((struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *)values[0]);
-    __pyx_v_ichamb = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 54, __pyx_L3_error)
-    __pyx_v_id = ((enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id)__Pyx_PyInt_As_enum____pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id(values[2])); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 54, __pyx_L3_error)
+    __pyx_v_ichamb = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 52, __pyx_L3_error)
+    __pyx_v_id = ((enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id)__Pyx_PyInt_As_enum____pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id(values[2])); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 52, __pyx_L3_error)
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("Leakage", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 54, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("Leakage", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 52, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -23642,12 +23642,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) __PYX_ERR(0, 54, __pyx_L1_error)
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leakage(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb, __pyx_v_id);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_6Leakage(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb, __pyx_v_id);
 
   /* function exit code */
   goto __pyx_L0;
@@ -23664,7 +23664,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leakage(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id __pyx_v_id) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_6Leakage(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id __pyx_v_id) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -23675,10 +23675,10 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leaka
   int __pyx_clineno = 0;
   __Pyx_TraceFrameInit(__pyx_codeobj__14)
   __Pyx_RefNannySetupContext("Leakage", 1);
-  __Pyx_TraceCall("Leakage (wrapper)", __pyx_f[0], 54, 0, __PYX_ERR(0, 54, __pyx_L1_error));
+  __Pyx_TraceCall("Leakage (wrapper)", __pyx_f[0], 52, 0, __PYX_ERR(0, 52, __pyx_L1_error));
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, __pyx_v_id, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 54, __pyx_L1_error)
-  __pyx_t_2 = PyFloat_FromDouble(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Leakage(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, __pyx_v_id, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_t_2 = PyFloat_FromDouble(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -23687,7 +23687,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leaka
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Leakage", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -23696,7 +23696,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leaka
   return __pyx_r;
 }
 
-/* "PDSim/screw/_screw_spindle.pyx":73
+/* "PDSim/screw/_screw.pyx":71
  *             return 0.0
  * 
  *     cpdef double Injection(self, FlowPath FP, int ichamb, str upstream_key):             # <<<<<<<<<<<<<<
@@ -23704,14 +23704,14 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_6Leaka
  *         Calculate the injection mass flow rate into a specific chamber (w/o backflow)
  */
 
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, PyObject *__pyx_v_upstream_key, int __pyx_skip_dispatch) {
+static double __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Injection(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, PyObject *__pyx_v_upstream_key, int __pyx_skip_dispatch) {
   double __pyx_r;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -23732,7 +23732,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
   int __pyx_clineno = 0;
   __Pyx_TraceFrameInit(__pyx_codeobj__15)
   __Pyx_RefNannySetupContext("Injection", 1);
-  __Pyx_TraceCall("Injection", __pyx_f[0], 73, 0, __PYX_ERR(0, 73, __pyx_L1_error));
+  __Pyx_TraceCall("Injection", __pyx_f[0], 71, 0, __PYX_ERR(0, 71, __pyx_L1_error));
   /* Check if called by wrapper */
   if (unlikely(__pyx_skip_dispatch)) ;
   /* Check if overridden in Python */
@@ -23742,10 +23742,10 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
     if (unlikely(!__Pyx_object_dict_version_matches(((PyObject *)__pyx_v_self), __pyx_tp_dict_version, __pyx_obj_dict_version))) {
       PY_UINT64_T __pyx_typedict_guard = __Pyx_get_tp_dict_version(((PyObject *)__pyx_v_self));
       #endif
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_Injection); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 73, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_self), __pyx_n_s_Injection); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection)) {
-        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ichamb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 73, __pyx_L1_error)
+      if (!__Pyx_IsSameCFunction(__pyx_t_1, (void*) __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection)) {
+        __pyx_t_3 = __Pyx_PyInt_From_int(__pyx_v_ichamb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_4 = __pyx_t_1; __pyx_t_5 = NULL;
@@ -23767,11 +23767,11 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
           __pyx_t_2 = __Pyx_PyObject_FastCall(__pyx_t_4, __pyx_callargs+1-__pyx_t_6, 3+__pyx_t_6);
           __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
           __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 73, __pyx_L1_error)
+          if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         }
-        __pyx_t_7 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_7 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 73, __pyx_L1_error)
+        __pyx_t_7 = __pyx_PyFloat_AsDouble(__pyx_t_2); if (unlikely((__pyx_t_7 == (double)-1) && PyErr_Occurred())) __PYX_ERR(0, 71, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_r = __pyx_t_7;
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -23790,20 +23790,20 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
     #endif
   }
 
-  /* "PDSim/screw/_screw_spindle.pyx":86
+  /* "PDSim/screw/_screw.pyx":84
  *         """
  * 
  *         if FP.key_up == upstream_key:             # <<<<<<<<<<<<<<
  *             FP.A = screw_spindle_geo.area_injection(self.theta, self.geo, ichamb)
  *             try:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_FP), __pyx_n_s_key_up); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_v_FP), __pyx_n_s_key_up); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_1, __pyx_v_upstream_key, Py_EQ)); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_8 = (__Pyx_PyString_Equals(__pyx_t_1, __pyx_v_upstream_key, Py_EQ)); if (unlikely((__pyx_t_8 < 0))) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_8) {
 
-    /* "PDSim/screw/_screw_spindle.pyx":87
+    /* "PDSim/screw/_screw.pyx":85
  * 
  *         if FP.key_up == upstream_key:
  *             FP.A = screw_spindle_geo.area_injection(self.theta, self.geo, ichamb)             # <<<<<<<<<<<<<<
@@ -23812,11 +23812,11 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
  */
     __pyx_t_1 = ((PyObject *)__pyx_v_self->geo);
     __Pyx_INCREF(__pyx_t_1);
-    __pyx_t_7 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_injection(__pyx_v_self->theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 87, __pyx_L1_error)
+    __pyx_t_7 = __pyx_f_5PDSim_5screw_17screw_spindle_geo_area_injection(__pyx_v_self->theta, ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)__pyx_t_1), __pyx_v_ichamb, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 85, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_FP->A = __pyx_t_7;
 
-    /* "PDSim/screw/_screw_spindle.pyx":88
+    /* "PDSim/screw/_screw.pyx":86
  *         if FP.key_up == upstream_key:
  *             FP.A = screw_spindle_geo.area_injection(self.theta, self.geo, ichamb)
  *             try:             # <<<<<<<<<<<<<<
@@ -23832,7 +23832,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
       __Pyx_XGOTREF(__pyx_t_11);
       /*try:*/ {
 
-        /* "PDSim/screw/_screw_spindle.pyx":89
+        /* "PDSim/screw/_screw.pyx":87
  *             FP.A = screw_spindle_geo.area_injection(self.theta, self.geo, ichamb)
  *             try:
  *                 return flow_models.LiquidNozzleFlow(FP.A,FP.State_up,FP.State_down, 1.0, 1e-10)             # <<<<<<<<<<<<<<
@@ -23843,13 +23843,13 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
         __Pyx_INCREF(__pyx_t_1);
         __pyx_t_2 = ((PyObject *)__pyx_v_FP->State_down);
         __Pyx_INCREF(__pyx_t_2);
-        __pyx_t_7 = __pyx_f_5PDSim_4flow_11flow_models_LiquidNozzleFlow(__pyx_v_FP->A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 1.0, 1e-10, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 89, __pyx_L4_error)
+        __pyx_t_7 = __pyx_f_5PDSim_4flow_11flow_models_LiquidNozzleFlow(__pyx_v_FP->A, ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_1), ((struct __pyx_obj_8CoolProp_8CoolProp_State *)__pyx_t_2), 1.0, 1e-10, 0); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 87, __pyx_L4_error)
         __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
         __pyx_r = __pyx_t_7;
         goto __pyx_L8_try_return;
 
-        /* "PDSim/screw/_screw_spindle.pyx":88
+        /* "PDSim/screw/_screw.pyx":86
  *         if FP.key_up == upstream_key:
  *             FP.A = screw_spindle_geo.area_injection(self.theta, self.geo, ichamb)
  *             try:             # <<<<<<<<<<<<<<
@@ -23864,7 +23864,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-      /* "PDSim/screw/_screw_spindle.pyx":90
+      /* "PDSim/screw/_screw.pyx":88
  *             try:
  *                 return flow_models.LiquidNozzleFlow(FP.A,FP.State_up,FP.State_down, 1.0, 1e-10)
  *             except ZeroDivisionError:             # <<<<<<<<<<<<<<
@@ -23873,13 +23873,13 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
  */
       __pyx_t_12 = __Pyx_PyErr_ExceptionMatches(__pyx_builtin_ZeroDivisionError);
       if (__pyx_t_12) {
-        __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
-        if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_1, &__pyx_t_4) < 0) __PYX_ERR(0, 90, __pyx_L6_except_error)
+        __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
+        if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_1, &__pyx_t_4) < 0) __PYX_ERR(0, 88, __pyx_L6_except_error)
         __Pyx_XGOTREF(__pyx_t_2);
         __Pyx_XGOTREF(__pyx_t_1);
         __Pyx_XGOTREF(__pyx_t_4);
 
-        /* "PDSim/screw/_screw_spindle.pyx":91
+        /* "PDSim/screw/_screw.pyx":89
  *                 return flow_models.LiquidNozzleFlow(FP.A,FP.State_up,FP.State_down, 1.0, 1e-10)
  *             except ZeroDivisionError:
  *                 return 0.0             # <<<<<<<<<<<<<<
@@ -23894,7 +23894,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
       }
       goto __pyx_L6_except_error;
 
-      /* "PDSim/screw/_screw_spindle.pyx":88
+      /* "PDSim/screw/_screw.pyx":86
  *         if FP.key_up == upstream_key:
  *             FP.A = screw_spindle_geo.area_injection(self.theta, self.geo, ichamb)
  *             try:             # <<<<<<<<<<<<<<
@@ -23921,7 +23921,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
       goto __pyx_L0;
     }
 
-    /* "PDSim/screw/_screw_spindle.pyx":86
+    /* "PDSim/screw/_screw.pyx":84
  *         """
  * 
  *         if FP.key_up == upstream_key:             # <<<<<<<<<<<<<<
@@ -23930,7 +23930,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
  */
   }
 
-  /* "PDSim/screw/_screw_spindle.pyx":93
+  /* "PDSim/screw/_screw.pyx":91
  *                 return 0.0
  *         else:
  *             return 0.0             # <<<<<<<<<<<<<<
@@ -23940,7 +23940,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
     goto __pyx_L0;
   }
 
-  /* "PDSim/screw/_screw_spindle.pyx":73
+  /* "PDSim/screw/_screw.pyx":71
  *             return 0.0
  * 
  *     cpdef double Injection(self, FlowPath FP, int ichamb, str upstream_key):             # <<<<<<<<<<<<<<
@@ -23955,7 +23955,7 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_TraceReturn(Py_None, 0);
@@ -23964,16 +23964,16 @@ static double __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injection, "_screw_spindle.Injection(self, FlowPath FP, int ichamb, str upstream_key) -> double\n\n        Calculate the injection mass flow rate into a specific chamber (w/o backflow)\n\n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that the leakage originates from\n        upstream_key: string\n            Key for the side of the flow path that is considered to be \"upstream\"      \n        ");
-static PyMethodDef __pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection = {"Injection", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injection};
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection(PyObject *__pyx_v_self, 
+PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_8Injection, "_ScrewSpindle.Injection(self, FlowPath FP, int ichamb, str upstream_key) -> double\n\n        Calculate the injection mass flow rate into a specific chamber (w/o backflow)\n\n        Parameters\n        ----------\n        FP : FlowPath\n        ichamb : int\n            number of chamber that the leakage originates from\n        upstream_key: string\n            Key for the side of the flow path that is considered to be \"upstream\"      \n        ");
+static PyMethodDef __pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection = {"Injection", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_8Injection};
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -24023,7 +24023,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[0]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 73, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 71, __pyx_L3_error)
         else goto __pyx_L5_argtuple_error;
         CYTHON_FALLTHROUGH;
         case  1:
@@ -24031,9 +24031,9 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[1]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 73, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 71, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("Injection", 1, 3, 3, 1); __PYX_ERR(0, 73, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("Injection", 1, 3, 3, 1); __PYX_ERR(0, 71, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -24041,14 +24041,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
           (void)__Pyx_Arg_NewRef_FASTCALL(values[2]);
           kw_args--;
         }
-        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 73, __pyx_L3_error)
+        else if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 71, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("Injection", 1, 3, 3, 2); __PYX_ERR(0, 73, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("Injection", 1, 3, 3, 2); __PYX_ERR(0, 71, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Injection") < 0)) __PYX_ERR(0, 73, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "Injection") < 0)) __PYX_ERR(0, 71, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 3)) {
       goto __pyx_L5_argtuple_error;
@@ -24058,12 +24058,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       values[2] = __Pyx_Arg_FASTCALL(__pyx_args, 2);
     }
     __pyx_v_FP = ((struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *)values[0]);
-    __pyx_v_ichamb = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 73, __pyx_L3_error)
+    __pyx_v_ichamb = __Pyx_PyInt_As_int(values[1]); if (unlikely((__pyx_v_ichamb == (int)-1) && PyErr_Occurred())) __PYX_ERR(0, 71, __pyx_L3_error)
     __pyx_v_upstream_key = ((PyObject*)values[2]);
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("Injection", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 73, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("Injection", 1, 3, 3, __pyx_nargs); __PYX_ERR(0, 71, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -24073,13 +24073,13 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) __PYX_ERR(0, 73, __pyx_L1_error)
-  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_upstream_key), (&PyString_Type), 1, "upstream_key", 1))) __PYX_ERR(0, 73, __pyx_L1_error)
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injection(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb, __pyx_v_upstream_key);
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_FP), __pyx_ptype_5PDSim_4flow_4flow_FlowPath, 1, "FP", 0))) __PYX_ERR(0, 71, __pyx_L1_error)
+  if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_upstream_key), (&PyString_Type), 1, "upstream_key", 1))) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_8Injection(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), __pyx_v_FP, __pyx_v_ichamb, __pyx_v_upstream_key);
 
   /* function exit code */
   goto __pyx_L0;
@@ -24096,7 +24096,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injection(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, PyObject *__pyx_v_upstream_key) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_8Injection(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *__pyx_v_FP, int __pyx_v_ichamb, PyObject *__pyx_v_upstream_key) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -24107,10 +24107,10 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injec
   int __pyx_clineno = 0;
   __Pyx_TraceFrameInit(__pyx_codeobj__15)
   __Pyx_RefNannySetupContext("Injection", 1);
-  __Pyx_TraceCall("Injection (wrapper)", __pyx_f[0], 73, 0, __PYX_ERR(0, 73, __pyx_L1_error));
+  __Pyx_TraceCall("Injection (wrapper)", __pyx_f[0], 71, 0, __PYX_ERR(0, 71, __pyx_L1_error));
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, __pyx_v_upstream_key, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 73, __pyx_L1_error)
-  __pyx_t_2 = PyFloat_FromDouble(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 73, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Injection(__pyx_v_self, __pyx_v_FP, __pyx_v_ichamb, __pyx_v_upstream_key, 1); if (unlikely(PyErr_Occurred())) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_2 = PyFloat_FromDouble(__pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
@@ -24119,7 +24119,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injec
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_2);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.Injection", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24128,30 +24128,30 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_8Injec
   return __pyx_r;
 }
 
-/* "PDSim/screw/_screw_spindle.pxd":25
+/* "PDSim/screw/_screw.pxd":25
  * 
- * cdef class _screw_spindle(object):
+ * cdef class _ScrewSpindle(object):
  *     cdef public geoVals geo             # <<<<<<<<<<<<<<
  *     cdef public double theta
  *     cdef public double HTC
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_1__get__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo___get__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo___get__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo___get__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo___get__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -24167,7 +24167,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo__
 
   /* function exit code */
   __pyx_L1_error:;
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.geo.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.geo.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24177,21 +24177,21 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo__
 }
 
 /* Python wrapper */
-static int __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_2__set__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_2__set__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_2__set__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_2__set__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -24215,7 +24215,7 @@ static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_2__set_
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.geo.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.geo.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_TraceReturn(Py_None, 0);
@@ -24224,21 +24224,21 @@ static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_2__set_
 }
 
 /* Python wrapper */
-static int __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_5__del__(PyObject *__pyx_v_self); /*proto*/
-static int __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_5__del__(PyObject *__pyx_v_self) {
+static int __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_5__del__(PyObject *__pyx_v_self); /*proto*/
+static int __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_5__del__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__del__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_4__del__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_4__del__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_4__del__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self) {
+static int __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_4__del__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self) {
   int __pyx_r;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -24257,7 +24257,7 @@ static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_4__del_
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.geo.__del__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.geo.__del__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_TraceReturn(Py_None, 0);
@@ -24265,8 +24265,8 @@ static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_4__del_
   return __pyx_r;
 }
 
-/* "PDSim/screw/_screw_spindle.pxd":26
- * cdef class _screw_spindle(object):
+/* "PDSim/screw/_screw.pxd":26
+ * cdef class _ScrewSpindle(object):
  *     cdef public geoVals geo
  *     cdef public double theta             # <<<<<<<<<<<<<<
  *     cdef public double HTC
@@ -24274,21 +24274,21 @@ static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_4__del_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5theta_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5theta_1__get__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta___get__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_5theta___get__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta___get__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_5theta___get__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -24308,7 +24308,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.theta.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.theta.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24318,21 +24318,21 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta
 }
 
 /* Python wrapper */
-static int __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5theta_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5theta_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta_2__set__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_5theta_2__set__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta_2__set__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_5theta_2__set__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_TraceDeclarations
   double __pyx_t_1;
@@ -24347,14 +24347,14 @@ static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta_2__se
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.theta.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.theta.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_TraceReturn(Py_None, 0);
   return __pyx_r;
 }
 
-/* "PDSim/screw/_screw_spindle.pxd":27
+/* "PDSim/screw/_screw.pxd":27
  *     cdef public geoVals geo
  *     cdef public double theta
  *     cdef public double HTC             # <<<<<<<<<<<<<<
@@ -24363,21 +24363,21 @@ static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta_2__se
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3HTC_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3HTC_1__get__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC___get__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3HTC___get__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC___get__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3HTC___get__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -24397,7 +24397,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC__
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.HTC.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.HTC.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24407,21 +24407,21 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC__
 }
 
 /* Python wrapper */
-static int __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3HTC_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3HTC_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC_2__set__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3HTC_2__set__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC_2__set__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_3HTC_2__set__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_TraceDeclarations
   double __pyx_t_1;
@@ -24436,14 +24436,14 @@ static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC_2__set_
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.HTC.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.HTC.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_TraceReturn(Py_None, 0);
   return __pyx_r;
 }
 
-/* "PDSim/screw/_screw_spindle.pxd":28
+/* "PDSim/screw/_screw.pxd":28
  *     cdef public double theta
  *     cdef public double HTC
  *     cdef public bint incl_leakage, incl_injection             # <<<<<<<<<<<<<<
@@ -24452,21 +24452,21 @@ static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC_2__set_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leakage_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leakage_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_12incl_leakage_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_12incl_leakage_1__get__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leakage___get__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_12incl_leakage___get__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leakage___get__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_12incl_leakage___get__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -24486,7 +24486,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.incl_leakage.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.incl_leakage.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24496,21 +24496,21 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl
 }
 
 /* Python wrapper */
-static int __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leakage_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leakage_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_12incl_leakage_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_12incl_leakage_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leakage_2__set__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_12incl_leakage_2__set__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leakage_2__set__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_12incl_leakage_2__set__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_TraceDeclarations
   int __pyx_t_1;
@@ -24525,7 +24525,7 @@ static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leaka
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.incl_leakage.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.incl_leakage.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_TraceReturn(Py_None, 0);
@@ -24533,21 +24533,21 @@ static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leaka
 }
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injection_1__get__(PyObject *__pyx_v_self); /*proto*/
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injection_1__get__(PyObject *__pyx_v_self) {
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_14incl_injection_1__get__(PyObject *__pyx_v_self); /*proto*/
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_14incl_injection_1__get__(PyObject *__pyx_v_self) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__get__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injection___get__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_14incl_injection___get__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injection___get__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_14incl_injection___get__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -24567,7 +24567,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.incl_injection.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.incl_injection.__get__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -24577,21 +24577,21 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl
 }
 
 /* Python wrapper */
-static int __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injection_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
-static int __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injection_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_14incl_injection_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value); /*proto*/
+static int __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_14incl_injection_3__set__(PyObject *__pyx_v_self, PyObject *__pyx_v_value) {
   CYTHON_UNUSED PyObject *const *__pyx_kwvalues;
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__set__ (wrapper)", 0);
   __pyx_kwvalues = __Pyx_KwValues_VARARGS(__pyx_args, __pyx_nargs);
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injection_2__set__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), ((PyObject *)__pyx_v_value));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_14incl_injection_2__set__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), ((PyObject *)__pyx_v_value));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injection_2__set__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, PyObject *__pyx_v_value) {
+static int __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_14incl_injection_2__set__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, PyObject *__pyx_v_value) {
   int __pyx_r;
   __Pyx_TraceDeclarations
   int __pyx_t_1;
@@ -24606,7 +24606,7 @@ static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injec
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.incl_injection.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.incl_injection.__set__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __Pyx_TraceReturn(Py_None, 0);
@@ -24620,16 +24620,16 @@ static int __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injec
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_11__reduce_cython__(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_11__reduce_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_10__reduce_cython__, "_screw_spindle.__reduce_cython__(self)");
-static PyMethodDef __pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_11__reduce_cython__ = {"__reduce_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_11__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_10__reduce_cython__};
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_11__reduce_cython__(PyObject *__pyx_v_self, 
+PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_10__reduce_cython__, "_ScrewSpindle.__reduce_cython__(self)");
+static PyMethodDef __pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_11__reduce_cython__ = {"__reduce_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_11__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_10__reduce_cython__};
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_11__reduce_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -24654,14 +24654,14 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   if (unlikely(__pyx_nargs > 0)) {
     __Pyx_RaiseArgtupleInvalid("__reduce_cython__", 1, 0, 0, __pyx_nargs); return NULL;}
   if (unlikely(__pyx_kwds) && __Pyx_NumKwargs_FASTCALL(__pyx_kwds) && unlikely(!__Pyx_CheckKeywordStrings(__pyx_kwds, "__reduce_cython__", 0))) return NULL;
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_10__reduce_cython__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self));
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_10__reduce_cython__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_10__reduce_cython__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_10__reduce_cython__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self) {
   PyObject *__pyx_v_state = 0;
   PyObject *__pyx_v__dict = 0;
   int __pyx_v_use_setstate;
@@ -24780,7 +24780,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_10__re
  *     else:
  *         use_setstate = self.geo is not None             # <<<<<<<<<<<<<<
  *     if use_setstate:
- *         return __pyx_unpickle__screw_spindle, (type(self), 0xdc8d038, None), state
+ *         return __pyx_unpickle__ScrewSpindle, (type(self), 0xdc8d038, None), state
  */
   /*else*/ {
     __pyx_t_6 = (((PyObject *)__pyx_v_self->geo) != Py_None);
@@ -24792,7 +24792,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_10__re
  *     else:
  *         use_setstate = self.geo is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle__screw_spindle, (type(self), 0xdc8d038, None), state
+ *         return __pyx_unpickle__ScrewSpindle, (type(self), 0xdc8d038, None), state
  *     else:
  */
   if (__pyx_v_use_setstate) {
@@ -24800,12 +24800,12 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_10__re
     /* "(tree fragment)":13
  *         use_setstate = self.geo is not None
  *     if use_setstate:
- *         return __pyx_unpickle__screw_spindle, (type(self), 0xdc8d038, None), state             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle__ScrewSpindle, (type(self), 0xdc8d038, None), state             # <<<<<<<<<<<<<<
  *     else:
- *         return __pyx_unpickle__screw_spindle, (type(self), 0xdc8d038, state)
+ *         return __pyx_unpickle__ScrewSpindle, (type(self), 0xdc8d038, state)
  */
     __Pyx_XDECREF(__pyx_r);
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_pyx_unpickle__screw_spindle); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 13, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_pyx_unpickle__ScrewSpindle); if (unlikely(!__pyx_t_4)) __PYX_ERR(1, 13, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 13, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -24837,21 +24837,21 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_10__re
  *     else:
  *         use_setstate = self.geo is not None
  *     if use_setstate:             # <<<<<<<<<<<<<<
- *         return __pyx_unpickle__screw_spindle, (type(self), 0xdc8d038, None), state
+ *         return __pyx_unpickle__ScrewSpindle, (type(self), 0xdc8d038, None), state
  *     else:
  */
   }
 
   /* "(tree fragment)":15
- *         return __pyx_unpickle__screw_spindle, (type(self), 0xdc8d038, None), state
+ *         return __pyx_unpickle__ScrewSpindle, (type(self), 0xdc8d038, None), state
  *     else:
- *         return __pyx_unpickle__screw_spindle, (type(self), 0xdc8d038, state)             # <<<<<<<<<<<<<<
+ *         return __pyx_unpickle__ScrewSpindle, (type(self), 0xdc8d038, state)             # <<<<<<<<<<<<<<
  * def __setstate_cython__(self, __pyx_state):
- *     __pyx_unpickle__screw_spindle__set_state(self, __pyx_state)
+ *     __pyx_unpickle__ScrewSpindle__set_state(self, __pyx_state)
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_pyx_unpickle__screw_spindle); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 15, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_pyx_unpickle__ScrewSpindle); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 15, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(1, 15, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -24890,7 +24890,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_10__re
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v_state);
@@ -24903,22 +24903,22 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_10__re
 
 /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle__screw_spindle, (type(self), 0xdc8d038, state)
+ *         return __pyx_unpickle__ScrewSpindle, (type(self), 0xdc8d038, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_unpickle__screw_spindle__set_state(self, __pyx_state)
+ *     __pyx_unpickle__ScrewSpindle__set_state(self, __pyx_state)
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_13__setstate_cython__(PyObject *__pyx_v_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_13__setstate_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12__setstate_cython__, "_screw_spindle.__setstate_cython__(self, __pyx_state)");
-static PyMethodDef __pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_13__setstate_cython__ = {"__setstate_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_13__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12__setstate_cython__};
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_13__setstate_cython__(PyObject *__pyx_v_self, 
+PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_12__setstate_cython__, "_ScrewSpindle.__setstate_cython__(self, __pyx_state)");
+static PyMethodDef __pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_13__setstate_cython__ = {"__setstate_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_13__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_12__setstate_cython__};
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_13__setstate_cython__(PyObject *__pyx_v_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -24988,11 +24988,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12__setstate_cython__(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v_self), __pyx_v___pyx_state);
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_12__setstate_cython__(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v_self), __pyx_v___pyx_state);
 
   /* function exit code */
   {
@@ -25005,7 +25005,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12__setstate_cython__(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw_13_ScrewSpindle_12__setstate_cython__(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -25018,20 +25018,20 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12__se
   __Pyx_TraceCall("__setstate_cython__", __pyx_f[1], 16, 0, __PYX_ERR(1, 16, __pyx_L1_error));
 
   /* "(tree fragment)":17
- *         return __pyx_unpickle__screw_spindle, (type(self), 0xdc8d038, state)
+ *         return __pyx_unpickle__ScrewSpindle, (type(self), 0xdc8d038, state)
  * def __setstate_cython__(self, __pyx_state):
- *     __pyx_unpickle__screw_spindle__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
+ *     __pyx_unpickle__ScrewSpindle__set_state(self, __pyx_state)             # <<<<<<<<<<<<<<
  */
   if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None) || __Pyx_RaiseUnexpectedTypeError("tuple", __pyx_v___pyx_state))) __PYX_ERR(1, 17, __pyx_L1_error)
-  __pyx_t_1 = __pyx_f_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_spindle__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 17, __pyx_L1_error)
+  __pyx_t_1 = __pyx_f_5PDSim_5screw_6_screw___pyx_unpickle__ScrewSpindle__set_state(__pyx_v_self, ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 17, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle__screw_spindle, (type(self), 0xdc8d038, state)
+ *         return __pyx_unpickle__ScrewSpindle, (type(self), 0xdc8d038, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_unpickle__screw_spindle__set_state(self, __pyx_state)
+ *     __pyx_unpickle__ScrewSpindle__set_state(self, __pyx_state)
  */
 
   /* function exit code */
@@ -25039,7 +25039,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12__se
   goto __pyx_L0;
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle._screw_spindle.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw._ScrewSpindle.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -25049,22 +25049,22 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12__se
 }
 
 /* "(tree fragment)":1
- * def __pyx_unpickle__screw_spindle(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
+ * def __pyx_unpickle__ScrewSpindle(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_1__pyx_unpickle__screw_spindle(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_1__pyx_unpickle__ScrewSpindle(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_spindle, "__pyx_unpickle__screw_spindle(__pyx_type, long __pyx_checksum, __pyx_state)");
-static PyMethodDef __pyx_mdef_5PDSim_5screw_14_screw_spindle_1__pyx_unpickle__screw_spindle = {"__pyx_unpickle__screw_spindle", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_1__pyx_unpickle__screw_spindle, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_spindle};
-static PyObject *__pyx_pw_5PDSim_5screw_14_screw_spindle_1__pyx_unpickle__screw_spindle(PyObject *__pyx_self, 
+PyDoc_STRVAR(__pyx_doc_5PDSim_5screw_6_screw___pyx_unpickle__ScrewSpindle, "__pyx_unpickle__ScrewSpindle(__pyx_type, long __pyx_checksum, __pyx_state)");
+static PyMethodDef __pyx_mdef_5PDSim_5screw_6_screw_1__pyx_unpickle__ScrewSpindle = {"__pyx_unpickle__ScrewSpindle", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_1__pyx_unpickle__ScrewSpindle, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw___pyx_unpickle__ScrewSpindle};
+static PyObject *__pyx_pw_5PDSim_5screw_6_screw_1__pyx_unpickle__ScrewSpindle(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -25084,7 +25084,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   int __pyx_clineno = 0;
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
-  __Pyx_RefNannySetupContext("__pyx_unpickle__screw_spindle (wrapper)", 0);
+  __Pyx_RefNannySetupContext("__pyx_unpickle__ScrewSpindle (wrapper)", 0);
   #if !CYTHON_METH_FASTCALL
   #if CYTHON_ASSUME_SAFE_MACROS
   __pyx_nargs = PyTuple_GET_SIZE(__pyx_args);
@@ -25124,7 +25124,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
         }
         else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 1, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_unpickle__screw_spindle", 1, 3, 3, 1); __PYX_ERR(1, 1, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_unpickle__ScrewSpindle", 1, 3, 3, 1); __PYX_ERR(1, 1, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -25134,12 +25134,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
         }
         else if (unlikely(PyErr_Occurred())) __PYX_ERR(1, 1, __pyx_L3_error)
         else {
-          __Pyx_RaiseArgtupleInvalid("__pyx_unpickle__screw_spindle", 1, 3, 3, 2); __PYX_ERR(1, 1, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__pyx_unpickle__ScrewSpindle", 1, 3, 3, 2); __PYX_ERR(1, 1, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
         const Py_ssize_t kwd_pos_args = __pyx_nargs;
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "__pyx_unpickle__screw_spindle") < 0)) __PYX_ERR(1, 1, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_kwvalues, __pyx_pyargnames, 0, values + 0, kwd_pos_args, "__pyx_unpickle__ScrewSpindle") < 0)) __PYX_ERR(1, 1, __pyx_L3_error)
       }
     } else if (unlikely(__pyx_nargs != 3)) {
       goto __pyx_L5_argtuple_error;
@@ -25154,7 +25154,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   goto __pyx_L6_skip;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__pyx_unpickle__screw_spindle", 1, 3, 3, __pyx_nargs); __PYX_ERR(1, 1, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__pyx_unpickle__ScrewSpindle", 1, 3, 3, __pyx_nargs); __PYX_ERR(1, 1, __pyx_L3_error)
   __pyx_L6_skip:;
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L3_error:;
@@ -25164,11 +25164,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle.__pyx_unpickle__screw_spindle", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw.__pyx_unpickle__ScrewSpindle", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_spindle(__pyx_self, __pyx_v___pyx_type, __pyx_v___pyx_checksum, __pyx_v___pyx_state);
+  __pyx_r = __pyx_pf_5PDSim_5screw_6_screw___pyx_unpickle__ScrewSpindle(__pyx_self, __pyx_v___pyx_type, __pyx_v___pyx_checksum, __pyx_v___pyx_state);
 
   /* function exit code */
   {
@@ -25181,7 +25181,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_spindle(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_5PDSim_5screw_6_screw___pyx_unpickle__ScrewSpindle(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_v___pyx_PickleError = 0;
   PyObject *__pyx_v___pyx_result = 0;
   PyObject *__pyx_r = NULL;
@@ -25196,8 +25196,8 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_s
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
   __Pyx_TraceFrameInit(__pyx_codeobj__18)
-  __Pyx_RefNannySetupContext("__pyx_unpickle__screw_spindle", 1);
-  __Pyx_TraceCall("__pyx_unpickle__screw_spindle", __pyx_f[1], 1, 0, __PYX_ERR(1, 1, __pyx_L1_error));
+  __Pyx_RefNannySetupContext("__pyx_unpickle__ScrewSpindle", 1);
+  __Pyx_TraceCall("__pyx_unpickle__ScrewSpindle", __pyx_f[1], 1, 0, __PYX_ERR(1, 1, __pyx_L1_error));
 
   /* "(tree fragment)":4
  *     cdef object __pyx_PickleError
@@ -25217,7 +25217,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_s
  *     if __pyx_checksum not in (0xdc8d038, 0x1cad21a, 0x61e6677):
  *         from pickle import PickleError as __pyx_PickleError             # <<<<<<<<<<<<<<
  *         raise __pyx_PickleError, "Incompatible checksums (0x%x vs (0xdc8d038, 0x1cad21a, 0x61e6677) = (HTC, geo, incl_injection, incl_leakage, theta))" % __pyx_checksum
- *     __pyx_result = _screw_spindle.__new__(__pyx_type)
+ *     __pyx_result = _ScrewSpindle.__new__(__pyx_type)
  */
     __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 5, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
@@ -25238,7 +25238,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_s
  *     if __pyx_checksum not in (0xdc8d038, 0x1cad21a, 0x61e6677):
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError, "Incompatible checksums (0x%x vs (0xdc8d038, 0x1cad21a, 0x61e6677) = (HTC, geo, incl_injection, incl_leakage, theta))" % __pyx_checksum             # <<<<<<<<<<<<<<
- *     __pyx_result = _screw_spindle.__new__(__pyx_type)
+ *     __pyx_result = _ScrewSpindle.__new__(__pyx_type)
  *     if __pyx_state is not None:
  */
     __pyx_t_3 = __Pyx_PyInt_From_long(__pyx_v___pyx_checksum); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 6, __pyx_L1_error)
@@ -25262,11 +25262,11 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_s
   /* "(tree fragment)":7
  *         from pickle import PickleError as __pyx_PickleError
  *         raise __pyx_PickleError, "Incompatible checksums (0x%x vs (0xdc8d038, 0x1cad21a, 0x61e6677) = (HTC, geo, incl_injection, incl_leakage, theta))" % __pyx_checksum
- *     __pyx_result = _screw_spindle.__new__(__pyx_type)             # <<<<<<<<<<<<<<
+ *     __pyx_result = _ScrewSpindle.__new__(__pyx_type)             # <<<<<<<<<<<<<<
  *     if __pyx_state is not None:
- *         __pyx_unpickle__screw_spindle__set_state(<_screw_spindle> __pyx_result, __pyx_state)
+ *         __pyx_unpickle__ScrewSpindle__set_state(<_ScrewSpindle> __pyx_result, __pyx_state)
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle), __pyx_n_s_new); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 7, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(((PyObject *)__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle), __pyx_n_s_new); if (unlikely(!__pyx_t_3)) __PYX_ERR(1, 7, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   __pyx_t_5 = 0;
@@ -25295,40 +25295,40 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_s
 
   /* "(tree fragment)":8
  *         raise __pyx_PickleError, "Incompatible checksums (0x%x vs (0xdc8d038, 0x1cad21a, 0x61e6677) = (HTC, geo, incl_injection, incl_leakage, theta))" % __pyx_checksum
- *     __pyx_result = _screw_spindle.__new__(__pyx_type)
+ *     __pyx_result = _ScrewSpindle.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
- *         __pyx_unpickle__screw_spindle__set_state(<_screw_spindle> __pyx_result, __pyx_state)
+ *         __pyx_unpickle__ScrewSpindle__set_state(<_ScrewSpindle> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
   __pyx_t_2 = (__pyx_v___pyx_state != Py_None);
   if (__pyx_t_2) {
 
     /* "(tree fragment)":9
- *     __pyx_result = _screw_spindle.__new__(__pyx_type)
+ *     __pyx_result = _ScrewSpindle.__new__(__pyx_type)
  *     if __pyx_state is not None:
- *         __pyx_unpickle__screw_spindle__set_state(<_screw_spindle> __pyx_result, __pyx_state)             # <<<<<<<<<<<<<<
+ *         __pyx_unpickle__ScrewSpindle__set_state(<_ScrewSpindle> __pyx_result, __pyx_state)             # <<<<<<<<<<<<<<
  *     return __pyx_result
- * cdef __pyx_unpickle__screw_spindle__set_state(_screw_spindle __pyx_result, tuple __pyx_state):
+ * cdef __pyx_unpickle__ScrewSpindle__set_state(_ScrewSpindle __pyx_result, tuple __pyx_state):
  */
     if (!(likely(PyTuple_CheckExact(__pyx_v___pyx_state))||((__pyx_v___pyx_state) == Py_None) || __Pyx_RaiseUnexpectedTypeError("tuple", __pyx_v___pyx_state))) __PYX_ERR(1, 9, __pyx_L1_error)
-    __pyx_t_1 = __pyx_f_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_spindle__set_state(((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)__pyx_v___pyx_result), ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 9, __pyx_L1_error)
+    __pyx_t_1 = __pyx_f_5PDSim_5screw_6_screw___pyx_unpickle__ScrewSpindle__set_state(((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)__pyx_v___pyx_result), ((PyObject*)__pyx_v___pyx_state)); if (unlikely(!__pyx_t_1)) __PYX_ERR(1, 9, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "(tree fragment)":8
  *         raise __pyx_PickleError, "Incompatible checksums (0x%x vs (0xdc8d038, 0x1cad21a, 0x61e6677) = (HTC, geo, incl_injection, incl_leakage, theta))" % __pyx_checksum
- *     __pyx_result = _screw_spindle.__new__(__pyx_type)
+ *     __pyx_result = _ScrewSpindle.__new__(__pyx_type)
  *     if __pyx_state is not None:             # <<<<<<<<<<<<<<
- *         __pyx_unpickle__screw_spindle__set_state(<_screw_spindle> __pyx_result, __pyx_state)
+ *         __pyx_unpickle__ScrewSpindle__set_state(<_ScrewSpindle> __pyx_result, __pyx_state)
  *     return __pyx_result
  */
   }
 
   /* "(tree fragment)":10
  *     if __pyx_state is not None:
- *         __pyx_unpickle__screw_spindle__set_state(<_screw_spindle> __pyx_result, __pyx_state)
+ *         __pyx_unpickle__ScrewSpindle__set_state(<_ScrewSpindle> __pyx_result, __pyx_state)
  *     return __pyx_result             # <<<<<<<<<<<<<<
- * cdef __pyx_unpickle__screw_spindle__set_state(_screw_spindle __pyx_result, tuple __pyx_state):
+ * cdef __pyx_unpickle__ScrewSpindle__set_state(_ScrewSpindle __pyx_result, tuple __pyx_state):
  *     __pyx_result.HTC = __pyx_state[0]; __pyx_result.geo = __pyx_state[1]; __pyx_result.incl_injection = __pyx_state[2]; __pyx_result.incl_leakage = __pyx_state[3]; __pyx_result.theta = __pyx_state[4]
  */
   __Pyx_XDECREF(__pyx_r);
@@ -25337,7 +25337,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_s
   goto __pyx_L0;
 
   /* "(tree fragment)":1
- * def __pyx_unpickle__screw_spindle(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
+ * def __pyx_unpickle__ScrewSpindle(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
@@ -25347,7 +25347,7 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_s
   __Pyx_XDECREF(__pyx_t_1);
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle.__pyx_unpickle__screw_spindle", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw.__pyx_unpickle__ScrewSpindle", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XDECREF(__pyx_v___pyx_PickleError);
@@ -25359,14 +25359,14 @@ static PyObject *__pyx_pf_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_s
 }
 
 /* "(tree fragment)":11
- *         __pyx_unpickle__screw_spindle__set_state(<_screw_spindle> __pyx_result, __pyx_state)
+ *         __pyx_unpickle__ScrewSpindle__set_state(<_ScrewSpindle> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle__screw_spindle__set_state(_screw_spindle __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
+ * cdef __pyx_unpickle__ScrewSpindle__set_state(_ScrewSpindle __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result.HTC = __pyx_state[0]; __pyx_result.geo = __pyx_state[1]; __pyx_result.incl_injection = __pyx_state[2]; __pyx_result.incl_leakage = __pyx_state[3]; __pyx_result.theta = __pyx_state[4]
  *     if len(__pyx_state) > 5 and hasattr(__pyx_result, '__dict__'):
  */
 
-static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_spindle__set_state(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_f_5PDSim_5screw_6_screw___pyx_unpickle__ScrewSpindle__set_state(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *__pyx_v___pyx_result, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_TraceDeclarations
   __Pyx_RefNannyDeclarations
@@ -25382,12 +25382,12 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_sp
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
-  __Pyx_RefNannySetupContext("__pyx_unpickle__screw_spindle__set_state", 1);
-  __Pyx_TraceCall("__pyx_unpickle__screw_spindle__set_state", __pyx_f[1], 11, 0, __PYX_ERR(1, 11, __pyx_L1_error));
+  __Pyx_RefNannySetupContext("__pyx_unpickle__ScrewSpindle__set_state", 1);
+  __Pyx_TraceCall("__pyx_unpickle__ScrewSpindle__set_state", __pyx_f[1], 11, 0, __PYX_ERR(1, 11, __pyx_L1_error));
 
   /* "(tree fragment)":12
  *     return __pyx_result
- * cdef __pyx_unpickle__screw_spindle__set_state(_screw_spindle __pyx_result, tuple __pyx_state):
+ * cdef __pyx_unpickle__ScrewSpindle__set_state(_ScrewSpindle __pyx_result, tuple __pyx_state):
  *     __pyx_result.HTC = __pyx_state[0]; __pyx_result.geo = __pyx_state[1]; __pyx_result.incl_injection = __pyx_state[2]; __pyx_result.incl_leakage = __pyx_state[3]; __pyx_result.theta = __pyx_state[4]             # <<<<<<<<<<<<<<
  *     if len(__pyx_state) > 5 and hasattr(__pyx_result, '__dict__'):
  *         __pyx_result.__dict__.update(__pyx_state[5])
@@ -25442,7 +25442,7 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_sp
   __pyx_v___pyx_result->theta = __pyx_t_2;
 
   /* "(tree fragment)":13
- * cdef __pyx_unpickle__screw_spindle__set_state(_screw_spindle __pyx_result, tuple __pyx_state):
+ * cdef __pyx_unpickle__ScrewSpindle__set_state(_ScrewSpindle __pyx_result, tuple __pyx_state):
  *     __pyx_result.HTC = __pyx_state[0]; __pyx_result.geo = __pyx_state[1]; __pyx_result.incl_injection = __pyx_state[2]; __pyx_result.incl_leakage = __pyx_state[3]; __pyx_result.theta = __pyx_state[4]
  *     if len(__pyx_state) > 5 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[5])
@@ -25505,7 +25505,7 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_sp
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "(tree fragment)":13
- * cdef __pyx_unpickle__screw_spindle__set_state(_screw_spindle __pyx_result, tuple __pyx_state):
+ * cdef __pyx_unpickle__ScrewSpindle__set_state(_ScrewSpindle __pyx_result, tuple __pyx_state):
  *     __pyx_result.HTC = __pyx_state[0]; __pyx_result.geo = __pyx_state[1]; __pyx_result.incl_injection = __pyx_state[2]; __pyx_result.incl_leakage = __pyx_state[3]; __pyx_result.theta = __pyx_state[4]
  *     if len(__pyx_state) > 5 and hasattr(__pyx_result, '__dict__'):             # <<<<<<<<<<<<<<
  *         __pyx_result.__dict__.update(__pyx_state[5])
@@ -25513,9 +25513,9 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_sp
   }
 
   /* "(tree fragment)":11
- *         __pyx_unpickle__screw_spindle__set_state(<_screw_spindle> __pyx_result, __pyx_state)
+ *         __pyx_unpickle__ScrewSpindle__set_state(<_ScrewSpindle> __pyx_result, __pyx_state)
  *     return __pyx_result
- * cdef __pyx_unpickle__screw_spindle__set_state(_screw_spindle __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
+ * cdef __pyx_unpickle__ScrewSpindle__set_state(_ScrewSpindle __pyx_result, tuple __pyx_state):             # <<<<<<<<<<<<<<
  *     __pyx_result.HTC = __pyx_state[0]; __pyx_result.geo = __pyx_state[1]; __pyx_result.incl_injection = __pyx_state[2]; __pyx_result.incl_leakage = __pyx_state[3]; __pyx_result.theta = __pyx_state[4]
  *     if len(__pyx_state) > 5 and hasattr(__pyx_result, '__dict__'):
  */
@@ -25528,7 +25528,7 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_sp
   __Pyx_XDECREF(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
-  __Pyx_AddTraceback("PDSim.screw._screw_spindle.__pyx_unpickle__screw_spindle__set_state", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("PDSim.screw._screw.__pyx_unpickle__ScrewSpindle__set_state", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = 0;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -25536,10 +25536,10 @@ static PyObject *__pyx_f_5PDSim_5screw_14_screw_spindle___pyx_unpickle__screw_sp
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static struct __pyx_vtabstruct_5PDSim_5screw_14_screw_spindle__screw_spindle __pyx_vtable_5PDSim_5screw_14_screw_spindle__screw_spindle;
+static struct __pyx_vtabstruct_5PDSim_5screw_6_screw__ScrewSpindle __pyx_vtable_5PDSim_5screw_6_screw__ScrewSpindle;
 
-static PyObject *__pyx_tp_new_5PDSim_5screw_14_screw_spindle__screw_spindle(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
-  struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *p;
+static PyObject *__pyx_tp_new_5PDSim_5screw_6_screw__ScrewSpindle(PyTypeObject *t, CYTHON_UNUSED PyObject *a, CYTHON_UNUSED PyObject *k) {
+  struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *p;
   PyObject *o;
   #if CYTHON_COMPILING_IN_LIMITED_API
   allocfunc alloc_func = (allocfunc)PyType_GetSlot(t, Py_tp_alloc);
@@ -25552,17 +25552,17 @@ static PyObject *__pyx_tp_new_5PDSim_5screw_14_screw_spindle__screw_spindle(PyTy
   }
   if (unlikely(!o)) return 0;
   #endif
-  p = ((struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)o);
-  p->__pyx_vtab = __pyx_vtabptr_5PDSim_5screw_14_screw_spindle__screw_spindle;
+  p = ((struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)o);
+  p->__pyx_vtab = __pyx_vtabptr_5PDSim_5screw_6_screw__ScrewSpindle;
   p->geo = ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)Py_None); Py_INCREF(Py_None);
   return o;
 }
 
-static void __pyx_tp_dealloc_5PDSim_5screw_14_screw_spindle__screw_spindle(PyObject *o) {
-  struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *p = (struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)o;
+static void __pyx_tp_dealloc_5PDSim_5screw_6_screw__ScrewSpindle(PyObject *o) {
+  struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *p = (struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)o;
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely((PY_VERSION_HEX >= 0x03080000 || __Pyx_PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE)) && __Pyx_PyObject_GetSlot(o, tp_finalize, destructor)) && !__Pyx_PyObject_GC_IsFinalized(o)) {
-    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_5PDSim_5screw_14_screw_spindle__screw_spindle) {
+    if (__Pyx_PyObject_GetSlot(o, tp_dealloc, destructor) == __pyx_tp_dealloc_5PDSim_5screw_6_screw__ScrewSpindle) {
       if (PyObject_CallFinalizerFromDealloc(o)) return;
     }
   }
@@ -25579,58 +25579,44 @@ static void __pyx_tp_dealloc_5PDSim_5screw_14_screw_spindle__screw_spindle(PyObj
   #endif
 }
 
-static int __pyx_tp_traverse_5PDSim_5screw_14_screw_spindle__screw_spindle(PyObject *o, visitproc v, void *a) {
+static int __pyx_tp_traverse_5PDSim_5screw_6_screw__ScrewSpindle(PyObject *o, visitproc v, void *a) {
   int e;
-  struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *p = (struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)o;
+  struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *p = (struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)o;
   if (p->geo) {
     e = (*v)(((PyObject *)p->geo), a); if (e) return e;
   }
   return 0;
 }
 
-static int __pyx_tp_clear_5PDSim_5screw_14_screw_spindle__screw_spindle(PyObject *o) {
+static int __pyx_tp_clear_5PDSim_5screw_6_screw__ScrewSpindle(PyObject *o) {
   PyObject* tmp;
-  struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *p = (struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *)o;
+  struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *p = (struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *)o;
   tmp = ((PyObject*)p->geo);
   p->geo = ((struct __pyx_obj_5PDSim_5screw_17screw_spindle_geo_geoVals *)Py_None); Py_INCREF(Py_None);
   Py_XDECREF(tmp);
   return 0;
 }
 
-static PyObject *__pyx_getprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_geo(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_1__get__(o);
+static PyObject *__pyx_getprop_5PDSim_5screw_6_screw_13_ScrewSpindle_geo(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_1__get__(o);
 }
 
-static int __pyx_setprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_geo(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+static int __pyx_setprop_5PDSim_5screw_6_screw_13_ScrewSpindle_geo(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
   if (v) {
-    return __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_3__set__(o, v);
+    return __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_3__set__(o, v);
   }
   else {
-    return __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3geo_5__del__(o);
+    return __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3geo_5__del__(o);
   }
 }
 
-static PyObject *__pyx_getprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_theta(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta_1__get__(o);
+static PyObject *__pyx_getprop_5PDSim_5screw_6_screw_13_ScrewSpindle_theta(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5theta_1__get__(o);
 }
 
-static int __pyx_setprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_theta(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+static int __pyx_setprop_5PDSim_5screw_6_screw_13_ScrewSpindle_theta(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
   if (v) {
-    return __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5theta_3__set__(o, v);
-  }
-  else {
-    PyErr_SetString(PyExc_NotImplementedError, "__del__");
-    return -1;
-  }
-}
-
-static PyObject *__pyx_getprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_HTC(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC_1__get__(o);
-}
-
-static int __pyx_setprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_HTC(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
-  if (v) {
-    return __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3HTC_3__set__(o, v);
+    return __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_5theta_3__set__(o, v);
   }
   else {
     PyErr_SetString(PyExc_NotImplementedError, "__del__");
@@ -25638,13 +25624,13 @@ static int __pyx_setprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_HTC(PyO
   }
 }
 
-static PyObject *__pyx_getprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_incl_leakage(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leakage_1__get__(o);
+static PyObject *__pyx_getprop_5PDSim_5screw_6_screw_13_ScrewSpindle_HTC(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3HTC_1__get__(o);
 }
 
-static int __pyx_setprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_incl_leakage(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+static int __pyx_setprop_5PDSim_5screw_6_screw_13_ScrewSpindle_HTC(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
   if (v) {
-    return __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12incl_leakage_3__set__(o, v);
+    return __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_3HTC_3__set__(o, v);
   }
   else {
     PyErr_SetString(PyExc_NotImplementedError, "__del__");
@@ -25652,13 +25638,13 @@ static int __pyx_setprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_incl_le
   }
 }
 
-static PyObject *__pyx_getprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_incl_injection(PyObject *o, CYTHON_UNUSED void *x) {
-  return __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injection_1__get__(o);
+static PyObject *__pyx_getprop_5PDSim_5screw_6_screw_13_ScrewSpindle_incl_leakage(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_12incl_leakage_1__get__(o);
 }
 
-static int __pyx_setprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_incl_injection(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+static int __pyx_setprop_5PDSim_5screw_6_screw_13_ScrewSpindle_incl_leakage(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
   if (v) {
-    return __pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_14incl_injection_3__set__(o, v);
+    return __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_12incl_leakage_3__set__(o, v);
   }
   else {
     PyErr_SetString(PyExc_NotImplementedError, "__del__");
@@ -25666,45 +25652,59 @@ static int __pyx_setprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_incl_in
   }
 }
 
-static PyMethodDef __pyx_methods_5PDSim_5screw_14_screw_spindle__screw_spindle[] = {
-  {"__reduce_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_11__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_10__reduce_cython__},
-  {"__setstate_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_14_screw_spindle_14_screw_spindle_13__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_14_screw_spindle_14_screw_spindle_12__setstate_cython__},
+static PyObject *__pyx_getprop_5PDSim_5screw_6_screw_13_ScrewSpindle_incl_injection(PyObject *o, CYTHON_UNUSED void *x) {
+  return __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_14incl_injection_1__get__(o);
+}
+
+static int __pyx_setprop_5PDSim_5screw_6_screw_13_ScrewSpindle_incl_injection(PyObject *o, PyObject *v, CYTHON_UNUSED void *x) {
+  if (v) {
+    return __pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_14incl_injection_3__set__(o, v);
+  }
+  else {
+    PyErr_SetString(PyExc_NotImplementedError, "__del__");
+    return -1;
+  }
+}
+
+static PyMethodDef __pyx_methods_5PDSim_5screw_6_screw__ScrewSpindle[] = {
+  {"__reduce_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_11__reduce_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_10__reduce_cython__},
+  {"__setstate_cython__", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_5PDSim_5screw_6_screw_13_ScrewSpindle_13__setstate_cython__, __Pyx_METH_FASTCALL|METH_KEYWORDS, __pyx_doc_5PDSim_5screw_6_screw_13_ScrewSpindle_12__setstate_cython__},
   {0, 0, 0, 0}
 };
 
-static struct PyGetSetDef __pyx_getsets_5PDSim_5screw_14_screw_spindle__screw_spindle[] = {
-  {(char *)"geo", __pyx_getprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_geo, __pyx_setprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_geo, (char *)PyDoc_STR("geo: PDSim.screw.screw_spindle_geo.geoVals"), 0},
-  {(char *)"theta", __pyx_getprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_theta, __pyx_setprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_theta, (char *)PyDoc_STR("theta: 'double'"), 0},
-  {(char *)"HTC", __pyx_getprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_HTC, __pyx_setprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_HTC, (char *)PyDoc_STR("HTC: 'double'"), 0},
-  {(char *)"incl_leakage", __pyx_getprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_incl_leakage, __pyx_setprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_incl_leakage, (char *)PyDoc_STR("incl_leakage: 'bool'"), 0},
-  {(char *)"incl_injection", __pyx_getprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_incl_injection, __pyx_setprop_5PDSim_5screw_14_screw_spindle_14_screw_spindle_incl_injection, (char *)PyDoc_STR("incl_injection: 'bool'"), 0},
+static struct PyGetSetDef __pyx_getsets_5PDSim_5screw_6_screw__ScrewSpindle[] = {
+  {(char *)"geo", __pyx_getprop_5PDSim_5screw_6_screw_13_ScrewSpindle_geo, __pyx_setprop_5PDSim_5screw_6_screw_13_ScrewSpindle_geo, (char *)PyDoc_STR("geo: PDSim.screw.screw_spindle_geo.geoVals"), 0},
+  {(char *)"theta", __pyx_getprop_5PDSim_5screw_6_screw_13_ScrewSpindle_theta, __pyx_setprop_5PDSim_5screw_6_screw_13_ScrewSpindle_theta, (char *)PyDoc_STR("theta: 'double'"), 0},
+  {(char *)"HTC", __pyx_getprop_5PDSim_5screw_6_screw_13_ScrewSpindle_HTC, __pyx_setprop_5PDSim_5screw_6_screw_13_ScrewSpindle_HTC, (char *)PyDoc_STR("HTC: 'double'"), 0},
+  {(char *)"incl_leakage", __pyx_getprop_5PDSim_5screw_6_screw_13_ScrewSpindle_incl_leakage, __pyx_setprop_5PDSim_5screw_6_screw_13_ScrewSpindle_incl_leakage, (char *)PyDoc_STR("incl_leakage: 'bool'"), 0},
+  {(char *)"incl_injection", __pyx_getprop_5PDSim_5screw_6_screw_13_ScrewSpindle_incl_injection, __pyx_setprop_5PDSim_5screw_6_screw_13_ScrewSpindle_incl_injection, (char *)PyDoc_STR("incl_injection: 'bool'"), 0},
   {0, 0, 0, 0, 0}
 };
 #if CYTHON_USE_TYPE_SPECS
-static PyType_Slot __pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle_slots[] = {
-  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_5PDSim_5screw_14_screw_spindle__screw_spindle},
-  {Py_tp_traverse, (void *)__pyx_tp_traverse_5PDSim_5screw_14_screw_spindle__screw_spindle},
-  {Py_tp_clear, (void *)__pyx_tp_clear_5PDSim_5screw_14_screw_spindle__screw_spindle},
-  {Py_tp_methods, (void *)__pyx_methods_5PDSim_5screw_14_screw_spindle__screw_spindle},
-  {Py_tp_getset, (void *)__pyx_getsets_5PDSim_5screw_14_screw_spindle__screw_spindle},
-  {Py_tp_new, (void *)__pyx_tp_new_5PDSim_5screw_14_screw_spindle__screw_spindle},
+static PyType_Slot __pyx_type_5PDSim_5screw_6_screw__ScrewSpindle_slots[] = {
+  {Py_tp_dealloc, (void *)__pyx_tp_dealloc_5PDSim_5screw_6_screw__ScrewSpindle},
+  {Py_tp_traverse, (void *)__pyx_tp_traverse_5PDSim_5screw_6_screw__ScrewSpindle},
+  {Py_tp_clear, (void *)__pyx_tp_clear_5PDSim_5screw_6_screw__ScrewSpindle},
+  {Py_tp_methods, (void *)__pyx_methods_5PDSim_5screw_6_screw__ScrewSpindle},
+  {Py_tp_getset, (void *)__pyx_getsets_5PDSim_5screw_6_screw__ScrewSpindle},
+  {Py_tp_new, (void *)__pyx_tp_new_5PDSim_5screw_6_screw__ScrewSpindle},
   {0, 0},
 };
-static PyType_Spec __pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle_spec = {
-  "PDSim.screw._screw_spindle._screw_spindle",
-  sizeof(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle),
+static PyType_Spec __pyx_type_5PDSim_5screw_6_screw__ScrewSpindle_spec = {
+  "PDSim.screw._screw._ScrewSpindle",
+  sizeof(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,
-  __pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle_slots,
+  __pyx_type_5PDSim_5screw_6_screw__ScrewSpindle_slots,
 };
 #else
 
-static PyTypeObject __pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle = {
+static PyTypeObject __pyx_type_5PDSim_5screw_6_screw__ScrewSpindle = {
   PyVarObject_HEAD_INIT(0, 0)
-  "PDSim.screw._screw_spindle.""_screw_spindle", /*tp_name*/
-  sizeof(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle), /*tp_basicsize*/
+  "PDSim.screw._screw.""_ScrewSpindle", /*tp_name*/
+  sizeof(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_5PDSim_5screw_14_screw_spindle__screw_spindle, /*tp_dealloc*/
+  __pyx_tp_dealloc_5PDSim_5screw_6_screw__ScrewSpindle, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -25731,15 +25731,15 @@ static PyTypeObject __pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle = {
   0, /*tp_as_buffer*/
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC, /*tp_flags*/
   0, /*tp_doc*/
-  __pyx_tp_traverse_5PDSim_5screw_14_screw_spindle__screw_spindle, /*tp_traverse*/
-  __pyx_tp_clear_5PDSim_5screw_14_screw_spindle__screw_spindle, /*tp_clear*/
+  __pyx_tp_traverse_5PDSim_5screw_6_screw__ScrewSpindle, /*tp_traverse*/
+  __pyx_tp_clear_5PDSim_5screw_6_screw__ScrewSpindle, /*tp_clear*/
   0, /*tp_richcompare*/
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_5PDSim_5screw_14_screw_spindle__screw_spindle, /*tp_methods*/
+  __pyx_methods_5PDSim_5screw_6_screw__ScrewSpindle, /*tp_methods*/
   0, /*tp_members*/
-  __pyx_getsets_5PDSim_5screw_14_screw_spindle__screw_spindle, /*tp_getset*/
+  __pyx_getsets_5PDSim_5screw_6_screw__ScrewSpindle, /*tp_getset*/
   0, /*tp_base*/
   0, /*tp_dict*/
   0, /*tp_descr_get*/
@@ -25749,7 +25749,7 @@ static PyTypeObject __pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle = {
   #endif
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_5PDSim_5screw_14_screw_spindle__screw_spindle, /*tp_new*/
+  __pyx_tp_new_5PDSim_5screw_6_screw__ScrewSpindle, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -25921,7 +25921,7 @@ static PyType_Slot __pyx_type___pyx_array_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_array_spec = {
-  "PDSim.screw._screw_spindle.array",
+  "PDSim.screw._screw.array",
   sizeof(struct __pyx_array_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_SEQUENCE,
@@ -25967,7 +25967,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "PDSim.screw._screw_spindle.""array", /*tp_name*/
+  "PDSim.screw._screw.""array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -26130,7 +26130,7 @@ static PyType_Slot __pyx_type___pyx_MemviewEnum_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_MemviewEnum_spec = {
-  "PDSim.screw._screw_spindle.Enum",
+  "PDSim.screw._screw.Enum",
   sizeof(struct __pyx_MemviewEnum_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,
@@ -26140,7 +26140,7 @@ static PyType_Spec __pyx_type___pyx_MemviewEnum_spec = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "PDSim.screw._screw_spindle.""Enum", /*tp_name*/
+  "PDSim.screw._screw.""Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -26440,7 +26440,7 @@ static PyType_Slot __pyx_type___pyx_memoryview_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_memoryview_spec = {
-  "PDSim.screw._screw_spindle.memoryview",
+  "PDSim.screw._screw.memoryview",
   sizeof(struct __pyx_memoryview_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,
@@ -26486,7 +26486,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "PDSim.screw._screw_spindle.""memoryview", /*tp_name*/
+  "PDSim.screw._screw.""memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -26643,7 +26643,7 @@ static PyType_Slot __pyx_type___pyx_memoryviewslice_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_memoryviewslice_spec = {
-  "PDSim.screw._screw_spindle._memoryviewslice",
+  "PDSim.screw._screw._memoryviewslice",
   sizeof(struct __pyx_memoryviewslice_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_SEQUENCE,
@@ -26653,7 +26653,7 @@ static PyType_Spec __pyx_type___pyx_memoryviewslice_spec = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "PDSim.screw._screw_spindle.""_memoryviewslice", /*tp_name*/
+  "PDSim.screw._screw.""_memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -26794,9 +26794,17 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_kp_u_Out_of_bounds_on_buffer_access_a, __pyx_k_Out_of_bounds_on_buffer_access_a, sizeof(__pyx_k_Out_of_bounds_on_buffer_access_a), 0, 1, 0, 0},
     {&__pyx_n_s_PDSim_flow, __pyx_k_PDSim_flow, sizeof(__pyx_k_PDSim_flow), 0, 0, 1, 1},
     {&__pyx_n_s_PDSim_screw, __pyx_k_PDSim_screw, sizeof(__pyx_k_PDSim_screw), 0, 0, 1, 1},
-    {&__pyx_n_s_PDSim_screw__screw_spindle, __pyx_k_PDSim_screw__screw_spindle, sizeof(__pyx_k_PDSim_screw__screw_spindle), 0, 0, 1, 1},
-    {&__pyx_kp_s_PDSim_screw__screw_spindle_pyx, __pyx_k_PDSim_screw__screw_spindle_pyx, sizeof(__pyx_k_PDSim_screw__screw_spindle_pyx), 0, 0, 1, 0},
+    {&__pyx_n_s_PDSim_screw__screw, __pyx_k_PDSim_screw__screw, sizeof(__pyx_k_PDSim_screw__screw), 0, 0, 1, 1},
+    {&__pyx_kp_s_PDSim_screw__screw_pyx, __pyx_k_PDSim_screw__screw_pyx, sizeof(__pyx_k_PDSim_screw__screw_pyx), 0, 0, 1, 0},
     {&__pyx_n_s_PickleError, __pyx_k_PickleError, sizeof(__pyx_k_PickleError), 0, 0, 1, 1},
+    {&__pyx_n_s_ScrewSpindle, __pyx_k_ScrewSpindle, sizeof(__pyx_k_ScrewSpindle), 0, 0, 1, 1},
+    {&__pyx_n_s_ScrewSpindle_Discharge, __pyx_k_ScrewSpindle_Discharge, sizeof(__pyx_k_ScrewSpindle_Discharge), 0, 0, 1, 1},
+    {&__pyx_n_s_ScrewSpindle_Injection, __pyx_k_ScrewSpindle_Injection, sizeof(__pyx_k_ScrewSpindle_Injection), 0, 0, 1, 1},
+    {&__pyx_n_s_ScrewSpindle_Leakage, __pyx_k_ScrewSpindle_Leakage, sizeof(__pyx_k_ScrewSpindle_Leakage), 0, 0, 1, 1},
+    {&__pyx_n_s_ScrewSpindle_Suction, __pyx_k_ScrewSpindle_Suction, sizeof(__pyx_k_ScrewSpindle_Suction), 0, 0, 1, 1},
+    {&__pyx_n_s_ScrewSpindle___cdict, __pyx_k_ScrewSpindle___cdict, sizeof(__pyx_k_ScrewSpindle___cdict), 0, 0, 1, 1},
+    {&__pyx_n_s_ScrewSpindle___reduce_cython, __pyx_k_ScrewSpindle___reduce_cython, sizeof(__pyx_k_ScrewSpindle___reduce_cython), 0, 0, 1, 1},
+    {&__pyx_n_s_ScrewSpindle___setstate_cython, __pyx_k_ScrewSpindle___setstate_cython, sizeof(__pyx_k_ScrewSpindle___setstate_cython), 0, 0, 1, 1},
     {&__pyx_n_s_Sequence, __pyx_k_Sequence, sizeof(__pyx_k_Sequence), 0, 0, 1, 1},
     {&__pyx_kp_s_Step_may_not_be_zero_axis_d, __pyx_k_Step_may_not_be_zero_axis_d, sizeof(__pyx_k_Step_may_not_be_zero_axis_d), 0, 0, 1, 0},
     {&__pyx_n_s_Suction, __pyx_k_Suction, sizeof(__pyx_k_Suction), 0, 0, 1, 1},
@@ -26876,21 +26884,13 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_pyx_state, __pyx_k_pyx_state, sizeof(__pyx_k_pyx_state), 0, 0, 1, 1},
     {&__pyx_n_s_pyx_type, __pyx_k_pyx_type, sizeof(__pyx_k_pyx_type), 0, 0, 1, 1},
     {&__pyx_n_s_pyx_unpickle_Enum, __pyx_k_pyx_unpickle_Enum, sizeof(__pyx_k_pyx_unpickle_Enum), 0, 0, 1, 1},
-    {&__pyx_n_s_pyx_unpickle__screw_spindle, __pyx_k_pyx_unpickle__screw_spindle, sizeof(__pyx_k_pyx_unpickle__screw_spindle), 0, 0, 1, 1},
+    {&__pyx_n_s_pyx_unpickle__ScrewSpindle, __pyx_k_pyx_unpickle__ScrewSpindle, sizeof(__pyx_k_pyx_unpickle__ScrewSpindle), 0, 0, 1, 1},
     {&__pyx_n_s_pyx_vtable, __pyx_k_pyx_vtable, sizeof(__pyx_k_pyx_vtable), 0, 0, 1, 1},
     {&__pyx_n_s_range, __pyx_k_range, sizeof(__pyx_k_range), 0, 0, 1, 1},
     {&__pyx_n_s_reduce, __pyx_k_reduce, sizeof(__pyx_k_reduce), 0, 0, 1, 1},
     {&__pyx_n_s_reduce_cython, __pyx_k_reduce_cython, sizeof(__pyx_k_reduce_cython), 0, 0, 1, 1},
     {&__pyx_n_s_reduce_ex, __pyx_k_reduce_ex, sizeof(__pyx_k_reduce_ex), 0, 0, 1, 1},
     {&__pyx_n_s_register, __pyx_k_register, sizeof(__pyx_k_register), 0, 0, 1, 1},
-    {&__pyx_n_s_screw_spindle, __pyx_k_screw_spindle, sizeof(__pyx_k_screw_spindle), 0, 0, 1, 1},
-    {&__pyx_n_s_screw_spindle_Discharge, __pyx_k_screw_spindle_Discharge, sizeof(__pyx_k_screw_spindle_Discharge), 0, 0, 1, 1},
-    {&__pyx_n_s_screw_spindle_Injection, __pyx_k_screw_spindle_Injection, sizeof(__pyx_k_screw_spindle_Injection), 0, 0, 1, 1},
-    {&__pyx_n_s_screw_spindle_Leakage, __pyx_k_screw_spindle_Leakage, sizeof(__pyx_k_screw_spindle_Leakage), 0, 0, 1, 1},
-    {&__pyx_n_s_screw_spindle_Suction, __pyx_k_screw_spindle_Suction, sizeof(__pyx_k_screw_spindle_Suction), 0, 0, 1, 1},
-    {&__pyx_n_s_screw_spindle___cdict, __pyx_k_screw_spindle___cdict, sizeof(__pyx_k_screw_spindle___cdict), 0, 0, 1, 1},
-    {&__pyx_n_s_screw_spindle___reduce_cython, __pyx_k_screw_spindle___reduce_cython, sizeof(__pyx_k_screw_spindle___reduce_cython), 0, 0, 1, 1},
-    {&__pyx_n_s_screw_spindle___setstate_cython, __pyx_k_screw_spindle___setstate_cython, sizeof(__pyx_k_screw_spindle___setstate_cython), 0, 0, 1, 1},
     {&__pyx_n_s_screw_spindle_geo, __pyx_k_screw_spindle_geo, sizeof(__pyx_k_screw_spindle_geo), 0, 0, 1, 1},
     {&__pyx_n_s_self, __pyx_k_self, sizeof(__pyx_k_self), 0, 0, 1, 1},
     {&__pyx_n_s_setstate, __pyx_k_setstate, sizeof(__pyx_k_setstate), 0, 0, 1, 1},
@@ -26923,7 +26923,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
 }
 /* #### Code section: cached_builtins ### */
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_ZeroDivisionError = __Pyx_GetBuiltinName(__pyx_n_s_ZeroDivisionError); if (!__pyx_builtin_ZeroDivisionError) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_builtin_ZeroDivisionError = __Pyx_GetBuiltinName(__pyx_n_s_ZeroDivisionError); if (!__pyx_builtin_ZeroDivisionError) __PYX_ERR(0, 32, __pyx_L1_error)
   __pyx_builtin___import__ = __Pyx_GetBuiltinName(__pyx_n_s_import); if (!__pyx_builtin___import__) __PYX_ERR(1, 100, __pyx_L1_error)
   __pyx_builtin_ValueError = __Pyx_GetBuiltinName(__pyx_n_s_ValueError); if (!__pyx_builtin_ValueError) __PYX_ERR(1, 141, __pyx_L1_error)
   __pyx_builtin_MemoryError = __Pyx_GetBuiltinName(__pyx_n_s_MemoryError); if (!__pyx_builtin_MemoryError) __PYX_ERR(1, 156, __pyx_L1_error)
@@ -26981,7 +26981,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1042
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1042
  *         __pyx_import_array()
  *     except Exception:
  *         raise ImportError("numpy._core.multiarray failed to import")             # <<<<<<<<<<<<<<
@@ -26992,7 +26992,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-8gm1p_66/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1048
+  /* "C:/Users/ThomasM/AppData/Local/Temp/pip-build-env-f912_173/overlay/Lib/site-packages/numpy/__init__.cython-30.pxd":1048
  *         _import_umath()
  *     except Exception:
  *         raise ImportError("numpy._core.umath failed to import")             # <<<<<<<<<<<<<<
@@ -27115,62 +27115,62 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_GIVEREF(__pyx_tuple__29);
   __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle_Enum, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(1, 1, __pyx_L1_error)
 
-  /* "PDSim/screw/_screw_spindle.pyx":12
- * cdef class _screw_spindle(object):
+  /* "PDSim/screw/_screw.pyx":10
+ * cdef class _ScrewSpindle(object):
  * 
  *     cpdef dict __cdict__(self):             # <<<<<<<<<<<<<<
  *         return dict(theta = self.theta,
  *                     geo = self.geo,
  */
-  __pyx_tuple__31 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_tuple__31 = PyTuple_Pack(1, __pyx_n_s_self); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
   __Pyx_GIVEREF(__pyx_tuple__31);
-  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_spindle_pyx, __pyx_n_s_cdict, 12, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(1, 0, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_pyx, __pyx_n_s_cdict, 10, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 10, __pyx_L1_error)
 
-  /* "PDSim/screw/_screw_spindle.pyx":20
+  /* "PDSim/screw/_screw.pyx":18
  * 
  * 
  *     cpdef double Suction(self, FlowPath FP, int ichamb):             # <<<<<<<<<<<<<<
  *         """
  *         Calculate the suction mass flow rate
  */
-  __pyx_tuple__32 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_FP, __pyx_n_s_ichamb); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_tuple__32 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_FP, __pyx_n_s_ichamb); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__32);
   __Pyx_GIVEREF(__pyx_tuple__32);
-  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_spindle_pyx, __pyx_n_s_Suction, 20, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_pyx, __pyx_n_s_Suction, 18, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 18, __pyx_L1_error)
 
-  /* "PDSim/screw/_screw_spindle.pyx":37
+  /* "PDSim/screw/_screw.pyx":35
  *             return 0.0
  * 
  *     cpdef double Discharge(self, FlowPath FP, int ichamb):             # <<<<<<<<<<<<<<
  *         """
  *         Calculate the discharge mass flow rate
  */
-  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_spindle_pyx, __pyx_n_s_Discharge, 37, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__32, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_pyx, __pyx_n_s_Discharge, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 35, __pyx_L1_error)
 
-  /* "PDSim/screw/_screw_spindle.pyx":54
+  /* "PDSim/screw/_screw.pyx":52
  *             return 0.0
  * 
  *     cpdef double Leakage(self, FlowPath FP, int ichamb, leak_id id):             # <<<<<<<<<<<<<<
  *         """
  *         Calculate the leakage mass flow rate from a specific chamber
  */
-  __pyx_tuple__33 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_FP, __pyx_n_s_ichamb, __pyx_n_s_id); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_tuple__33 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_FP, __pyx_n_s_ichamb, __pyx_n_s_id); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__33);
   __Pyx_GIVEREF(__pyx_tuple__33);
-  __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_spindle_pyx, __pyx_n_s_Leakage, 54, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_pyx, __pyx_n_s_Leakage, 52, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 52, __pyx_L1_error)
 
-  /* "PDSim/screw/_screw_spindle.pyx":73
+  /* "PDSim/screw/_screw.pyx":71
  *             return 0.0
  * 
  *     cpdef double Injection(self, FlowPath FP, int ichamb, str upstream_key):             # <<<<<<<<<<<<<<
  *         """
  *         Calculate the injection mass flow rate into a specific chamber (w/o backflow)
  */
-  __pyx_tuple__34 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_FP, __pyx_n_s_ichamb, __pyx_n_s_upstream_key); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 73, __pyx_L1_error)
+  __pyx_tuple__34 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_FP, __pyx_n_s_ichamb, __pyx_n_s_upstream_key); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__34);
   __Pyx_GIVEREF(__pyx_tuple__34);
-  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_spindle_pyx, __pyx_n_s_Injection, 73, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 73, __pyx_L1_error)
+  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(4, 0, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__34, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_PDSim_screw__screw_pyx, __pyx_n_s_Injection, 71, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 71, __pyx_L1_error)
 
   /* "(tree fragment)":1
  * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
@@ -27184,9 +27184,9 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle__screw_spindle, (type(self), 0xdc8d038, state)
+ *         return __pyx_unpickle__ScrewSpindle, (type(self), 0xdc8d038, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_unpickle__screw_spindle__set_state(self, __pyx_state)
+ *     __pyx_unpickle__ScrewSpindle__set_state(self, __pyx_state)
  */
   __pyx_tuple__36 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_pyx_state); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(1, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__36);
@@ -27194,11 +27194,11 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __pyx_codeobj__17 = (PyObject*)__Pyx_PyCode_New(2, 0, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_setstate_cython, 16, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__17)) __PYX_ERR(1, 16, __pyx_L1_error)
 
   /* "(tree fragment)":1
- * def __pyx_unpickle__screw_spindle(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
+ * def __pyx_unpickle__ScrewSpindle(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
-  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle__screw_spindle, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(3, 0, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_stringsource, __pyx_n_s_pyx_unpickle__ScrewSpindle, 1, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -27283,38 +27283,38 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  __pyx_vtabptr_5PDSim_5screw_14_screw_spindle__screw_spindle = &__pyx_vtable_5PDSim_5screw_14_screw_spindle__screw_spindle;
-  __pyx_vtable_5PDSim_5screw_14_screw_spindle__screw_spindle.__pyx___cdict__ = (PyObject *(*)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, int __pyx_skip_dispatch))__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle___cdict__;
-  __pyx_vtable_5PDSim_5screw_14_screw_spindle__screw_spindle.Suction = (double (*)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, int __pyx_skip_dispatch))__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Suction;
-  __pyx_vtable_5PDSim_5screw_14_screw_spindle__screw_spindle.Discharge = (double (*)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, int __pyx_skip_dispatch))__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Discharge;
-  __pyx_vtable_5PDSim_5screw_14_screw_spindle__screw_spindle.Leakage = (double (*)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id, int __pyx_skip_dispatch))__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Leakage;
-  __pyx_vtable_5PDSim_5screw_14_screw_spindle__screw_spindle.Injection = (double (*)(struct __pyx_obj_5PDSim_5screw_14_screw_spindle__screw_spindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, PyObject *, int __pyx_skip_dispatch))__pyx_f_5PDSim_5screw_14_screw_spindle_14_screw_spindle_Injection;
+  __pyx_vtabptr_5PDSim_5screw_6_screw__ScrewSpindle = &__pyx_vtable_5PDSim_5screw_6_screw__ScrewSpindle;
+  __pyx_vtable_5PDSim_5screw_6_screw__ScrewSpindle.__pyx___cdict__ = (PyObject *(*)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, int __pyx_skip_dispatch))__pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle___cdict__;
+  __pyx_vtable_5PDSim_5screw_6_screw__ScrewSpindle.Suction = (double (*)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, int __pyx_skip_dispatch))__pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Suction;
+  __pyx_vtable_5PDSim_5screw_6_screw__ScrewSpindle.Discharge = (double (*)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, int __pyx_skip_dispatch))__pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Discharge;
+  __pyx_vtable_5PDSim_5screw_6_screw__ScrewSpindle.Leakage = (double (*)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, enum __pyx_t_5PDSim_5screw_17screw_spindle_geo_leak_id, int __pyx_skip_dispatch))__pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Leakage;
+  __pyx_vtable_5PDSim_5screw_6_screw__ScrewSpindle.Injection = (double (*)(struct __pyx_obj_5PDSim_5screw_6_screw__ScrewSpindle *, struct __pyx_obj_5PDSim_4flow_4flow_FlowPath *, int, PyObject *, int __pyx_skip_dispatch))__pyx_f_5PDSim_5screw_6_screw_13_ScrewSpindle_Injection;
   #if CYTHON_USE_TYPE_SPECS
-  __pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle_spec, NULL); if (unlikely(!__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle)) __PYX_ERR(0, 10, __pyx_L1_error)
-  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle_spec, __pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
+  __pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle = (PyTypeObject *) __Pyx_PyType_FromModuleAndSpec(__pyx_m, &__pyx_type_5PDSim_5screw_6_screw__ScrewSpindle_spec, NULL); if (unlikely(!__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle)) __PYX_ERR(0, 8, __pyx_L1_error)
+  if (__Pyx_fix_up_extension_type_from_spec(&__pyx_type_5PDSim_5screw_6_screw__ScrewSpindle_spec, __pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
   #else
-  __pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle = &__pyx_type_5PDSim_5screw_14_screw_spindle__screw_spindle;
+  __pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle = &__pyx_type_5PDSim_5screw_6_screw__ScrewSpindle;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
   #endif
   #if !CYTHON_USE_TYPE_SPECS
-  if (__Pyx_PyType_Ready(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
+  if (__Pyx_PyType_Ready(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
   #endif
   #if PY_MAJOR_VERSION < 3
-  __pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle->tp_print = 0;
+  __pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle->tp_print = 0;
   #endif
   #if !CYTHON_COMPILING_IN_LIMITED_API
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle->tp_dictoffset && __pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle->tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle->tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle->tp_dictoffset && __pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle->tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle->tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
   #endif
-  if (__Pyx_SetVtable(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle, __pyx_vtabptr_5PDSim_5screw_14_screw_spindle__screw_spindle) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
+  if (__Pyx_SetVtable(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle, __pyx_vtabptr_5PDSim_5screw_6_screw__ScrewSpindle) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
   #if !CYTHON_COMPILING_IN_LIMITED_API
-  if (__Pyx_MergeVtables(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
+  if (__Pyx_MergeVtables(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
   #endif
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_screw_spindle, (PyObject *) __pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_ScrewSpindle, (PyObject *) __pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
   #if !CYTHON_COMPILING_IN_LIMITED_API
-  if (__Pyx_setup_reduce((PyObject *) __pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject *) __pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle) < 0) __PYX_ERR(0, 8, __pyx_L1_error)
   #endif
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;
@@ -27605,10 +27605,10 @@ static int __Pyx_modinit_function_import_code(void) {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec__screw_spindle(PyObject* module); /*proto*/
+static int __pyx_pymod_exec__screw(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec__screw_spindle},
+  {Py_mod_exec, (void*)__pyx_pymod_exec__screw},
   {0, NULL}
 };
 #endif
@@ -27621,7 +27621,7 @@ namespace {
   #endif
   {
       PyModuleDef_HEAD_INIT,
-      "_screw_spindle",
+      "_screw",
       0, /* m_doc */
     #if CYTHON_PEP489_MULTI_PHASE_INIT
       0, /* m_size */
@@ -27669,11 +27669,11 @@ namespace {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC init_screw_spindle(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC init_screw_spindle(void)
+__Pyx_PyMODINIT_FUNC init_screw(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC init_screw(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit__screw_spindle(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit__screw_spindle(void)
+__Pyx_PyMODINIT_FUNC PyInit__screw(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit__screw(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -27754,7 +27754,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec__screw_spindle(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec__screw(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -27778,7 +27778,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec__screw_spindle(PyObject *__pyx_pyi
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module '_screw_spindle' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module '_screw' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -27790,13 +27790,13 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec__screw_spindle(PyObject *__pyx_pyi
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("_screw_spindle", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("_screw", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   if (unlikely(!__pyx_m)) __PYX_ERR(0, 1, __pyx_L1_error)
   #elif CYTHON_USE_MODULE_STATE
   __pyx_t_1 = PyModule_Create(&__pyx_moduledef); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   {
     int add_module_result = PyState_AddModule(__pyx_t_1, &__pyx_moduledef);
-    __pyx_t_1 = 0; /* transfer ownership from __pyx_t_1 to "_screw_spindle" pseudovariable */
+    __pyx_t_1 = 0; /* transfer ownership from __pyx_t_1 to "_screw" pseudovariable */
     if (unlikely((add_module_result < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     pystate_addmodule_run = 1;
   }
@@ -27820,7 +27820,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit__screw_spindle(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit__screw(void)", 0);
   if (__Pyx_check_binary_version(__PYX_LIMITED_VERSION_HEX, __Pyx_get_runtime_version(), CYTHON_COMPILING_IN_LIMITED_API) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -27858,14 +27858,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_PDSim__screw___screw_spindle) {
+  if (__pyx_module_is_main_PDSim__screw___screw) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "PDSim.screw._screw_spindle")) {
-      if (unlikely((PyDict_SetItemString(modules, "PDSim.screw._screw_spindle", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "PDSim.screw._screw")) {
+      if (unlikely((PyDict_SetItemString(modules, "PDSim.screw._screw", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -27885,7 +27885,7 @@ if (!__Pyx_RefNanny) {
   #if defined(__Pyx_Generator_USED) || defined(__Pyx_Coroutine_USED)
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  __Pyx_TraceCall("__Pyx_PyMODINIT_FUNC PyInit__screw_spindle(void)", __pyx_f[0], 1, 0, __PYX_ERR(0, 1, __pyx_L1_error));
+  __Pyx_TraceCall("__Pyx_PyMODINIT_FUNC PyInit__screw(void)", __pyx_f[0], 1, 0, __PYX_ERR(0, 1, __pyx_L1_error));
 
   /* "View.MemoryView":99
  * 
@@ -28400,7 +28400,7 @@ if (!__Pyx_RefNanny) {
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_pyx_unpickle_Enum, __pyx_t_7) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "PDSim/screw/_screw_spindle.pyx":1
+  /* "PDSim/screw/_screw.pyx":1
  * from PDSim.flow import flow_models             # <<<<<<<<<<<<<<
  * cimport PDSim.flow.flow_models as flow_models
  * 
@@ -28419,126 +28419,126 @@ if (!__Pyx_RefNanny) {
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "PDSim/screw/_screw_spindle.pyx":6
- * 
+  /* "PDSim/screw/_screw.pyx":4
+ * cimport PDSim.flow.flow_models as flow_models
  * 
  * from PDSim.screw import screw_spindle_geo             # <<<<<<<<<<<<<<
  * cimport PDSim.screw.screw_spindle_geo as screw_spindle_geo
  * 
  */
-  __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_INCREF(__pyx_n_s_screw_spindle_geo);
   __Pyx_GIVEREF(__pyx_n_s_screw_spindle_geo);
-  if (__Pyx_PyList_SET_ITEM(__pyx_t_4, 0, __pyx_n_s_screw_spindle_geo)) __PYX_ERR(0, 6, __pyx_L1_error);
-  __pyx_t_7 = __Pyx_Import(__pyx_n_s_PDSim_screw, __pyx_t_4, -1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 6, __pyx_L1_error)
+  if (__Pyx_PyList_SET_ITEM(__pyx_t_4, 0, __pyx_n_s_screw_spindle_geo)) __PYX_ERR(0, 4, __pyx_L1_error);
+  __pyx_t_7 = __Pyx_Import(__pyx_n_s_PDSim_screw, __pyx_t_4, -1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_ImportFrom(__pyx_t_7, __pyx_n_s_screw_spindle_geo); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 6, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_ImportFrom(__pyx_t_7, __pyx_n_s_screw_spindle_geo); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_screw_spindle_geo, __pyx_t_4) < 0) __PYX_ERR(0, 6, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_screw_spindle_geo, __pyx_t_4) < 0) __PYX_ERR(0, 4, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "PDSim/screw/_screw_spindle.pyx":12
- * cdef class _screw_spindle(object):
+  /* "PDSim/screw/_screw.pyx":10
+ * cdef class _ScrewSpindle(object):
  * 
  *     cpdef dict __cdict__(self):             # <<<<<<<<<<<<<<
  *         return dict(theta = self.theta,
  *                     geo = self.geo,
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_1__cdict__, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_screw_spindle___cdict, NULL, __pyx_n_s_PDSim_screw__screw_spindle, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_1__cdict__, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_ScrewSpindle___cdict, NULL, __pyx_n_s_PDSim_screw__screw, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle, __pyx_n_s_cdict, __pyx_t_7) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle, __pyx_n_s_cdict, __pyx_t_7) < 0) __PYX_ERR(0, 10, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  PyType_Modified(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
+  PyType_Modified(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
 
-  /* "PDSim/screw/_screw_spindle.pyx":20
+  /* "PDSim/screw/_screw.pyx":18
  * 
  * 
  *     cpdef double Suction(self, FlowPath FP, int ichamb):             # <<<<<<<<<<<<<<
  *         """
  *         Calculate the suction mass flow rate
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_3Suction, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_screw_spindle_Suction, NULL, __pyx_n_s_PDSim_screw__screw_spindle, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 20, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_3Suction, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_ScrewSpindle_Suction, NULL, __pyx_n_s_PDSim_screw__screw, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle, __pyx_n_s_Suction, __pyx_t_7) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle, __pyx_n_s_Suction, __pyx_t_7) < 0) __PYX_ERR(0, 18, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  PyType_Modified(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
+  PyType_Modified(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
 
-  /* "PDSim/screw/_screw_spindle.pyx":37
+  /* "PDSim/screw/_screw.pyx":35
  *             return 0.0
  * 
  *     cpdef double Discharge(self, FlowPath FP, int ichamb):             # <<<<<<<<<<<<<<
  *         """
  *         Calculate the discharge mass flow rate
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_5Discharge, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_screw_spindle_Discharge, NULL, __pyx_n_s_PDSim_screw__screw_spindle, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_5Discharge, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_ScrewSpindle_Discharge, NULL, __pyx_n_s_PDSim_screw__screw, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle, __pyx_n_s_Discharge, __pyx_t_7) < 0) __PYX_ERR(0, 37, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle, __pyx_n_s_Discharge, __pyx_t_7) < 0) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  PyType_Modified(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
+  PyType_Modified(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
 
-  /* "PDSim/screw/_screw_spindle.pyx":54
+  /* "PDSim/screw/_screw.pyx":52
  *             return 0.0
  * 
  *     cpdef double Leakage(self, FlowPath FP, int ichamb, leak_id id):             # <<<<<<<<<<<<<<
  *         """
  *         Calculate the leakage mass flow rate from a specific chamber
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_7Leakage, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_screw_spindle_Leakage, NULL, __pyx_n_s_PDSim_screw__screw_spindle, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_7Leakage, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_ScrewSpindle_Leakage, NULL, __pyx_n_s_PDSim_screw__screw, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle, __pyx_n_s_Leakage, __pyx_t_7) < 0) __PYX_ERR(0, 54, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle, __pyx_n_s_Leakage, __pyx_t_7) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  PyType_Modified(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
+  PyType_Modified(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
 
-  /* "PDSim/screw/_screw_spindle.pyx":73
+  /* "PDSim/screw/_screw.pyx":71
  *             return 0.0
  * 
  *     cpdef double Injection(self, FlowPath FP, int ichamb, str upstream_key):             # <<<<<<<<<<<<<<
  *         """
  *         Calculate the injection mass flow rate into a specific chamber (w/o backflow)
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_9Injection, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_screw_spindle_Injection, NULL, __pyx_n_s_PDSim_screw__screw_spindle, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 73, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_9Injection, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_ScrewSpindle_Injection, NULL, __pyx_n_s_PDSim_screw__screw, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle, __pyx_n_s_Injection, __pyx_t_7) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle, __pyx_n_s_Injection, __pyx_t_7) < 0) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  PyType_Modified(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
+  PyType_Modified(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
 
   /* "(tree fragment)":1
  * def __reduce_cython__(self):             # <<<<<<<<<<<<<<
  *     cdef tuple state
  *     cdef object _dict
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_11__reduce_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_screw_spindle___reduce_cython, NULL, __pyx_n_s_PDSim_screw__screw_spindle, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_11__reduce_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_ScrewSpindle___reduce_cython, NULL, __pyx_n_s_PDSim_screw__screw, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle, __pyx_n_s_reduce_cython, __pyx_t_7) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle, __pyx_n_s_reduce_cython, __pyx_t_7) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  PyType_Modified(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
+  PyType_Modified(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
 
   /* "(tree fragment)":16
  *     else:
- *         return __pyx_unpickle__screw_spindle, (type(self), 0xdc8d038, state)
+ *         return __pyx_unpickle__ScrewSpindle, (type(self), 0xdc8d038, state)
  * def __setstate_cython__(self, __pyx_state):             # <<<<<<<<<<<<<<
- *     __pyx_unpickle__screw_spindle__set_state(self, __pyx_state)
+ *     __pyx_unpickle__ScrewSpindle__set_state(self, __pyx_state)
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_14_screw_spindle_14_screw_spindle_13__setstate_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_screw_spindle___setstate_cython, NULL, __pyx_n_s_PDSim_screw__screw_spindle, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 16, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_6_screw_13_ScrewSpindle_13__setstate_cython__, __Pyx_CYFUNCTION_CCLASS, __pyx_n_s_ScrewSpindle___setstate_cython, NULL, __pyx_n_s_PDSim_screw__screw, __pyx_d, ((PyObject *)__pyx_codeobj__17)); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 16, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle, __pyx_n_s_setstate_cython, __pyx_t_7) < 0) __PYX_ERR(1, 16, __pyx_L1_error)
+  if (__Pyx_SetItemOnTypeDict((PyObject *)__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle, __pyx_n_s_setstate_cython, __pyx_t_7) < 0) __PYX_ERR(1, 16, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  PyType_Modified(__pyx_ptype_5PDSim_5screw_14_screw_spindle__screw_spindle);
+  PyType_Modified(__pyx_ptype_5PDSim_5screw_6_screw__ScrewSpindle);
 
   /* "(tree fragment)":1
- * def __pyx_unpickle__screw_spindle(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
+ * def __pyx_unpickle__ScrewSpindle(__pyx_type, long __pyx_checksum, __pyx_state):             # <<<<<<<<<<<<<<
  *     cdef object __pyx_PickleError
  *     cdef object __pyx_result
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_14_screw_spindle_1__pyx_unpickle__screw_spindle, 0, __pyx_n_s_pyx_unpickle__screw_spindle, NULL, __pyx_n_s_PDSim_screw__screw_spindle, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 1, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_5PDSim_5screw_6_screw_1__pyx_unpickle__ScrewSpindle, 0, __pyx_n_s_pyx_unpickle__ScrewSpindle, NULL, __pyx_n_s_PDSim_screw__screw, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_7)) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_pyx_unpickle__screw_spindle, __pyx_t_7) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_pyx_unpickle__ScrewSpindle, __pyx_t_7) < 0) __PYX_ERR(1, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-  /* "PDSim/screw/_screw_spindle.pyx":1
+  /* "PDSim/screw/_screw.pyx":1
  * from PDSim.flow import flow_models             # <<<<<<<<<<<<<<
  * cimport PDSim.flow.flow_models as flow_models
  * 
@@ -28558,7 +28558,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_7);
   if (__pyx_m) {
     if (__pyx_d && stringtab_initialized) {
-      __Pyx_AddTraceback("init PDSim.screw._screw_spindle", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init PDSim.screw._screw", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     #if !CYTHON_USE_MODULE_STATE
     Py_CLEAR(__pyx_m);
@@ -28572,7 +28572,7 @@ if (!__Pyx_RefNanny) {
     }
     #endif
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init PDSim.screw._screw_spindle");
+    PyErr_SetString(PyExc_ImportError, "init PDSim.screw._screw");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

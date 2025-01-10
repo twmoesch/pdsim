@@ -100,7 +100,7 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
                 i+=1
                 if 'inj' in str(col):
                     self.geo.A_inj_raw[i] = df_geomdata[col].to_numpy()
-            self.geo.num_inj_tubes = i
+            #self.geo.num_inj_tubes = i
     
     # def set_hx_geomdata(self, HXGeomDataFilePath:Path = None):
     #     return None
@@ -143,10 +143,10 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
             return self.Leakage(FP, ichamb, leakage_id)
         return _MdotFcn_leakage
     
-    def MdotFcn_injection(self, ichamb, itube, upstream_key:str='INJ'):
+    def MdotFcn_injection(self, ichamb, upstream_key:str='INJ'):
         '''simple function factory for injection mass flow'''
         def _MdotFcn_injection(self, FP:FlowPath):
-            return self.Injection(FP, ichamb, itube, upstream_key)
+            return self.Injection(FP, ichamb, upstream_key)
         return _MdotFcn_injection
 
     def auto_add_CVs(self, inletState:State, outletState:State):
@@ -308,8 +308,9 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
                     if self.A_inj(ichamb)(theta) > 0:
                         self.add_flow(FlowPath(
                         key1 = 'INJtube{}.2'.format(itube), key2 = 'C{}'.format(ichamb), 
-                        MdotFcn = self.MdotFcn_injection(ichamb, itube, upstream_key='INJtube{}.2'.format(itube)),
-                        MdotFcn_kwargs=dict(itube = itube, ichamb = ichamb,))) 
+                        MdotFcn = self.MdotFcn_injection(ichamb, upstream_key='INJtube{}.2'.format(itube)),
+                        #MdotFcn_kwargs=dict(itube = itube, ichamb = ichamb,)
+                        )) 
                         break
         return None
 

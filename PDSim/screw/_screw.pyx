@@ -67,7 +67,7 @@ cdef class _ScrewSpindle(object):
         except ZeroDivisionError:
             return 0.0
     
-    cpdef double Injection(self, FlowPath FP, int ichamb, int itube, str upstream_key):
+    cpdef double Injection(self, FlowPath FP, int ichamb, str upstream_key):
         """
         Calculate the injection mass flow rate into a specific chamber (w/o backflow)
 
@@ -76,14 +76,12 @@ cdef class _ScrewSpindle(object):
         FP : FlowPath
         ichamb : int
             number of chamber that the leakage originates from
-        itube: int
-            The selected injection tube between 1 and geo.num_inj_tubes
         upstream_key: string
             Key for the side of the flow path that is considered to be "upstream"      
         """
 
         if FP.key_up == upstream_key:
-            FP.A = screw_spindle_geo.area_injection(self.theta, self.geo, ichamb, itube)
+            FP.A = screw_spindle_geo.area_injection(self.theta, self.geo, ichamb)
             try:
                 return flow_models.LiquidNozzleFlow(FP.A,FP.State_up,FP.State_down, 1.0, 1e-10)
             except ZeroDivisionError:

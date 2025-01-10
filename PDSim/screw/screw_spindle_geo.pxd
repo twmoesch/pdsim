@@ -27,12 +27,12 @@ cdef enum leak_id:
 cdef class geoVals:
     cdef public double num_lobes, V_suc_plenum, V_dis_plenum, V_suc, V_dis
     cdef public double theta_min, theta_max, theta_suc, theta_dis, dtheta_chamb
-    cdef public int num_chambers, num_inj_tubes
+    cdef public int num_chambers
     cdef public double[:] theta_raw, V_raw, dV_raw
     cdef public double[:] A_suc_ax_raw, A_suc_rad_raw, A_dis_ax_raw 
     cdef public double[:] A_leak_housing_raw, A_leak_radial_raw, A_leak_intermesh_internal_raw
     cdef public double[:] A_leak_intermesh_external_raw, A_leak_blowhole1_raw, A_leak_blowhole2_raw
-    cdef public double[:][:] A_inj_raw
+    cdef public double[:] theta_inj_raw, A_inj_raw
     cdef public double[:] A_hx_housing1_raw, A_hx_housing2_raw
     cdef public double[:] A_hx_rotor_root_raw, A_hx_rotor_crown_raw, A_hx_rotor_flank1_raw, A_hx_rotor_flank2_raw
 
@@ -42,4 +42,4 @@ cpdef VdVstruct VdV(double theta, geoVals geo, int ichamb)
 cpdef double area_leak(double theta, geoVals geo, int ichamb, leak_id id)
 cpdef double area_suction(double theta, geoVals geo, int ichamb)
 cpdef double area_discharge(double theta, geoVals geo, int ichamb)
-cpdef double area_injection(double theta, geoVals geo, int ichamb, int itube)
+cpdef double area_injection(double theta, geoVals geo, int ichamb)

@@ -32,6 +32,11 @@ PDSim/scroll/common_scroll_geo.cpp
 PDSim/scroll/common_scroll_geo.html
 PDSim/scroll/symm_scroll_geo.cpp
 PDSim/scroll/symm_scroll_geo.html
+PDSim/screw/_screw.cpp
+PDSim/screw/_screw.html
+PDSim/screw/screw_spindle_geo.cpp
+PDSim/screw/screw_spindle_geo.html
+
 doc/_build
 doc/PDSim_apidoc
 build

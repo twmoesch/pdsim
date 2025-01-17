@@ -11,6 +11,29 @@ cdef class VdVstruct:
     def __repr__(self):
         return str(list([self.V,self.dV]))
 
+#This is a list of all the members in geoVals
+# TODO Anpassung an tatsächliche Werte in geoVals
+geoValsvarlist=['V_suc_plenum', 'V_dis_plenum', 'V_suc', 'V_dis', 'V_nan',
+                'theta_min', 'theta_max', 'theta_suc', 'theta_dis', 'dtheta_chamb',
+                'num_chambers', 'num_lobes', 
+                #'theta_raw', 'V_raw', 'dV_raw',
+                #'A_suc_ax_raw', 'A_suc_rad_raw', 'A_dis_ax_raw', 
+                #'A_leak_housing_raw', 'A_leak_radial_raw', 'A_leak_intermesh_internal_raw',
+                #'A_leak_intermesh_external_raw', 'A_leak_blowhole1_raw', 'A_leak_blowhole2_raw',
+                #'theta_inj_raw', 'A_inj_raw', 'num_inj_tubes'
+                #'A_hx_housing1_raw', 'A_hx_housing2_raw',
+                #'A_hx_rotor_root_raw', 'A_hx_rotor_crown_raw', 'A_hx_rotor_flank1_raw', 'A_hx_rotor_flank2_raw'
+                ]
+ 
+cdef class geoVals:
+    def __init__(self, num_lobes):
+        self.num_lobes = num_lobes
+
+    def __iter__(self):
+        for atr in geoValsvarlist:
+            yield atr, getattr(self,atr)
+        return None
+
 cdef double get_global_theta(double theta, geoVals geo, int ichamb):
     return theta + geo.theta_min + (ichamb - 1) * pi / geo.num_lobes
 
@@ -27,7 +50,7 @@ cdef double simple_interpolation(double X, double[:] X_all, double[:] Y_all, dou
         i += 1
     return Y_ext
 
-cpdef VdVstruct VdV(double theta, geoVals geo, int ichamb):
+cpdef tuple VdV(double theta, geoVals geo, int ichamb):
     """
     Evaluate V and dV/dtheta in a generalized manner for a chamber
     
@@ -42,11 +65,16 @@ cpdef VdVstruct VdV(double theta, geoVals geo, int ichamb):
 
     """
     cdef double theta_global = get_global_theta(theta, geo, ichamb)
-    cdef VdVstruct VdV = VdVstruct.__new__(VdVstruct)
+    #cdef VdVstruct VdV = VdVstruct.__new__(VdVstruct)
 
-    VdV.V = simple_interpolation(theta_global, geo.theta_raw, geo.V_raw, 0.0)
-    VdV.dV = simple_interpolation(theta_global, geo.theta_raw, geo.dV_raw, 0.0)
-    return VdV
+    #VdV.V = simple_interpolation(theta_global, geo.theta_raw, geo.V_raw, geo.V_nan)
+    #VdV.dV = simple_interpolation(theta_global, geo.theta_raw, geo.dV_raw, 0.0)
+    V = simple_interpolation(theta_global, geo.theta_raw, geo.V_raw, geo.V_nan)
+    dV = simple_interpolation(theta_global, geo.theta_raw, geo.dV_raw, 0.0)
+    if V<geo.V_nan:
+        V = geo.V_nan
+        dV = 0.0
+    return V, dV
 
 cpdef double area_leak(double theta, geoVals geo, int ichamb, leak_id id):
     """
@@ -60,7 +88,7 @@ cpdef double area_leak(double theta, geoVals geo, int ichamb, leak_id id):
         The structure with the geometry obtained from get_geo()
     ichamb : int
         The chamber number between 1 and geo.num_chambers
-    id : leak_id
+    id : int
         The identifier of the leakage flow
     """
     cdef double area, theta_global = get_global_theta(theta, geo, ichamb)

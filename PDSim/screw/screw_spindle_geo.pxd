@@ -18,16 +18,16 @@ cdef class VdVstruct:
     """ Derivative of volume with respect to crank angle [m^3/radian] """
 
 cdef enum leak_id:
-    HOUSING
-    RADIAL
-    INTERMESH_INT
-    INTERMESH_EXT
-    BLOWHOLE
+    HOUSING = 0
+    RADIAL = 1
+    INTERMESH_INT = 2
+    INTERMESH_EXT = 3
+    BLOWHOLE = 4
 
 cdef class geoVals:
-    cdef public double num_lobes, V_suc_plenum, V_dis_plenum, V_suc, V_dis
+    cdef public double V_suc_plenum, V_dis_plenum, V_suc, V_dis, V_nan
     cdef public double theta_min, theta_max, theta_suc, theta_dis, dtheta_chamb
-    cdef public int num_chambers
+    cdef public int num_chambers, num_lobes, num_inj_tubes
     cdef public double[:] theta_raw, V_raw, dV_raw
     cdef public double[:] A_suc_ax_raw, A_suc_rad_raw, A_dis_ax_raw 
     cdef public double[:] A_leak_housing_raw, A_leak_radial_raw, A_leak_intermesh_internal_raw
@@ -38,7 +38,7 @@ cdef class geoVals:
 
 cdef double get_global_theta(double theta, geoVals geo, int ichamb)
 cdef double simple_interpolation(double X, double[:] X_all, double[:] Y_all, double Y_ext)
-cpdef VdVstruct VdV(double theta, geoVals geo, int ichamb)
+cpdef tuple VdV(double theta, geoVals geo, int ichamb)
 cpdef double area_leak(double theta, geoVals geo, int ichamb, leak_id id)
 cpdef double area_suction(double theta, geoVals geo, int ichamb)
 cpdef double area_discharge(double theta, geoVals geo, int ichamb)

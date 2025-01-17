@@ -30,7 +30,9 @@ cdef class _ScrewSpindle(object):
     cpdef dict __cdict__(self)
     cpdef double Suction(self, FlowPath FP, int ichamb)
     cpdef double Discharge(self, FlowPath FP, int ichamb)
+    cpdef double SimpleFlow(self, FlowPath FP, float A)
     cpdef double Leakage(self, FlowPath FP, int ichamb, leak_id id)
+    
     #cpdef double RadialLeakage(self, FlowPath FP, int ichamb)
     #cpdef double InternalIntermeshLeakage(self, FlowPath FP, int ichamb)
     #cpdef double ExternalIntermeshLeakage(self, FlowPath FP, int ichamb)

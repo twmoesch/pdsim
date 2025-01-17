@@ -9,6 +9,7 @@ from PDSim.screw.core import ScrewSpindle
 import PDSim
 
 data_folder = Path(PDSim.__file__).parent.parent.joinpath('data')
+example_folder = Path(PDSim.__file__).parent.parent.joinpath('examples')
 
 ###################################
 # Definition operating conditions #
@@ -42,8 +43,8 @@ backend='BICUBIC'
 # Generate Screw Spindle object #
 #################################
 
-GeomDataFilePath = data_folder.joinpath('GeomData_screw_spindle.csv')
-filename='screw_R718_eps0.001'
+GeomDataFilePath = example_folder.joinpath('GeomData_screw_spindle.csv')
+filename='screw'
 screw1 = ScrewSpindle(num_lobes=2)
 
 screw1.set_base_geomdata(BaseGeomDataFilePath = GeomDataFilePath)
@@ -55,17 +56,17 @@ filename+='_leak'
 screw1.set_leakage_geomdata(LeakGeomDataFilePath = GeomDataFilePath)
 screw1.auto_add_leakage()
 
-# filename+='_inj'
-# screw1.set_inj_geomdata(InjGeomDataFilePath = GeomDataFilePath)
-# screw1.auto_add_injection(injState=injState)
+filename+='_inj'
+screw1.set_inj_geomdata(InjGeomDataFilePath = GeomDataFilePath)
+screw1.auto_add_injection(injState=injState)
 
 screw1.compressor_solve(
-    solver_method = 'Euler', EulerN = 50000,
-    # solver_method = 'RK45', RK45_eps = 1e-6,
+    # solver_method = 'Euler', EulerN = 20000,
+    solver_method = 'RK45', RK45_eps = 1e-6,
     backend = backend,
     OneCycle = False,
     n = n,
-    eps_cycle=0.001,
+    eps_cycle=0.005,
     HDF5filename=filename+'.h5'
 )
 

@@ -2,6 +2,7 @@
 *.h5
 *.pyd
 *.so
+*.h
 PDSim/core/_bearings.cpp
 PDSim/core/_bearings.html
 PDSim/core/callbacks.cpp

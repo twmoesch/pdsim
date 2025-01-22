@@ -52,3 +52,4 @@ doc/notebooks/**/*.png
 # uv
 .venv/
 .python-version
+data

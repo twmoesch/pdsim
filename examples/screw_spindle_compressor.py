@@ -8,7 +8,7 @@ from PDSim.screw.core import ScrewSpindle
 
 import PDSim
 
-example_folder = Path(PDSim.__file__).parent.parent.joinpath('examples')
+data_folder = Path(PDSim.__file__).parent.parent.joinpath('data')
 
 ###################################
 # Definition operating conditions #
@@ -43,7 +43,7 @@ backend='BICUBIC'
 # Generate Screw Spindle object #
 #################################
 
-GeomDataFilePath = example_folder.joinpath('GeomData_screw_spindle.csv')
+GeomDataFilePath = data_folder.joinpath('GeomData_screw_spindle.csv')
 filename='screw'
 screw1 = ScrewSpindle(num_lobes=2)
 
@@ -61,8 +61,8 @@ screw1.set_inj_geomdata(InjGeomDataFilePath = GeomDataFilePath)
 screw1.auto_add_injection(injState=injState)
 
 screw1.compressor_solve(
-    # solver_method = 'Euler', EulerN = 20000,
-    solver_method = 'RK45', RK45_eps = 1e-6,
+    solver_method = 'Euler', EulerN = 20000,
+    # solver_method = 'RK45', RK45_eps = 1e-6,
     backend = backend,
     OneCycle = False,
     n = n,

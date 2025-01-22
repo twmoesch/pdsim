@@ -94,15 +94,22 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
         else:
             raise NotImplementedError()
     
-    def set_leakage_geomdata(self, LeakGeomDataFilePath:Path = None):
+    def set_leakage_geomdata(self, LeakGeomDataFilePath:Path = None, delta_S:float = None):
         if LeakGeomDataFilePath != None:
             df_geomdata = pd.read_csv(LeakGeomDataFilePath,sep='\t',header=0)
-            self.geo.A_leak_housing_raw = df_geomdata['FL_5_A'].to_numpy()
-            self.geo.A_leak_intermesh_external_raw = df_geomdata['FL_5_B'].to_numpy()
-            self.geo.A_leak_radial_raw = df_geomdata['FL_5_C'].to_numpy()
             self.geo.A_leak_blowhole1_raw = df_geomdata['FL_5_D1'].to_numpy()
             self.geo.A_leak_blowhole2_raw  = df_geomdata['FL_5_D2'].to_numpy()
-            self.geo.A_leak_intermesh_internal_raw = df_geomdata['FL_5_E'].to_numpy()
+            if delta_S != None:
+                self.geo.A_leak_housing_raw = df_geomdata['LL_5_A'].to_numpy() * delta_S
+                self.geo.A_leak_intermesh_external_raw = df_geomdata['LL_5_B'].to_numpy() * delta_S
+                self.geo.A_leak_radial_raw = df_geomdata['LL_5_C'].to_numpy() * delta_S
+                self.geo.A_leak_intermesh_internal_raw = df_geomdata['LL_5_E'].to_numpy() * delta_S
+                
+            else:
+                self.geo.A_leak_housing_raw = df_geomdata['FL_5_A'].to_numpy()
+                self.geo.A_leak_intermesh_external_raw = df_geomdata['FL_5_B'].to_numpy()
+                self.geo.A_leak_radial_raw = df_geomdata['FL_5_C'].to_numpy()
+                self.geo.A_leak_intermesh_internal_raw = df_geomdata['FL_5_E'].to_numpy()
     
     def set_inj_geomdata(self, InjGeomDataFilePath:Path = None):
         if InjGeomDataFilePath != None:
@@ -362,7 +369,7 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
                     )
                 ) 
             for ichamb in range(1, self.geo.num_chambers + 1, 1):
-                for theta in np.linspace(0, self.geo.dtheta_chamb, 100):
+                for theta in np.linspace(0, self.geo.dtheta_chamb, 10000):
                     if self.A_inj(ichamb)(theta) > 0:
                         self.add_flow(FlowPath(
                         key1 = 'INJtube{}.2'.format(itube), key2 = 'c{}'.format(ichamb), 

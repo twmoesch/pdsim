@@ -319,7 +319,7 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
                 self.add_flow(FlowPath(key1='c' + str(ichamb-2),
                                    key2='c' + str(ichamb),
                                    # MdotFcn=self.MdotFcn_leakage(ichamb, screw_spindle_geo.HOUSING),
-                                   MdotFcn=self.MdotFcn_leakage(ichamb, 0, flow_coeff=0.1),
+                                   MdotFcn=self.MdotFcn_leakage(ichamb, 0, flow_coeff=0.2),
                                    )
                           )
             if ichamb>=2:
@@ -333,20 +333,20 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
                 self.add_flow(FlowPath(key1='c' + str(ichamb-3),
                                    key2='c' + str(ichamb),
                                    #MdotFcn=self.MdotFcn_leakage(ichamb, screw_spindle_geo.INTERMESH_EXT),
-                                   MdotFcn=self.MdotFcn_leakage(ichamb, 3, flow_coeff=0.7),
+                                   MdotFcn=self.MdotFcn_leakage(ichamb, 3, flow_coeff=0.8),
                                    )
                           )    
             if ichamb>=5:
                 self.add_flow(FlowPath(key1='c' + str(ichamb-4),
                                    key2='c' + str(ichamb),
                                    #MdotFcn=self.MdotFcn_leakage(ichamb, screw_spindle_geo.INTERMESH_INT),
-                                   MdotFcn=self.MdotFcn_leakage(ichamb, 2, flow_coeff=0.7),
+                                   MdotFcn=self.MdotFcn_leakage(ichamb, 2, flow_coeff=0.8),
                                    )
                           )
                 self.add_flow(FlowPath(key1='c' + str(ichamb-4),
                                    key2='c' + str(ichamb),
                                    # MdotFcn=self.MdotFcn_leakage(ichamb, screw_spindle_geo.RADIAL),
-                                   MdotFcn=self.MdotFcn_leakage(ichamb, 1, flow_coeff=0.7),
+                                   MdotFcn=self.MdotFcn_leakage(ichamb, 1, flow_coeff=0.8),
                                    )
                           )    
         return None

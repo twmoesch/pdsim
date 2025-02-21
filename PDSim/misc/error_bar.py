@@ -11,6 +11,8 @@ def error_ascii_bar(val, tol, N=50, min_p=-5, max_p=2):
 
     if isnan(val):
         return " XXX VAL is NAN XXX "
+    elif val==0.0:
+        val=1e-16
 
     # Add the bar for the tolerance
     i = int(N * (log10(tol) - min_p) / (max_p - min_p) + 1)

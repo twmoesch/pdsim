@@ -168,10 +168,10 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
             return screw_spindle_geo.VdV(theta, self.geo, ichamb)[0:2]
         return _VdV
 
-    def MdotFcn_leakage(self, ichamb, leakage_id):
+    def MdotFcn_leakage(self, ichamb, leakage_id, flow_coeff=1.0):
         '''simple function factory for leakage mass flow'''
         def _MdotFcn_leakage(FP:FlowPath):
-            return self.Leakage(FP, ichamb, leakage_id)
+            return self.Leakage(FP, ichamb, leakage_id, flow_coeff=flow_coeff)
         return _MdotFcn_leakage
     
     def MdotFcn_injection(self, ichamb, upstream_key:str='INJ'):
@@ -317,34 +317,34 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
                 self.add_flow(FlowPath(key1='c' + str(ichamb-2),
                                    key2='c' + str(ichamb),
                                    # MdotFcn=self.MdotFcn_leakage(ichamb, screw_spindle_geo.HOUSING),
-                                   MdotFcn=self.MdotFcn_leakage(ichamb, 0),
+                                   MdotFcn=self.MdotFcn_leakage(ichamb, 0, flow_coeff=0.2),
                                    )
                           )
             if ichamb>=2:
                 self.add_flow(FlowPath(key1='c' + str(ichamb-1),
                                    key2= 'c' + str(ichamb),
                                    #MdotFcn=self.MdotFcn_leakage(ichamb, screw_spindle_geo.BLOWHOLE),
-                                   MdotFcn=self.MdotFcn_leakage(ichamb, 4),
+                                   MdotFcn=self.MdotFcn_leakage(ichamb, 4, flow_coeff=1.0),
                                    )
                           )
             if ichamb>=4:
                 self.add_flow(FlowPath(key1='c' + str(ichamb-3),
                                    key2='c' + str(ichamb),
                                    #MdotFcn=self.MdotFcn_leakage(ichamb, screw_spindle_geo.INTERMESH_EXT),
-                                   MdotFcn=self.MdotFcn_leakage(ichamb, 3),
+                                   MdotFcn=self.MdotFcn_leakage(ichamb, 3, flow_coeff=0.8),
                                    )
                           )    
             if ichamb>=5:
                 self.add_flow(FlowPath(key1='c' + str(ichamb-4),
                                    key2='c' + str(ichamb),
                                    #MdotFcn=self.MdotFcn_leakage(ichamb, screw_spindle_geo.INTERMESH_INT),
-                                   MdotFcn=self.MdotFcn_leakage(ichamb, 2),
+                                   MdotFcn=self.MdotFcn_leakage(ichamb, 2, flow_coeff=0.8),
                                    )
                           )
                 self.add_flow(FlowPath(key1='c' + str(ichamb-4),
                                    key2='c' + str(ichamb),
                                    # MdotFcn=self.MdotFcn_leakage(ichamb, screw_spindle_geo.RADIAL),
-                                   MdotFcn=self.MdotFcn_leakage(ichamb, 1),
+                                   MdotFcn=self.MdotFcn_leakage(ichamb, 1, flow_coeff=0.8),
                                    )
                           )    
         return None

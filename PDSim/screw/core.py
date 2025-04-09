@@ -78,8 +78,8 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
             # self.geo.theta_suc = sproot(tck_A_suc)[1]
             # self.geo.theta_dis = sproot(tck_A_dis)[0]
 
-            self.geo.theta_suc = PPoly.from_spline(tck_A_suc).roots()[1]
-            self.geo.theta_dis = PPoly.from_spline(tck_A_dis).roots()[0]
+            self.geo.theta_suc = PPoly.from_spline(tck_A_suc).roots(extrapolate=False)[0]
+            self.geo.theta_dis = PPoly.from_spline(tck_A_dis).roots(extrapolate=False)[0]
 
     	    #Suction and discharge (built-in) volume
             self.geo.V_suc = splev(self.geo.theta_suc, tck_V)
@@ -366,6 +366,7 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
                     State1=injState.copy(),
                     fixed=1,
                     TubeFcn=self.TubeCode,
+                    phase='Liquid'
                     )
                 ) 
             for ichamb in range(1, self.geo.num_chambers + 1, 1):
@@ -392,7 +393,8 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
                                                 Tube.ID,
                                                 T_wall=T_wall,
                                                 Q_add = Tube.Q_add,
-                                                alpha = Tube.alpha
+                                                alpha = Tube.alpha,
+                                                phase = Tube.phase
                                                 )
 
     def mechanical_losses(self):

@@ -14,6 +14,7 @@ from . import integrators
 from PDSim.misc.datatypes import arraym, empty_arraym
 import PDSim.core.callbacks
 from PDSim.misc.error_bar import error_ascii_bar
+from PDSim.misc.state_handling import copystate
 
 ##-- Non-package imports  --
 import numpy as np
@@ -783,7 +784,7 @@ class PDSimCore(object):
         # Can't use intermediate temperature because the state might be two-phase
         # for some conditions and you are better off just calculating the enthalpy
         # directly
-        temp = outletState.copy()
+        temp = copystate(outletState)#.copy()
         def objective(T):
             temp.update(dict(P=outletState.p, T=T))
             return temp.s - s1

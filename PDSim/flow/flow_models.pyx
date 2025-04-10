@@ -4,6 +4,7 @@ import cython
 cimport cython
 
 from CoolProp cimport constants_header
+from PDSim.misc.state_handling cimport copystate
 
 #Uncomment this line to use the python math functions
 #from math import log,pi,e,pow,sqrt
@@ -227,7 +228,7 @@ cpdef IsothermalWallTube(mdot,State1,State2,fixed,L,ID,OD=None,HTModel='Twall',T
         # Q_add needs to be in W
         Q_add *= 1000       
         
-        S=State(Fluid,{'T':Tmean,'P':p})
+        S=State(Fluid.decode(encoding="utf-8"),{'T':Tmean,'P':p})
             
         mu = S.visc  #kg/m-s
         cp = S.cp*1000. #J/kg-K
@@ -266,7 +267,7 @@ cpdef IsothermalWallTube(mdot,State1,State2,fixed,L,ID,OD=None,HTModel='Twall',T
             T2_star = T_wall-(T_wall-T1)*exp(-pi*ID*L*alpha/(mdot*cp))
             
             # Get the actual outlet enthalpy based on the additional heat input
-            S_star = State1.copy()
+            S_star = copystate(State1)#.copy()
             S_star.update({'T':T2_star,'P':p + DELTAP/1000.0})
             
             h2 = S_star.h + Q_add/mdot/1000.0

@@ -21,9 +21,9 @@ data_folder = Path(PDSim.__file__).parent.parent.joinpath('data')
 
 OP1 = dict(name='air_dp600_n4580', T1=293.15, p1=400e2, T2=293.15, p2=1000e2, n=4580/60, fluid="air")
 OP2 = dict(name='air_dp150_n5833', T1=293.15, p1=850e2, T2=293.15, p2=1000e2, n=5833/60, fluid="air")
-OP3 = dict(name='R718_p0_30_pc_42_n6600', T1=26.1+273.15, p1=30e2, T2=44.4+273.15, p2=42e2, n=6600/60, fluid='water')
+OP3 = dict(name='R718_p0_30_pc_42_n6600', T1=26.1+273.15, p1=30e2, T2=44.4+273.15, p2=42e2, n=6600/60, fluid="water")
 # OP4 = dict(name='R718_p0_14_pc_44_n4000', T1=20+273.15, p1=14e2, T2=30.6+273.15, p2=44e2, n=4000/60, fluid='water')
-OP4 = dict(name='R718_p0_14_pc_44_n4000', T1=20+273.15, p1=14e2, T2=45+273.15, p2=44e2, n=4000/60, fluid='water')
+OP4 = dict(name='R718_p0_14_pc_44_n4000', T1=20+273.15, p1=14e2, T2=45+273.15, p2=44e2, n=4000/60, fluid="water")
 #OP4 = dict(name='R718_p0_17_pc_44_n4000', T1=20+273.15, p1=17e2, T2=45+273.15, p2=44e2, n=4000/60, fluid='water')
 
 OP5 = dict(name='HA_dp245_n4800', T1=69+273.15, p1=1021e2-245e2, T2=85+273.15, p2=1021e2, n=4800/60)
@@ -46,9 +46,11 @@ backend='BICUBIC'
 # GeomDataFilePath = data_folder.joinpath('GeomData_a-195_redStk-70.0_dphi_deg=1.0_delta_S=1.00e-04.csv')
 GeomDataFilePath = data_folder.joinpath('GeomData_screw_spindle.csv')
 LeakDataFilePath = data_folder.joinpath('GeomData_a-195_LEAK_dphi_deg=1.0_delta_phi_fl_deg=1.50e+00_offN=3.50e-04_offR=1.00e-03.csv')
-for OP in [OP5]:
-    inletState = State.State(OP['fluid'],{'T':OP['T1'],'P':OP['p1']/1000}, phase='Gas')
-    outletState = State.State(OP['fluid'],{'T':OP['T2'],'P':OP['p2']/1000}, phase='Gas')
+for OP in [OP4]:
+    p1 = OP['p1']/1000
+    p2 = OP['p2']/1000
+    inletState = State.State(OP['fluid'],{'T':OP['T1'],'P':p1})#, phase=b"Gas")
+    outletState = State.State(OP['fluid'],{'T':OP['T2'],'P':p2})#, phase=b"Gas")
     if True:
         delta_S = 1e-4 
     #for delta_S in [1e-4, 2e-4, 3e-4, 4e-4, 5e-4, 6e-4, 7e-4, 8e-4, 9e-4, 10e-4]:

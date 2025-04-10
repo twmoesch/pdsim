@@ -13,6 +13,8 @@ from PDSim.misc.datatypes import arraym
 
 from PDSim.screw import screw_spindle_geo
 from PDSim.screw._screw import _ScrewSpindle
+#from copy import copy, deepcopy
+from PDSim.misc.state_handling import copystate
 
 from CoolProp import State
 from math import pi
@@ -207,10 +209,10 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
         
 
         #Add suction and discharge plenum
-        self.add_CV(ControlVolume(key='sc',initialState=self.inletState.copy(),
+        self.add_CV(ControlVolume(key='sc',initialState=copystate(self.inletState),#.copy(),
                 VdVFcn=self.V_SC,becomes=['sc','c1']))
 
-        self.add_CV(ControlVolume(key='dc',initialState=self.outletState.copy(),
+        self.add_CV(ControlVolume(key='dc',initialState=copystate(self.outletState),#.copy(),
                 VdVFcn=self.V_DC,becomes='dc'))
 
         #Add working chambers (automatically recognizing chambers opened to suction / discharge side)
@@ -230,10 +232,10 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
             A_dis2 = self.A_dis(ichamb)(theta=self.geo.dtheta_chamb)
 
             if A_suc1!=0 or A_suc2!=0: #suction working chambers
-                initial_state = self.inletState.copy()
+                initial_state = copystate(self.inletState)#.copy()
                 is_suction = True
             elif A_dis1!=0 or A_dis2!=0 or is_discharge: #discharge working chambers
-                initial_state = self.outletState.copy()
+                initial_state = copystate(self.outletState)#.copy()
                 is_discharge = True
             else: # compression chambers
                 is_suction = False 
@@ -244,19 +246,19 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
                 V2, dV2 = self.VdV(ichamb)(0)
 
                 if V2 <= self.geo.V_nan:
-                    initial_state = self.outletState.copy()
+                    initial_state = copystate(self.outletState)#.copy()
                 else:
                     rho2 = rho1 * V1 / V2
-                    temp = self.inletState.copy()
+                    temp = copystate(self.inletState)#.copy()
                     def resid(T):
                         temp.update(dict(T=T, D=rho2))
                         return temp.s-s1
                     optimize.root_scalar(resid, x0=self.inletState.T)
                     # Temp has now been updated
-                    initial_state=temp.copy()
+                    initial_state=copystate(temp)#.copy()
 
             self.add_CV(ControlVolume(key=key,
-                                      initialState=initial_state.copy(),
+                                      initialState=copystate(initial_state),#.copy(),
                                       VdVFcn=self.VdV(ichamb),
                                       #VdVFcn_kwargs={'alpha':alpha},
                                       #discharge_becomes=disc_becomes_c1,
@@ -284,7 +286,7 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
             L=L_suc,
             ID=D_suc,
             mdot=self.mdot_guess,
-            State1=self.inletState.copy(),
+            State1=copystate(self.inletState),#.copy(),
             fixed=1,
             TubeFcn=self.TubeCode,
             ))
@@ -296,7 +298,7 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
             L=L_dis,
             ID=D_dis,
             mdot=self.mdot_guess,
-            State2=self.outletState.copy(),
+            State2=copystate(self.outletState),#.copy(),
             fixed=2,
             TubeFcn=self.TubeCode,
             ))
@@ -362,8 +364,8 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
                     key2='INJtube{}.2'.format(itube),
                     L=L_inj[itube],
                     ID=D_inj[itube],
-                    mdot=1e-6,
-                    State1=injState.copy(),
+                    mdot=1e-3,#1e-6,
+                    State1=copystate(injState),#.copy(),
                     fixed=1,
                     TubeFcn=self.TubeCode,
                     phase='Liquid'
@@ -394,7 +396,7 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
                                                 T_wall=T_wall,
                                                 Q_add = Tube.Q_add,
                                                 alpha = Tube.alpha,
-                                                phase = Tube.phase
+                                                #phase = Tube.phase
                                                 )
 
     def mechanical_losses(self):
@@ -478,7 +480,7 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
                         T_merged=(T_kam*Vdict[kam]+TDC*VDC)/V_merged
                         #Must conserve mass and internal energy (instantaneous mixing process)
                         
-                        temp = self.CVs['dc'].State.copy()
+                        temp = copystate(self.CVs['dc'].State)#.copy()
                         def resid(T):
                             temp.update(dict(T=T,D=rho_merged))
                             return temp.u - U_before/m_merged

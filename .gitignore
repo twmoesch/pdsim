@@ -37,6 +37,9 @@ PDSim/screw/_screw.cpp
 PDSim/screw/_screw.html
 PDSim/screw/screw_spindle_geo.cpp
 PDSim/screw/screw_spindle_geo.html
+PDSim/misc/state_handling.cpp
+PDSim/misc/state_handling.html
+
 
 doc/_build
 doc/PDSim_apidoc

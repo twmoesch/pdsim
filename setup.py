@@ -72,7 +72,8 @@ pyx_list = [
             "PDSim/scroll/symm_scroll_geo.pyx",
             "PDSim/scroll/_scroll.pyx",
             "PDSim/screw/screw_spindle_geo.pyx",
-            "PDSim/screw/_screw.pyx"
+            "PDSim/screw/_screw.pyx",
+            "PDSim/misc/state_handling.pyx",
             ]
 
 def clean():

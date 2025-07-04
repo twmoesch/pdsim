@@ -8,6 +8,7 @@ cdef public enum STATE_VARS:
     
 cimport CoolProp.constants_header as constants
 from CoolProp import constants
+from PDSim.misc.state_handling cimport copystate
 
 cdef bytes to_bytes(object val):
     if isinstance(val, bytes):
@@ -72,11 +73,11 @@ cdef class Tube(object):
         if fixed==1 and isinstance(State1,StateClass) and State2==None:
             #Everything good
             self.State1=State1
-            self.State2=State1.copy()
+            self.State2=copystate(State1)#.copy()
         elif fixed==2 and isinstance(State2,StateClass) and State1==None:
             #Everything good
             self.State2=State2
-            self.State1=State2.copy()
+            self.State1=copystate(State2)#.copy()
         else:
             raise AttributeError('Incompatibility between the value for fixed and the states provided')
             

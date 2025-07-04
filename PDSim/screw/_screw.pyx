@@ -63,7 +63,7 @@ cdef class _ScrewSpindle(object):
         except ZeroDivisionError:
             return 0.0
 
-    cpdef double Leakage(self, FlowPath FP, int ichamb, leak_id id):
+    cpdef double Leakage(self, FlowPath FP, int ichamb, leak_id id, double flow_coeff):
         """
         Calculate the leakage mass flow rate from a specific chamber
 
@@ -72,13 +72,16 @@ cdef class _ScrewSpindle(object):
         FP : FlowPath
         ichamb : int
             number of chamber that the leakage originates from
-        leak_id : int
-            leakage identifier      
+        id : int
+            leakage identifier 
+             
+        flow_coeff : double
+            flow coefficient (standard = 1.0)
         """
 
         FP.A = screw_spindle_geo.area_leak(self.theta, self.geo, ichamb, id)
         try:
-            return flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)
+            return flow_coeff * flow_models.IsentropicNozzle(FP.A,FP.State_up,FP.State_down)
         except ZeroDivisionError:
             return 0.0
     

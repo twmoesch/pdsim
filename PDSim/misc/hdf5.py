@@ -24,7 +24,7 @@ class HDF5Writer(object):
             try:
                 # Get the attribute
                 value = getattr(struct, thing)
-            except (AttributeError, ValueError) as E:
+            except (AttributeError, ValueError, TypeError) as E:
                 print((thing, E))
                 # If it can't get the attribute, just go to the next thing
                 continue

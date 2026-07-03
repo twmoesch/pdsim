@@ -116,16 +116,33 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
     def set_inj_geomdata(self, InjGeomDataFilePath:Path = None):
         if InjGeomDataFilePath != None:
             df_geomdata = pd.read_csv(InjGeomDataFilePath,sep='\t',header=0)
-            self.geo.theta_inj_raw = df_geomdata['theta'].to_numpy()
-            self.geo.A_inj_raw = np.zeros(df_geomdata['theta'].to_numpy().size)
             i=0
-            A_inj = np.zeros(df_geomdata['theta'].to_numpy().size)
-            for col in df_geomdata.columns:
-                if 'inj' in str(col):
-                    i+=1
-                    A_inj += df_geomdata[col].to_numpy()
-                    #self.geo.A_inj_raw[i] = df_geomdata[col].to_numpy()
-            self.geo.A_inj_raw = A_inj
+            if 'theta' in df_geomdata.columns:
+                # #self.geo.theta_inj_raw = [df_geomdata['theta'].to_numpy()]
+                # self.geo.A_inj_raw = np.zeros(df_geomdata['theta'].to_numpy().size)
+                # i=0
+                # A_inj = np.zeros(df_geomdata['theta'].to_numpy().size)
+                
+                # for col in df_geomdata.columns:
+                #     if 'inj' in str(col):
+                #         i+=1
+                #         A_inj += df_geomdata[col].to_numpy()
+                #         #self.geo.A_inj_raw[i] = df_geomdata[col].to_numpy()
+                # A_inj = [A_inj]
+                for col in df_geomdata.columns:
+                    if 'inj' in str(col):
+                        i+=1
+                        self.geo.__setattr__(str(col).replace('F','A')+'_raw', df_geomdata[col].to_numpy())
+                        self.geo.__setattr__(str(col).replace('F','theta')+'_raw', df_geomdata['theta'].to_numpy())
+            else:
+                for col in df_geomdata.columns:
+                    if 'F_inj' in str(col):
+                        i+=1
+                        self.geo.__setattr__(str(col).replace('F','A')+'_raw', df_geomdata[col].to_numpy())
+                    elif 'theta_inj' in str(col):
+                        self.geo.__setattr__(str(col)+'_raw', df_geomdata[col].to_numpy())      
+            # self.geo.A_inj_raw = np.column_stack(A_inj)
+            # self.geo.theta_inj_raw = np.column_stack(theta_inj)
             self.geo.num_inj_tubes = i
     
     def set_operation_data(self, inletState:State, outletState:State, n:float=12000/60):
@@ -158,10 +175,10 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
             return screw_spindle_geo.area_discharge(theta, self.geo, ichamb)
         return _A_dis
 
-    def A_inj(self, ichamb):
+    def A_inj(self, ichamb, itube):
         '''simple function factory for injection area for each chamber'''
         def _A_inj(theta):
-            return screw_spindle_geo.area_injection(theta, self.geo, ichamb)
+            return screw_spindle_geo.area_injection(theta, self.geo, ichamb, itube)
         return _A_inj
 
     def VdV(self, ichamb):
@@ -176,10 +193,10 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
             return self.Leakage(FP, ichamb, leakage_id, flow_coeff=flow_coeff)
         return _MdotFcn_leakage
     
-    def MdotFcn_injection(self, ichamb, upstream_key:str='INJ'):
+    def MdotFcn_injection(self, ichamb, itube, upstream_key:str='INJ'):
         '''simple function factory for injection mass flow'''
         def _MdotFcn_injection(FP:FlowPath):
-            return self.Injection(FP, ichamb, upstream_key)
+            return self.Injection(FP, ichamb, itube, upstream_key)
         return _MdotFcn_injection
 
     def auto_add_CVs(self):
@@ -368,15 +385,15 @@ class ScrewSpindle(PDSimCore, _ScrewSpindle):
                     State1=copystate(injState),#.copy(),
                     fixed=1,
                     TubeFcn=self.TubeCode,
-                    phase='Liquid'
+                    #phase='Liquid'
                     )
                 ) 
             for ichamb in range(1, self.geo.num_chambers + 1, 1):
                 for theta in np.linspace(0, self.geo.dtheta_chamb, 10000):
-                    if self.A_inj(ichamb)(theta) > 0:
+                    if self.A_inj(ichamb, itube)(theta) > 0:
                         self.add_flow(FlowPath(
                         key1 = 'INJtube{}.2'.format(itube), key2 = 'c{}'.format(ichamb), 
-                        MdotFcn = self.MdotFcn_injection(ichamb, upstream_key='INJtube{}.2'.format(itube)),
+                        MdotFcn = self.MdotFcn_injection(ichamb, itube, upstream_key='INJtube{}.2'.format(itube)),
                         #MdotFcn_kwargs=dict(itube = itube, ichamb = ichamb,)
                         )) 
                         break

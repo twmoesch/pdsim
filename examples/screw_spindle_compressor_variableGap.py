@@ -14,6 +14,7 @@ from datetime import datetime
 import PDSim
 
 data_folder = Path(PDSim.__file__).parent.parent.joinpath('data')
+result_folder = Path(PDSim.__file__).parent.parent.joinpath('results')
 
 ###################################
 # Definition operating conditions #

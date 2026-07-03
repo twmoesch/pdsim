@@ -9,7 +9,7 @@ from PDSim.screw.core import ScrewSpindle
 import PDSim
 
 data_folder = Path(PDSim.__file__).parent.parent.joinpath('data')
-example_folder = Path(PDSim.__file__).parent.parent.joinpath('examples')
+result_folder = Path(PDSim.__file__).parent.parent.joinpath('results')
 
 ###################################
 # Definition operating conditions #
@@ -25,8 +25,6 @@ T2 = TC + 50; p2 = pC
 
 n = 12000 / 60
 
-
-
 inletState = State.State(fluid,{'T':T1,'P':p1/1000})
 outletState = State.State(fluid,{'T':T2,'P':p2/1000})
 injState = State.State(fluid,{'T':Tinj,'P':pinj/1000})
@@ -37,14 +35,13 @@ injState = State.State(fluid,{'T':Tinj,'P':pinj/1000})
 
 backend='BICUBIC'
 
-
-
 #################################
 # Generate Screw Spindle object #
 #################################
 
-GeomDataFilePath = data_folder.joinpath('GeomData_screw_spindle.csv')
-filename='screw_R718_eps0.001'
+GeomDataFilePath = data_folder.joinpath('GeomData_a-195_redStk-70.0_dphi_deg=1.0_delta_S=3.00e-04.csv')
+InjDataFilePath = data_folder.joinpath('InjData_a-195_redStk-70.0_dphi_deg=0.1_delta_S=3.00e-04.csv')
+filename='screw_R718_eps0.003'
 screw1 = ScrewSpindle(num_lobes=2)
 
 screw1.set_base_geomdata(BaseGeomDataFilePath = GeomDataFilePath)
@@ -56,13 +53,13 @@ filename+='_leak'
 screw1.set_leakage_geomdata(LeakGeomDataFilePath = GeomDataFilePath)
 screw1.auto_add_leakage()
 
-# filename+='_inj'
-# screw1.set_inj_geomdata(InjGeomDataFilePath = GeomDataFilePath)
-# screw1.auto_add_injection(injState=injState)
+filename+='_inj'
+screw1.set_inj_geomdata(InjGeomDataFilePath = InjDataFilePath)
+screw1.auto_add_injection(injState=injState)
 
 screw1.compressor_solve(
-    solver_method = 'Euler', EulerN = 50000,
-    # solver_method = 'RK45', RK45_eps = 1e-6,
+    # solver_method = 'Euler', EulerN = 50000,
+    solver_method = 'RK45', RK45_eps = 1e-6,
     backend = backend,
     OneCycle = False,
     n = n,

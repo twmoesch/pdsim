@@ -37,7 +37,7 @@ cdef class _ScrewSpindle(object):
     #cpdef double InternalIntermeshLeakage(self, FlowPath FP, int ichamb)
     #cpdef double ExternalIntermeshLeakage(self, FlowPath FP, int ichamb)
     #cpdef double BlowholeLeakage(self, FlowPath FP, int ichamb)
-    cpdef double Injection(self, FlowPath FP, int ichamb, str upstream_key)
+    cpdef double Injection(self, FlowPath FP, int ichamb, int itube, str upstream_key)
 
 
 

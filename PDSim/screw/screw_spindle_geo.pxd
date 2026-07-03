@@ -35,7 +35,9 @@ cdef class geoVals:
     cdef public double[:] A_suc_ax_raw, A_suc_rad_raw, A_dis_ax_raw 
     cdef public double[:] A_leak_housing_raw, A_leak_radial_raw, A_leak_intermesh_internal_raw
     cdef public double[:] A_leak_intermesh_external_raw, A_leak_blowhole1_raw, A_leak_blowhole2_raw
-    cdef public double[:] theta_inj_raw, A_inj_raw
+    # cdef public double[:] theta_inj_raw, A_inj_raw
+    cdef public double[:] theta_inj_0_raw, theta_inj_1_raw, theta_inj_2_raw, theta_inj_3_raw, theta_inj_4_raw, theta_inj_5_raw, theta_inj_6_raw, theta_inj_7_raw, theta_inj_8_raw, theta_inj_9_raw, theta_inj_10_raw
+    cdef public double[:] A_inj_0_raw, A_inj_1_raw, A_inj_2_raw, A_inj_3_raw, A_inj_4_raw, A_inj_5_raw, A_inj_6_raw, A_inj_7_raw, A_inj_8_raw, A_inj_9_raw, A_inj_10_raw
     cdef public double[:] A_hx_housing1_raw, A_hx_housing2_raw
     cdef public double[:] A_hx_rotor_root_raw, A_hx_rotor_crown_raw, A_hx_rotor_flank1_raw, A_hx_rotor_flank2_raw
 
@@ -45,4 +47,4 @@ cpdef tuple VdV(double theta, geoVals geo, int ichamb)
 cpdef double area_leak(double theta, geoVals geo, int ichamb, leak_id id)
 cpdef double area_suction(double theta, geoVals geo, int ichamb)
 cpdef double area_discharge(double theta, geoVals geo, int ichamb)
-cpdef double area_injection(double theta, geoVals geo, int ichamb)
+cpdef double area_injection(double theta, geoVals geo, int ichamb, int itube)

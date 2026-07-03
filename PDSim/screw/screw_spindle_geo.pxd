@@ -25,12 +25,9 @@ cdef enum leak_id:
     BLOWHOLE = 4
 
 cdef class geoVals:
-
     cdef public double V_suc_plenum, V_dis_plenum, V_suc, V_dis, V_nan
     cdef public double theta_min, theta_max, theta_suc, theta_dis, dtheta_chamb
     cdef public int num_chambers, num_lobes, num_inj_tubes
-
-    cdef public int num_chambers, num_inj_tubes
     cdef public double[:] theta_raw, V_raw, dV_raw
     cdef public double[:] A_suc_ax_raw, A_suc_rad_raw, A_dis_ax_raw 
     cdef public double[:] A_leak_housing_raw, A_leak_radial_raw, A_leak_intermesh_internal_raw

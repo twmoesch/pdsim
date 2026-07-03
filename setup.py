@@ -85,7 +85,6 @@ pyx_list = [
             "PDSim/screw/screw_spindle_geo.pyx",
             "PDSim/screw/_screw.pyx",
             "PDSim/misc/state_handling.pyx",
-            "PDSim/screw/_screw_spindle.pyx"
             ]
 
 def clean():
